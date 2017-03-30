@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/ionic.css"/>
+		<script src="../js/ionic.bundle.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('app',['ionic']);
+			//abstract	--	指定这个页面为抽象页面，即不能作为主页面显示，只能成为上级页面承载其他下级页面
+			app.config(function($stateProvider,$urlRouterProvider){
+				$stateProvider.state('tabs',{
+					url:'/tabs',
+					abstract: true,
+					templateUrl:'views/tabs.html'
+				})
+				.state('tabs.home',{
+					url:'/home',
+					views:{
+						'tab-home':{templateUrl:'views/home.html',controller:'home'}
+					}
+				})
+				.state('tabs.about',{
+					url:'/about',
+					views:{
+						'tab-about':{templateUrl:'views/about.html'}
+					}
+				})
+				.state('tabs.home-face',{
+					url:'/home-face',
+					views:{
+						'tab-home':{templateUrl:'views/home-face.html'}
+					}
+				})
+				$urlRouterProvider.otherwise('/tabs/home')
+			});
+			app.controller('home',function($scope){
+				$scope.home = '这是主页的内容';
+			})
+		</script>
+	</head>
+	<body ng-app="app">
+		<!--设置一个返回按钮用来返回上一个页面-->
+		<ion-nav-bar class='bar-positive'>
+			<ion-nav-back-button></ion-nav-back-button>
+		</ion-nav-bar>
+		<!--创建view窗口-->
+		<ion-nav-view></ion-nav-view>
+	</body>
+</html>

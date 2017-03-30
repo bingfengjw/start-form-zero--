@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			h3{
+				color: orangered;
+				padding: 0 10px;
+				display: inline;
+			}
+			span{
+				width: 150px;
+				color: red;
+				display: inline-block;
+			}
+		</style>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('myapp',[]);
+			app.controller('myctrl1',function($scope,$http){
+				$scope.myRecords = ['张三','李四','王五'];
+			})
+			app.controller('myctrl2',function($scope,$http){
+				$http.get('json/records.json').success(function(response){
+					$scope.myRecords = response.records;
+				})
+			})
+			app.controller('myctrl3',function($scope){
+				$scope.myPerson = {
+					'姓名':'张三',
+					'年龄':20,
+					'居住地':'北京'
+				}
+			})
+		</script>
+	</head>
+	<body ng-app="myapp">
+		<div ng-controller="myctrl1">
+			<select ng-model="records" ng-options="x for x in myRecords"></select>
+		</div>
+		<hr />
+		<div ng-controller='myctrl2'>
+			<select>
+				<option ng-repeat="x in myRecords">
+					{{x.Name}}
+				</option>
+			</select>
+		</div>
+		<hr />
+		<div ng-controller="myctrl2">
+			<p>该实例演示了使用 ng-repeat 指令来创建下拉列表，选中的值是一个字符串。</p>
+			<select ng-model="myCity">
+				<option ng-repeat="x in myRecords" value="{{x.City}}">
+					{{x.Name}}
+				</option>
+			</select>
+			选中人物的城市是：<h3>{{myCity}}</h3>
+		</div>
+		<hr />
+		<div ng-controller="myctrl2">
+			<p>该实例演示了使用 ng-options  指令来创建下拉列表，选中的值是一个对象。</p>
+			<select ng-model="mySelect" ng-options="x.Name for x in myRecords"></select><br />
+			<span>选择的名字是：</span>{{mySelect.Name}}<br />
+			<span>名字对应的城市是：</span>{{mySelect.City}}<br />
+		</div>
+		<hr />
+		<div ng-controller="myctrl3">
+			<p>该实例演示了使用对象作为创建下拉列表。</p>
+			<select ng-model="myValue" ng-options="key for (key,value) in myPerson"></select><br />
+			选择的值为：<span>{{myValue}}</span><br />
+		</div>
+		<hr />
+		<div ng-controller="myctrl2">
+			<p>该实例演示了使用对象作为创建下拉列表。</p>
+			<select ng-model="myValue" ng-options="value.Name for (key,value) in myRecords"></select><br />
+			Name：<span>{{myValue.Name}}</span><br />
+			City：<span>{{myValue.City}}</span><br />
+			Country：<span>{{myValue.Country}}</span><br />
+			<p>下拉列表中的选项也可以是对象的属性。</p>
+		</div>
+	</body>
+</html>

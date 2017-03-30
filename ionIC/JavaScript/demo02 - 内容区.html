@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />	
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css"/>
+		<script src="js/ionic.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('app',['ionic']);
+			app.controller('ctrl',function($scope){
+				$scope.a = function(){
+					$scope.num=11111111111111111111;
+				}
+			})
+		</script>
+	</head>
+	<body ng-app="app">
+		<ion-header-bar align-title="left" class='bar-calm'>
+			<h1 class="title">内容区</h1>
+		</ion-header-bar>
+		<!--
+		delegate-handle(可选)		字符串	该句柄用于标识带有$ionicScrollDelegate的滚动视图。
+		padding(可选)				布尔值	是否在内容上添加内填充。在iOS上默认为true，在Android上为false。
+		scroll(可选)				布尔值	是否允许内容滚动。默认为true。
+		overflow-scroll(可选)		布尔值	是否用溢出滚动代替Ionic滚动。
+		has-bouncing(可选)		布尔值	是否允许内容滚动反弹到边缘。iOS上默认为true，Android上默认为false。
+		on-scroll(可选)			表达式	当内容滚动时表现的评估。
+		on-scroll-complete(可选)	表达式	一个滚动动作完成时表现的评估。
+		-->
+		<ion-content
+			class='scroll-content has-header'
+			padding="true"
+			scroll="true"
+			has-bouncing="true"
+			on-scroll=''
+			>
+			{{num}}
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+			<p>这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区这是一个内容区</p>
+		</ion-content>
+	</body>
+</html>

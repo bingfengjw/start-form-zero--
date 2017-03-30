@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			span{color: red;}
+		</style>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('myapp',[]);
+			app.controller('myctrl',function($scope){
+				$scope.person = {
+					name:'张三',
+					email:'abcde@qq.com'
+				}
+			})
+		</script>
+	</head>
+	<!--
+	$dirty	表单有填写记录
+	$pristine	表单没有填写记录
+	$valid	字段内容合法的
+	$invalid	字段内容是非法的
+	-->
+	<body ng-app="myapp">
+		<form ng-controller="myctrl" name="myForm" method="get" action="demo1.html">
+			<input type="text" name="Name" ng-model="person.name" required>
+			<span ng-show="myForm.Name.$error.required">
+				用户名不能为空
+			</span>
+			<br />
+			<input type="email" name="Email" ng-model="person.email" required>
+			<span ng-show="myForm.Email.$error.required">邮箱不能为空</span>
+			<span ng-show="myForm.Email.$error.email">邮箱格式错误，请重新输入</span>
+			<br />
+			<input type="submit" ng-disabled="myForm.Name.$dirty && myForm.Name.$invalid || myForm.Email.$dirty && myForm.Email.$invalid">
+		</form>
+	</body>
+</html>

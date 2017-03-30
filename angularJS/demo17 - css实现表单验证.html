@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		/*	
+		 	ng-model 指令根据表单域的状态添加/移除以下类：
+			ng-empty 		为空时状态
+			ng-not-empty 	不为空时状态
+			ng-touched 		控件已失去焦点
+			ng-untouched 	控件未失去焦点
+			ng-valid 		验证是否通过
+			ng-invalid 		验证是否未通过
+			ng-dirty 		验证是否更改过，如更改过为true
+			ng-pristine 	验证是否没有更改过，如没有更改过为true
+			ng-pending 		
+		*/
+		#myemail.ng-valid{
+			color: lightgrey;
+		}
+		</style>
+		<script src='js/angular.min.js'></script>
+		<script>
+		var app = angular.module('myapp',[]);
+			app.controller('myctrl',function($scope){
+				$scope.myEmail = 'abc@xx.com';
+			})
+		window.onload = function(){
+			document.getElementById('myemail').onfocus = function(){
+				if(this.value == 'abc@xx.com'){
+					this.value = "";
+				}
+			}
+			document.getElementById('myemail').onblur = function(){
+				if(this.value == ''){
+					this.value = "abc@xx.com";
+				}
+			}
+		}
+		</script>
+	</head>
+	<body ng-app="myapp">
+		<form name="myForm" ng-controller="myctrl">
+			Email:<input type="email" id="myemail" name="email" ng-model="myEmail"><br />
+			<span ng-show="myForm.email.$error.email">
+				邮箱格式有误
+			</span>
+		</form>
+	</body>
+</html>

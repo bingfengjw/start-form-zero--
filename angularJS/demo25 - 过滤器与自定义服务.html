@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('myapp',[]);
+			app.service('myService',function(){
+				this.myFunc = function(x){
+					return x.toString(16);
+				}
+			})
+			app.filter('myFilter',['myService',function(myService){
+				return function(x){
+					return myService.myFunc(x);
+				}
+			}])
+			app.controller('myctrl',function($scope){
+				$scope.num = 255;
+			})
+		</script>
+	</head>
+	<body ng-app="myapp" ng-controller="myctrl">
+		数字<input type="number" ng-model="num">转换为16位进制得：<br />
+		{{num | myFilter}}
+	</body>
+</html>
+
+<!------------------------------------------------>
+<!--第二种方法-->
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('myapp',[]);
+			app.filter('myFilter',function(){
+				return this.myFunc = function(x){
+					return x.toString(16);
+				}
+			})
+			app.controller('myctrl',function($scope){
+				$scope.num = 255;
+			})
+		</script>
+	</head>
+	<body ng-app="myapp" ng-controller="myctrl">
+		<input type="number" ng-model="num" /><br />
+		{{num | myFilter}}		
+	</body>
+</html>-->
+

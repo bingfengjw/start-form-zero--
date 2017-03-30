@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box,.box2{
+				width: 200px;
+				height: 200px;
+				background-color: skyblue;
+			}
+			#box1 .box,#box1 .box2{
+				transition: all 0.5s 0s;
+			}
+			#box1 .box2{
+				background-color: orangered;
+			}
+			#box1 .box.ng-hide{
+				background-color: transparent;
+			}
+			/**********************/
+			#box2 .box.ng-hide{
+				-webkit-animation: boxAni1 0.5s;
+			}
+			#box2 .box{
+				-webkit-animation: boxAni2 0.5s;
+			}
+			@-webkit-keyframes boxAni1{
+				from{height: 200px;}
+				to{height: 0px;}
+			}
+			@-webkit-keyframes boxAni2{
+				from{height: 0px;top: 200px;}
+				to{height: 200px;top: 0;}
+			}
+			/*****************************/
+			#box3 .box{
+				transition: all 0.5s;
+			}
+			#box3 .box.ng-hide{
+				height: 0px;
+			}
+		</style>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular-animate.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('myapp',['ngAnimate']);
+		</script>
+	</head>
+	<body ng-app="myapp">
+		<!--<div id="box1">
+			<h2><label>隐藏DIV：<input type="checkbox" ng-model="myCheck1"></label></h2>
+			<div class="box" ng-hide="myCheck1"></div>
+			<div class="box2" ng-hide="myCheck1"></div>
+		</div>
+		<hr />-->
+		<!--<div id="box2">
+			<h2><label>显示DIV：<input type="checkbox" ng-model="myCheck2"></label></h2>
+			<div class="box" ng-show="myCheck2"></div>
+		</div>-->
+		<div id="box3">
+			<h2><label>隐藏DIV：<input type="checkbox" ng-model="myCheck2"></label></h2>
+			<div class="box" ng-show="myCheck2"></div>
+		</div>
+		{{a}}
+	</body>
+</html>

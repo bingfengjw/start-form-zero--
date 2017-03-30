@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js"></script>
+		<script>
+			var app = angular.module("myapp",[]);
+			app.controller("myctrl",function($scope){
+				$scope.names = ["张三","李四","王五"];
+			})
+		</script>
+	</head>
+	<body ng-app="myapp" ng-controller="myctrl">
+		<div>
+			<p>数组循环（使用ng-repeat）</p>
+			<ul>
+				<li ng-repeat="name in names">
+					{{name}}
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

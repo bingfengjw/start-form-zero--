@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>这是我的页面</title>
+		<style type="text/css">
+			body{color: red;}
+			#box{width: 200px;height: 200px;background-color: skyblue;}
+			p{width:300px;border:1px solid red;text-indent: 2em each-line;}
+		</style>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			/*window.onload = function(){
+				document.getElementById('box').onclick = function(){
+					this.style.backgroundColor = 'pink';
+				}
+			}*/
+			$(function(){
+				$("#box").click(function(){
+					$(this).css('background-color','pink');
+				})
+			})
+		</script>
+	</head>
+	<body>
+		这是我的首页页面,啦啦啦啦啦
+		<a href="abc">这是超级链接abc</a>
+		<div id="box"></div>
+		<br />
+		<!-- enctype="multipart/form-data"会导致服务器端无法获取到input里面的内容(只能接受被上传的文件,不能接受文字)-->
+		<form action="http://127.0.0.1:8080/submit" method="post">
+			<input type="text" id="user_name" placeholder="请输入用户名" name="name" /><br />
+			<input type="password" id="user_password" placeholder="请输入密码" name="password" /><br>
+			<input type="text" id="profession" placeholder="请输入职业" name="profession" /><br>
+			<input type="text" id="id" placeholder="请输入id" name="id" /><br>
+			<input type="file" name="pic_up" id="pic_up" value="点击上传" />
+			<input type="submit" value="点击提交"/>
+		</form>
+	<br>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul{
+				float: left;
+				border: 1px solid red;
+				margin: 0 10px;
+			}
+		</style>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('app',[]);
+			app.controller('ctrl',function($scope){
+				$scope.persons = [
+	                {name: "张三", age: 38, gender: "男"},
+	                {name: "李四", age: 28, gender: "女"},
+	                {name: "王老五", age: 18, gender: "男"},
+	                {name: "赵小六", age: 48, gender: "女"},
+	                {name: "钱老七", age: 58, gender: "男"}
+	            ];
+	            $scope.myFilter = function(item){
+	            	return item.age > 20;
+	            }
+			})
+		</script>
+	</head>
+	<body ng-app="app" ng-controller="ctrl">
+		<ul>
+			<!--多个过滤器连续使用-->
+			<li ng-repeat="x in persons | filter:{gender:'男'} | orderBy:'age' | limitTo:2:1">
+				{{x.name}},{{x.age}},{{x.gender}}
+			</li>
+		</ul>
+		<ul>
+			<!--过滤器使用函数-->
+			<li ng-repeat="x in persons | filter:myFilter">
+				{{x.name}},{{x.age}},{{x.gender}}
+			</li>
+		</ul>
+		<ul>
+			<!--过滤器使用函数-->
+			<li ng-repeat="x in persons | filter:{gender:'男',name:'老'}">
+				{{x.name}},{{x.age}},{{x.gender}}
+			</li>
+		</ul>
+		<div ng-init="myArr = [{name:'Tom', age:20}, {name:'Tom Senior', age:50}, {name:'May', age:21}, {name:'Jack', age:20}, {name:'Alice', age:22}]">
+			Name:<input ng-model="yourName" />
+			<!-- 指定comparator为false或者undefined，即为默认值可不传，将以大小写不敏感的方式匹配任意内容 -->
+			<!-- 可以试试把下面代码的comparator为true，true即大小写及内容均需完全匹配 -->
+			<div ng-repeat="u in myArr | filter:{name:yourName}:false ">
+			<p>Name:{{u.name}}</p>
+			<p>Age:{{u.age}}</p>
+			<br />
+			</div>
+		</div>
+<!--		
+		// 先在Controller中定义function:myComparator, 此function将能匹配大小写不敏感的内容，但与comparator为false的情况不同的是，comparator必须匹配全文
+		$scope.myComparator = function (expected, actual) {
+		    return angular.equals(expected.toLowerCase(), actual.toLowerCase());
+		}
+		
+		<div ng-init="myArr = [{name:'Tom', age:20}, {name:'Tom Senior', age:50}, {name:'May', age:21}, {name:'Jack', age:20}, {name:'Alice', age:22}]">
+		    Name:<input ng-model="yourName" />
+		    <div ng-repeat="u in myArr | filter:{name:yourName}:myComparator ">
+		        <p>Name:{{u.name}}</p>
+		        <p>Age:{{u.age}}</p>
+		        <br />
+		    </div>
+		</div>
+-->	
+	</body>
+</html>

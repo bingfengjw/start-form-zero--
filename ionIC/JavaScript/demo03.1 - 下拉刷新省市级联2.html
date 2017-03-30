@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css"/>
+		<script src="js/ionic.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module("app",['ionic']);
+			app.controller('ctrl',function($scope,$rootScope,$http){
+				$scope.doRefresh = function(){
+					$http({
+						url:'json/city.json'
+					}).then(function(data){
+						$scope.items = data.data.cityList;
+						//因为所有的ng-repeat里面的项都有一个单独的作用域，所以需要给每一项附一个单独的flag，即使用forEach
+						//如果不使用这种方式的话会出现二级循环部分无法使用到父级的flag的原因
+                        angular.forEach($scope.items, function(v) {
+                        	console.log(v);
+                            v.flag = false;
+                        });
+					}).finally(function(){
+						//$broadcast  一个广播事件
+						$scope.$broadcast('scroll.refreshComplete')
+					})
+				}
+			})
+			function getDate(tm){ 
+				var tt=new Date(parseInt(tm)).toLocaleString() 
+				return tt; 
+			} 
+			console.log(getDate(14900256000))
+			console.log(document.cookie);
+			
+			/*Hm_lvt_c337010bc5a1154d2fb6741a4d77d226=1486346122; 
+			__utma=96992031.526372079.1486346122.1486346122.1486346122.1;
+			__utmz=96992031.1486346122.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)*/
+			
+		</script>
+	</head>
+	<body ng-app="app" ng-controller="ctrl">
+		<ion-header-bar class='bar-calm'>
+			<h1 class="title">下拉刷新省市级联练习</h1>
+		</ion-header-bar>
+		<ion-content class='scroll-content has-header'>
+			<ion-refresher on-refresh='doRefresh()'></ion-refresher>
+			<ion-list ng-repeat="x in items">
+				<ion-item class="item-dark item-icon-right" ng-click="x.flag = !x.flag">
+					{{x.province}}
+					<i class="icon" ng-class="{'ion-android-add':!x.flag,'ion-minus':x.flag}"></i>
+				</ion-item>
+				<ion-item ng-show="x.flag" class='padding' ng-repeat='z in x.city'>{{z.cityName}}</ion-item>
+			</ion-list>
+		</ion-content>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/angular.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script>
+		//angular复习测试
+			angular.module('app',[]).controller('ctrl', function ($scope,$http) {
+				$scope.nav1 = true;
+				$scope.nav2 = false;
+				$scope.menu1 = function(){
+					$scope.nav1 = true;
+					$scope.nav2 = false;
+				};
+				$scope.menu2 = function(){
+					$scope.nav1 = false;
+					$scope.nav2 = true;
+				};
+				$http.get('json/city.min.json').success(function(response){
+					$scope.oCitylist = response.citylist;
+					$scope.oCityElse = function () {
+						var oMyCity = ['北京','天津','上海','重庆','香港','澳门','台湾'];
+						if(oMyCity.indexOf($scope.p.p) != -1){
+							return false;
+						}else{
+							return true;
+						}
+					}
+				});
+
+                $scope.sendCity = function () {
+                    //需要分别提交用户名密码和select标签里面的地址，如果使用同一标签的话会出错
+                    $http({
+                        url:'/register',
+                        method:'post',
+                        params:{
+                            sheng:$scope.p.p,
+                            shi:$scope.c.n,
+                            qu:$scope.n.s
+                        }
+                    }).success(function (response) {
+                        console.log(response);
+                    }).error(function (err) {
+                        console.error();
+                    });
+                };
+
+                //'获取select列表中的信息';
+                $scope.choseCity = function (e) {
+                    console.log(e);
+                };
+				$scope.txt = function (a,b,c) {
+					console.log(a + ',' + b + ',' + c)
+				};
+				$scope.txt2 = function () {
+                    console.log($scope.p.p + ',' + $scope.c.n + ',' + $scope.n.s)
+                };
+			})
+		</script>
+	</head>
+	<body ng-app="app" ng-controller="ctrl">
+		<div class="login_register">
+			<div class="nav clear-fix">
+				<p class="nav-now" ng-click="menu1()" ng-class="{'nav-now':nav1}">登录</p>
+				<p ng-click="menu2()" ng-class="{'nav-now':nav2}">注册</p>
+			</div>
+			<div class="main clear-fix">
+				<!--登录-->
+				<form action="/login" method="post" id="main-login" ng-show="nav1" name="main-login">
+					<label>
+						<p>用户名:</p>
+						<input type="text" name="loginUser" id="login-user" placeholder="请输入用户名" required />
+					</label>
+					<label>
+						<p>密码:</p>
+						<input type="password" name="loginPassword" id="login-password" placeholder="请输入密码" required />
+					</label>
+					<!--<input type="submit" ng-disabled="main-login.login-user.$invalid && main-login.login-user.$dirty || main-login.login-password.$invalid && main-login.login-user.$dirty" />-->
+					<input type="submit" ng-disabled="main-login.login-user.$error.required" />
+				</form>
+				<!--注册-->
+				<form action="/register" method='post' class="register" ng-show="!nav1" name="main-register">
+					<label>
+						<p>用户名:</p>
+						<input type="text" name="registerUser" id="login-user" placeholder="请输入用户名" />
+					</label>
+					<label>
+						<p>密码:</p>
+						<input type="password" name="registerPassword" id="login-password" placeholder="请输入密码" />
+					</label>
+					<label>
+						<p>密码确认:</p>
+						<input type="password" name="registerConfirm" id="login-confirm" placeholder="请再输入一次密码" />
+					</label>
+					<label class="address clear-fix">
+						<p>地址:</p>
+						<div>
+							<select ng-change="choseCity(p.p)" ng-model="p" ng-options="x.p for x in oCitylist" >
+								<option value="">- 请选择省 -</option>
+							</select>
+							<select ng-change="choseCity(c.n)" ng-model="c" ng-show="p" ng-options="c.n for c in p.c">
+								<option value="">- 请选择市 -</option>
+							</select>
+							<select ng-change="choseCity(n.s)" ng-model="n" ng-show="c && oCityElse()" ng-options="a.s for a in c.a">
+								<option value="">- 请选择区 -</option>
+							</select>
+						</div>
+					</label>
+					<input type="button" value="点我">
+					<input type="submit" ng-click="sendCity()">
+				</form>
+			</div>
+		</div>
+<!--
+    <script type="text/javascript">
+        var o = document.getElementsByTagName('select')[0].getElementsByTagName('option');
+        for(var i=0;i< o.length;i++){
+            console.log(o)
+            o[i].onclick = function () {
+                console.log(this);
+                alert(this.label);
+            }
+        }
+    </script>-->
+	</body>
+</html>

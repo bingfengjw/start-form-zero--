@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('app',[]);
+			app.controller('ctrl',function($scope){
+				$scope.userName = {
+					regVal:'default',
+					items:[
+						{"name":"default","value":"请输入用户名"},
+						{"name":"required","value":"用户名不能为空"},
+						{"name":"pattern","value":"请输入正确的用户名"},
+						{"name":"pass","value":"√"}
+					]
+				}
+				$scope.change=function(list,err){
+					console.log('$scope.userName : ');
+					console.log($scope.userName);
+					console.log('list : ');
+					console.log(list);
+					console.log('$scope[list] : ');
+					console.log($scope[list]);
+					console.log('$scope.list : ');
+					console.log($scope.list);
+					console.log('$scope[list].regVal');
+					console.log($scope[list].regVal);
+					console.log('err : ');
+					console.log(err);
+					console.log('arguments = ');
+					console.log(arguments);
+					console.log('arguments[1] = ');
+					console.log(arguments[1]);
+					console.log('------------');
+					for(var value in err){
+						console.log(value);
+						if(err[value]){
+							$scope[list].regVal = value;
+							return;
+						}
+					}
+					$scope[list].regVal = 'pass';
+				}
+			})
+		</script>
+	</head>
+	<body ng-app="app" ng-controller="ctrl">
+		<form name="myForm">
+			<label>用户名：<input type="text" ng-model="aa" ng-pattern="/[A-Z a-z]/" required name="user" ng-blur="change('userName',myForm.user.$error)"></label>
+			<span ng-repeat="item in userName.items | filter:userName.regVal">{{item.value}},{{item}}</span>
+			<br />
+			{{myForm.user.$error}}
+		</form>
+		
+	</body>
+</html>

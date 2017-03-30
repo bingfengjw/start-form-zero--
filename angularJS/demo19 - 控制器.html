@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js"></script>
+		<script src="controller/personController.js"></script>
+	</head>
+	<body ng-app="myapp">
+		<div ng-controller="myctrl">
+			内容为：<br />
+			{{persons}}
+			<ul>
+				全部转换为大写：
+				<li ng-repeat="x in persons">
+					{{x.name | uppercase}}
+				</li>
+			</ul>
+			<hr />
+			<ul>
+				全部转换为小写：
+				<li ng-repeat="x in persons">
+					{{x.name | lowercase}}
+				</li>
+			</ul>
+			<hr />
+			转换为货币相乘获得总价：<br />
+			购买数量：<input type="number" ng-model="num1"><br />
+			单价：<input type="number" ng-model="num2"><br />
+			总价：{{num1 * num2 | currency:"￥"}}
+			<hr />
+			控制排列顺序：<br />
+			<ul>
+				<li ng-repeat="x in persons | orderBy:'age'">
+					{{x.name + " , " + x.age}}
+				</li>
+			</ul>
+			<hr />
+			通过输入控制显示的内容：<br />
+			<input type="text" ng-model="test"><br />
+			<ul>
+				<li ng-repeat="x in persons | filter:test | orderBy:'age'">
+					{{x.name + ',' + x.city + ',' + x.age}}
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

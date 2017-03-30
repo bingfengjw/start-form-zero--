@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js"></script>
+		<script>
+			var app = angular.module("myapp",[]);
+			app.directive("myDiv",function(){
+				return {
+					template:"<h1>自定义指令</h1>",
+				}
+			})
+		</script>
+	</head>
+	<body ng-app="myapp">
+		<div my-div></div>
+		<my-div></my-div>
+		<h6 my-div></h6>
+		<!--my-div-->
+	</body>
+</html>

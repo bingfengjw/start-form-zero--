@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/angular.min.js"></script>
+    <script>
+        var app = angular.module("myapp",[]);
+        app.controller("myCtrl",function($scope){
+            $scope.person = {
+                name:"张三",
+                age:20
+            }
+        })
+    </script>
+</head>
+<body ng-app="myapp">
+<div ng-controller="myCtrl">
+    姓名：<input type="text" ng-model="person.name"><br>
+    年龄：<input type="text" ng-model="person.age"><br>
+    人员名单：{{person.name + " " + person.age}}
+</div>
+<br>
+<br>
+<div ng-init="person2={name:'李四',age:'21'}">
+    姓名：<input type="text" ng-model="person2.name"><br>
+    年龄：<input type="text" ng-model="person2.age"><br>
+    人员名单：{{person2.name + " " + person2.age}}
+</div>
+</body>
+</html>

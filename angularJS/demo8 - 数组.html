@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src='js/angular.min.js'></script>
+    <script>
+        var app = angular.module("myapp",[]);
+        app.controller("myctrl",function($scope){
+            $scope.array = [1,2,3,4,5,6];
+        })
+    </script>
+</head>
+<body>
+<!--两种方法不能同时存在-->
+<div ng-app="myapp" ng-controller="myctrl">
+    {{array[2]}}
+</div>
+<br>
+<br>
+<br>
+<div ng-app="" ng-init="array2=[9,8,7,6]">
+    {{array2[1]}}
+</div>
+</body>
+</html>

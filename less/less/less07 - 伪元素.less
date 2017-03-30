@@ -1,0 +1,13 @@
+@fontColor:red;
+@fontColorHover:orange;
+
+a{
+    color: @fontColor;
+    //有&时解析为当前元素,没有&时解析为伪元素或伪类
+    &:hover{
+        color: @fontColorHover;
+    }
+    &:nth-of-type(2){
+        background-color: skyblue;
+    }
+}

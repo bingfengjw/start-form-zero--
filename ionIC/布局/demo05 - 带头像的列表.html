@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css"/>
+		<script src="js/ionic.bundle.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			angular.module('app',['ionic']);
+		</script>
+	</head>
+	<body ng-app="app">
+		<div class="bar bar-header bar-calm">
+			<h1 class="title">带头像的列表</h1>
+		</div>
+		<ion-content class="scroll-content has-header">
+			<ul class="list">
+				<li class="item item-avatar">
+					<img src="img/1.png"/>
+					<h2>这里显示用户的名字</h2>
+					<p>这里是用户的简介</p>
+				</li>
+				<li class="item item-avatar">
+					<img src="img/2.png"/>
+					<h2>这里显示用户的名字</h2>
+					<p>这里是用户的简介</p>
+				</li>
+				<li class="item item-avatar">
+					<img src="img/3.png"/>
+					<h2>这里显示用户的名字</h2>
+					<p>这里是用户的简介</p>
+				</li>
+				<li class="item item-divider">略缩图列表</li>
+				<li class="item item-thumbnail-left">
+					<img src="img/12.png">
+					<h2>这是略缩图的名称</h2>
+					<p>这里是简介</p>
+				</li>
+				<li class="item item-thumbnail-right">
+					<img src="img/12.png">
+					<h2>这是略缩图的名称</h2>
+					<p>这里是简介</p>
+				</li>
+			</ul>
+			<ul class="list list-inset">
+				<li class="item item-divider">内嵌列表</li>
+				<li class="item">1111</li>
+				<li class="item">2222</li>
+				<li class="item item-divider">图片列表</li>
+				<li class="item item-image">
+					<img src="img/13.png"/>
+				</li>
+			</ul>
+		</ion-content>
+	</body>
+</html>

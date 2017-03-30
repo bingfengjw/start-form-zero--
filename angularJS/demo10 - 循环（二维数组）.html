@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js"></script>
+		<script>
+			var app = angular.module("myapp",[]);
+			app.controller("myctrl",function($scope){
+				$scope.persons = [
+					["张三",12],
+					["李四",13],
+					["王五",14]
+				]
+			})
+		</script>
+	</head>
+	<body ng-app="myapp" ng-controller="myctrl">
+		<p>二维数组循环</p>
+		<ul ng-repeat="person in persons">
+			<li ng-repeat="x in person">
+				{{x}}
+			</li>
+		</ul>
+	</body>
+</html>

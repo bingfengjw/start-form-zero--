@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			table tr:first-of-type{
+				color: red;
+				font-weight: bold;
+			}
+			/*tr:nth-last-of-type(odd){
+				background-color: #F3F3F3;
+			}*/
+		</style>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('myapp',[]);
+			app.controller('myctrl1',function($scope,$http){
+				$http.get('json/city.min.json').success(function(response){
+					$scope.oCityList = response.citylist;
+					//排除直辖市（没有区则返回false，使第三个下拉框不出现）
+					$scope.oCityElse = function(){
+						var oMyCity = ['北京','天津','上海','重庆','香港','澳门','台湾'];
+						if(oMyCity.indexOf($scope.p.p) != -1){
+							return false;
+						}else{
+							return true;
+						};
+					};
+				});
+			});
+			app.controller('myctrl2',function($scope,$http){
+				$http.get('json/records.json').success(function(response){
+					$scope.oRecords = response.records;
+				});
+			});
+		</script>
+	</head>
+	<body ng-app="myapp">
+		<div ng-controller="myctrl1">
+			<select ng-model="p" ng-options="x.p for x in oCityList">
+				<option value="">-请选择省-</option>
+			</select>
+			<select ng-model="c" ng-show='p' ng-options="c.n for c in p.c">
+				<option value="">-请选择市-</option>
+			</select>
+			<select ng-model="n" ng-show="c && oCityElse()" ng-options="a.s for a in c.a">
+				<option value="">-请选择区-</option>
+			</select>
+			<hr />
+		</div>
+		<div ng-controller="myctrl2">
+			<input type='text' ng-model="myTable">
+			<table border="1" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>Num</td>
+					<td>Name</td>
+					<td>City</td>
+					<td>Country</td>
+				</tr>
+				<tr ng-repeat="x in oRecords | filter:myTable">
+					<td>{{$index + 1}}</td>
+					<td ng-if="$odd" style="background-color: #F3F3F3;">{{x.Name}}</td>
+					<td ng-if="$even">{{x.Name}}</td>
+					<td ng-if="$odd" style="background-color: #F3F3F3;">{{x.City}}</td>
+					<td ng-if="$even">{{x.City}}</td>
+					<td ng-if="$odd" style="background-color: #F3F3F3;">{{x.Country}}</td>
+					<td ng-if="$even">{{x.Country}}</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

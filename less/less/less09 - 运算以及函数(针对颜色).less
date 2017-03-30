@@ -1,0 +1,21 @@
+@color:red;
+@colorNow:saturate(@color,10%);
+.header{
+    width: 200px;
+    height: 200px;
+    background-color:@colorNow;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: @color;
+}
+//以下为less定义的多种关于颜色的函数,使用时变更的百分比尽量不要太大
+// lighten(@color, 10%); // return a color which is 10% *lighter* than @color           更亮
+// darken(@color, 10%); // return a color which is 10% *darker* than @color             更暗
+// saturate(@color, 10%); // return a color 10% *more* saturated than @color            饱和
+// desaturate(@color, 10%);// return a color 10% *less* saturated than @color           减少饱和
+// fadein(@color, 10%); // return a color 10% *less* transparent than @color            透明
+// fadeout(@color, 10%); // return a color 10% *more* transparent than @color           减少透明
+// spin(@color, 10); // return a color with a 10 degree larger in hue than @color       更大？
+// spin(@color, -10); // return a color with a 10 degree smaller hue than @color        更小？

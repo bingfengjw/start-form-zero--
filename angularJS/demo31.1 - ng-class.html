@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		.myDiv{
+			width: 200px;
+			height: 200px;
+			margin: 100px auto 0;
+			background-color: black;
+		}
+			.in{
+				background-color: skyblue;
+			}
+			.out{
+				background-color: pink;
+			}
+		</style>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('app',[]);
+			app.controller('ctrl',function ($scope) {
+				$scope.myClick = true;
+				$scope.toggle = 0;
+				$scope.myFun = function () {
+					$scope.myClick = !$scope.myClick;
+					if($scope.myClick){
+						$scope.toggle = 0;
+					}else{
+						$scope.toggle = 1;
+					}
+				}
+			})
+		</script>
+	</head>
+	<body ng-app="app" ng-controller="ctrl">
+			{{myClick}}
+		<div class="myDiv" ng-click="myFun()" ng-class="{'in':toggle==0,'out':toggle==1}"></div>
+	</body>
+</html>

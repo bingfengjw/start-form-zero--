@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js"></script>
+		<script>
+			var app = angular.module("myapp",[]);
+			app.directive("myDiv",function(){
+				return{
+					template:"<h1>这是通过类名显示的自定义指令</h1>",
+					restrict:"C"
+				};
+			});
+		</script>
+	</head>
+	<body ng-app="myapp">
+		<!--
+			restrict 值可以是以下几种:
+				E 只限元素名使用
+				A 只限属性使用
+				C 只限类名使用
+				M 只限注释使用
+		-->
+		<div class="my-div"></div>
+	</body>
+</html>

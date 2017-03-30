@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('myapp',[]);
+			app.directive('myModel',function(){
+				return{
+					template:'这是我的自定义指令创建的模块'
+				};
+			});
+		</script>
+	</head>
+	<body ng-app="myapp">
+		<div my-model></div>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+<!--主页-->
+<div id="inner">
+    <div id="box">
+        <p>LOGIN</p>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul id="login">
+        <li id="nicknameInput">
+            <label><span>NAME:</span><input type="text" class="login_input" name="userName"></label>
+            <div id="point"></div>
+        </li>
+        <li id="sexList">
+            <ul>
+                <li><label for="sex1" class="sexChoose"><img src="images/radio1.png"> <img src="images/sexMan.png">
+                </label><input type="radio" name="sex" id="sex1" value="sexBtn1" checked="checked"></li>
+                <li><label for="sex2" class="sexChoose"><img src="images/radio2.png"> <img
+                        src="images/sexWomen.png"></label><input type="radio" name="sex" id="sex2" value="sexBtn2"></li>
+            </ul>
+        </li>
+        <li id="choose">
+            <div id="avatar"><img src="images/avatar.png"></div>
+            <ul id="avatarList">
+                <li><img src="images/1.png"></li>
+                <li><img src="images/2.png"></li>
+                <li><img src="images/3.png"></li>
+                <li><img src="images/4.png"></li>
+                <li><img src="images/5.png"></li>
+                <li><img src="images/6.png"></li>
+                <li><img src="images/7.png"></li>
+                <li><img src="images/8.png"></li>
+                <li><img src="images/9.png"></li>
+                <li><img src="images/10.png"></li>
+            </ul>
+        </li>
+        <li id="signInLi">
+            <input type="button" id="signIn" value="SIGN IN">
+        </li>
+    </ul>
+</div>
+<!--主页结束-->
+
+<!--聊天室-->
+<div id="chatroom" style="display: none;">
+    <div id="chatLeft">
+        <div id="count"></div>
+        <ul id="userList">
+
+        </ul>
+    </div>
+    <div id="chatRight">
+        <div id="messageRoom"></div>
+        <div id="messageSend">
+            <textarea id="message"></textarea>
+            <div id="prompt"></div>
+            <div id="send"> SEND</div>
+        </div>
+    </div>
+    <div id="bgPic"></div>
+</div>
+<!--聊天室结束-->
+</body>
+</html>

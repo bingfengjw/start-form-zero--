@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html lang="zh_CN">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Angular基础</title>  
+</head>  
+<body>  
+	<!--该demo有问题，暂时没有解决-->
+<div ng-app="myApp">  
+    <div ng-controller="firstCtrl">
+    	<input type="text" ng-model="welcome"><br />
+    	<input type="checkbox" ng-model="flag"><br />
+        {{welcome | abc:flag}}<br/>  
+    </div>  
+  
+</div>  
+<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="application/javascript">  
+    var myApp=angular.module('myApp',[]);  
+    myApp.controller('firstCtrl',function($scope){  
+        $scope.welcome="Hello AngularJs";
+        $scope.flag = true;
+    });  
+    //自定义过滤器  
+    myApp.filter('abc',function(){
+    	return function(data,up){
+    		//使用this查看过滤器指定的对象		=》	window
+    		//使用arguments查看过滤器的函数的原型		=》
+    		//				第一个参数是输入的内容，第二个参数是过滤器指定的值（即flag）
+    		console.log(this);
+    		console.log(arguments);
+    		console.log(data);
+    		if(up){
+    			data = data.toUpperCase();
+    		}else{
+    			data = data.toLowerCase();
+    		}
+    		
+    		return data;
+    	}
+    })
+</script>  
+</body>  
+</html>  

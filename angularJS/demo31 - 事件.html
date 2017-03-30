@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		tr:first-of-type{
+			background-color: #cfcfcf;
+		}
+			tr:nth-of-type(even){
+				background-color: #F0F0F0;
+			}
+			.myTxt.ng-not-empty~table tr:nth-of-type(2){
+				background-color: #CFCFCF;
+				color: orangered;
+			}
+		</style>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('myapp',[]);
+			app.controller('myctrl1',function($scope){
+				$scope.count = 0;
+			})
+			app.controller('myctrl2',function($scope,$http){
+				$scope.flag = true;
+				$scope.flag_Name = true;
+				$scope.flag_City = true;
+				$scope.flag_Country = true;
+				$http.get('json/records.json').success(function(response){
+					$scope.oRecords = response.records;
+				})
+				$scope.toogle = function(){
+					$scope.flag = !$scope.flag;
+				}
+			})
+		</script>
+	</head>
+	<body ng-app="myapp">
+		<div ng-controller="myctrl1">
+			<button ng-click="count = count + 1">点我+1</button><br />
+			{{count}}
+		</div>
+		<hr />
+		<div ng-controller="myctrl2">
+			<button ng-click="flag = !flag">点击切换隐藏/显示整个图表</button>{{flag}}<br />
+			<button ng-click="flag_Name = !flag_Name">点击切换隐藏/显示Name</button>{{flag_Name}}<br />
+			<button ng-click="flag_City = !flag_City">点击切换隐藏/显示City</button>{{flag_City}}<br />
+			<button ng-click="flag_Country = !flag_Country">点击切换隐藏/显示Country</button>{{flag_Country}}<br />
+			<input type="text" ng-model="search" class="myTxt">
+			<table border="1" cellspacing="0" cellpadding="1" ng-show="flag">
+				<tr>
+					<td>num</td>
+					<td ng-show="flag_Name">Name</td>
+					<td ng-show="flag_City">City</td>
+					<td ng-show="flag_Country">Country</td>
+				</tr>
+				<tr ng-repeat="x in oRecords | filter:search">
+					<td>{{$index + 1}}</td>
+					<td ng-show="flag_Name">{{x.Name}}</td>
+					<td ng-show="flag_City">{{x.City}}</td>
+					<td ng-show="flag_Country">{{x.Country}}</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

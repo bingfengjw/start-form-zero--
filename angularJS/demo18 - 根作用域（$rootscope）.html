@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js"></script>
+		<script>
+			var app = angular.module('myapp',[]);
+			app.controller('myctrl',function($scope,$rootScope){
+				$scope.names = ['张三','李四','王五'];
+				$rootScope.lastname = '莱昂纳多';
+			})
+		</script>
+	</head>
+	<body ng-app="myapp">
+		根作用域(rootScope)控制的：{{lastname}}	<--无论是否有控制器都可以显示
+		<div ng-controller="myctrl">
+			<ul>
+				<li ng-repeat='name in names'>
+						{{lastname}}·{{name}}<br />
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

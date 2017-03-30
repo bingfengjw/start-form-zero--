@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js"></script>
+	</head>
+	<body ng-app="">
+		<form name="myForm">
+			Email：<input type="email" ng-model="myEmail" name="mail"><br />
+			<span ng-show="myForm.mail.$error.email">
+				邮箱验证有误
+			</span>
+			<br />
+			{{myForm.mail.$error}}
+		</form>
+	</body>
+</html>

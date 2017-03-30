@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css"/>
+		<script src="js/ionic.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			angular.module('app',['ionic']);
+		</script>
+	</head>
+	<body ng-app="app">
+		<!--align-title规定标题文字的位置，可用:'left','right',or'center'默认为 'center'。-->
+		<ion-header-bar align-title="right" class="bar-positive">
+			<div class="buttons">
+				<button class="button button-calm">左侧按钮</button>
+			</div>
+			<h1 class="title">页眉与页脚</h1>
+			<div class="buttons">
+				<button class="button button-assertive">右侧按钮</button>
+			</div>
+		</ion-header-bar>
+		<ion-content class="scroll-content has-header">
+			这是内容区域
+		</ion-content>
+		<ion-footer-bar align-title="left" class="bar-assertive">
+		<div class="buttons">
+			<button class="button">左侧按钮</button>
+		</div>
+			<h1 class="title">Title!</h1>
+			<div class="buttons" ng-click="doSomething()">
+				<button class="button">右侧按钮</button>
+			</div>
+		</ion-footer-bar>
+	</body>
+</html>

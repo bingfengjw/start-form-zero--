@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			angular.module('valueExample', [])
+				.controller('ExampleController', ['$scope', function($scope) {
+					$scope.names = ['pizza', 'unicorns', 'robots'];
+					$scope.my = {
+						favorite: 'unicorns'
+					};
+				}]);
+		</script>
+	</head>
+
+	<body ng-app="valueExample">
+		<form ng-controller="ExampleController">
+			<h2>Which is your favorite?</h2>
+			<label ng-repeat="name in names" for="{{name}}">
+       			{{name}}
+	       			<input type="radio"
+	              ng-model="my.favorite"
+	              ng-value="name"
+	              id="{{name}}"
+	              name="favorite">
+			</label>
+			<div>You chose {{my.favorite}}</div>
+		</form>
+	</body>
+
+</html>

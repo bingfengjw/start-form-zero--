@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module("app", ['ionic']);
+			app.controller('ctrl', function($scope, $rootScope, $http) {
+
+			})
+		</script>
+	</head>
+
+	<body ng-app="app" ng-controller="ctrl">
+		<ion-side-menus>
+			<!-- 中间内容 -->
+			<ion-side-menu-content>
+				<ion-header-bar class='bar-calm'>
+					<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+					<h1 class="title">侧边栏</h1>
+				</ion-header-bar>
+			</ion-side-menu-content>
+			<!-- 左侧菜单 -->
+			<ion-side-menu side="left">
+				<ul class="list">
+					<li menu-close class="item">1111111</li>
+					<li class="item">1111111R</li>
+					<li class="item">1111111R</li>
+					<li class="item">1111111R</li>
+					<li class="item">1111111R</li>
+					<li class="item">1111111R</li>
+				</ul>
+			</ion-side-menu>
+
+			<!-- 右侧菜单 -->
+			<ion-side-menu side="right">
+				这是右侧菜单
+			</ion-side-menu>
+		</ion-side-menus>
+	</body>
+
+</html>

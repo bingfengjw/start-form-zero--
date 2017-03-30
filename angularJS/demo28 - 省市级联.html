@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('myapp',[]);
+			app.controller('myctrl',function($scope,$http){
+				$http.get("json/city.json").success(function(response){
+					$scope.myCityList = response.cityList;
+				})
+				$scope.alal = function (){
+					alert(123456);
+				}
+			})
+		</script>
+	</head>
+	<body ng-app="myapp" ng-controller="myctrl">
+		<select ng-model="myProvince" ng-options="x.province for x in myCityList">
+			<option value=""> -请选择省- </option>
+		</select>
+		<select ng-show="myProvince" ng-model="myCity" ng-options="cityName.cityName for cityName in myProvince.city">
+			<option value=""> -请选择市- </option>
+		</select>
+		<button ng-click="alal()">点我弹出</button>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('myapp',[]);
+			app.controller('myctrl',function($scope,$timeout){
+				$scope.name = '张三';
+				$timeout(function(){
+					$scope.name = '李四';
+				},2000);
+			})
+		</script>
+	</head>
+	<body ng-app="myapp" ng-controller="myctrl">
+		$timeout：延迟两秒之后变换内容<br />
+		<p>{{name}}</p>
+	</body>
+</html>

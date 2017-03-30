@@ -1,0 +1,19 @@
+//LESS 也采用了命名空间的方法来避免重名问题，于是乎 LESS 在 mixins 的基础上扩展了一下，看下面这样一段代码：
+
+//使用明明空间可以直接使用 下级元素选择器 建立样式名,在写样式的时候可以避免写入大量重复的父级元素名,减少出错并增加效率
+#userName{
+    .myAnimate(@name:x,@time:0s,@animate:forwards){
+        animation: @arguments;
+    }
+    .banner{
+        .myAnimate(myAnimate2,5s,forwards);
+    }
+    .main{
+        .myAnimate(myAnimate2,10s);
+    }
+}
+
+@keyframes myAnimate2{
+    form{left:0;}
+    to{left: 100px;}
+}

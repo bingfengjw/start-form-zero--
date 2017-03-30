@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module("app", ['ionic']);
+			app.controller('ctrl', function($scope, $rootScope, $http) {
+				$scope.items = [];
+				var c=0;
+				$scope.loadMore = function() {
+					$http({
+						url: 'json/city.json'
+					}).then(function(data) {
+						//Array.prototype.push.apply($scope.items,data);
+						//Array.prototype.push.apply($scope.items,data.data.cityList);
+						var items = $scope.items;
+						var oData = data.data.cityList;
+						/*angular.forEach(data.data.cityList,function(v){
+							items.push(v.province);
+						})*/
+						c++;
+						items.push(c);
+						console.log($scope.a);
+						$scope.$broadcast('scroll.infiniteScrollComplete');
+					});
+					
+				};
+			})
+		</script>
+	</head>
+
+	<body ng-app="app" ng-controller="ctrl">
+		<ion-header-bar class='bar-calm'>
+			<h1 class="title">无限滚动</h1>
+		</ion-header-bar>
+		<ion-content class='scroll-content has-header'>
+			<ul class="list">
+				<li class="item" ng-repeat="x in items track by $index">{{x}}</li>
+			</ul>
+			<ion-infinite-scroll on-infinite="loadMore()"></ion-infinite-scroll>
+		</ion-content>
+	</body>
+
+</html>

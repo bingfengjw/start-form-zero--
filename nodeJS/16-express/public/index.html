@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>这是我的页面</title>
+		<style type="text/css">
+			body{color: red;}
+			#box{width: 200px;height: 200px;background-color: skyblue;}
+		</style>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			/*window.onload = function(){
+				document.getElementById('box').onclick = function(){
+					this.style.backgroundColor = 'pink';
+				}
+			}*/
+			$(function(){
+				$("#box").click(function(){
+					$(this).css('background-color','pink');
+				})
+			})
+		</script>
+	</head>
+	<body>
+		这是我的首页页面,啦啦啦啦啦
+		<a href="abc">这是超级链接abc</a>
+		<div id="box"></div>
+		<br />
+		<!--当form标签有enctype="multipart/form-data"这一属性时input中的name属性无法正常提交-->
+		<form action="http://127.0.0.1:8080/submit" method="post" enctype="multipart/form-data">
+			<input type="text" id="user_name" value="请输入用户名" name="name" /><br />
+			<input type="password" id="user_password" value="请输入密码" name="password" />
+			<input type="file" name="pic_up" id="pic_up" value="点击上传" />
+			<input type="submit" value="点击提交"/>
+		</form>
+		
+	</body>
+</html>

@@ -1,0 +1,14 @@
+#userName .banner {
+  animation: myAnimate2 5s forwards;
+}
+#userName .main {
+  animation: myAnimate2 10s forwards;
+}
+@keyframes myAnimate2 {
+  form {
+    left: 0;
+  }
+  to {
+    left: 100px;
+  }
+}

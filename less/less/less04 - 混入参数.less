@@ -1,0 +1,12 @@
+//此处将.borderRadius作为样式选择器使用，并且附加上一个变量@borderRadius，在使用时将.borderRadius直接调用，
+//并且在后面加上对应的内容
+.borderRadius(@borderRadius){
+    border-radius: @borderRadius;
+}
+
+.header{
+    .borderRadius(20px);
+}
+.banner{
+    .borderRadius(10px);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.min.css"/>
+		<script src="js/ionic.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('app',['ionic']);
+			app.controller('ctrl',function($scope,$http){
+				$scope.items = [1,2,3]
+				$scope.doRefresh = function(){
+					$http({
+						url:'json/city.json',
+						method:'get'
+					}).then(function(data){
+						console.log(data.data.cityList);
+						$scope.items = data.data.cityList;
+					}).finally(function(){
+						$scope.$broadcast('scroll.refreshComplete');
+					})
+					/*$http.get('json/city.json').success(function(data) {
+						console.log(data);
+				    	$scope.items = data;
+				     }).finally(function() {
+						// 停止广播ion-refresher
+						$scope.$broadcast('scroll.refreshComplete');
+				     });*/
+				}
+			})
+		</script>
+	</head>
+	<body ng-app="app" ng-controller="ctrl">
+		<ion-header-bar class="bar-calm">
+			<h1 class='title'>下拉刷新</h1>
+		</ion-header-bar>
+		<ion-content>
+			<ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()"></ion-refresher>
+			<ion-list ng-repeat="x in items">
+				<ion-item class='item item-divider' ng-model="a">{{x.province}}</ion-item>
+			</ion-list>
+		</ion-content>
+	</body>
+</html>

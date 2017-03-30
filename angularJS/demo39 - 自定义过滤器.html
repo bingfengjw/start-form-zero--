@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="myApp">
+    <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+         <script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+
+        <div ng-controller="myAppCtrl">
+            name:{{ name }}<br>
+            reverse name:{{ name | reverse }}<br>
+            reverse&uppercase name:{{ name | reverse:true }}
+        </div>
+        <script type="text/javascript">
+            var myAppModule = angular.module("myApp",[]);
+
+            myAppModule.controller("myAppCtrl",["$scope",function($scope){
+                $scope.name = "xingoo";
+            }]);
+
+            myAppModule.filter("reverse",function(){
+                return function(input,uppercase){
+                    var out = "";
+                    for(var i=0 ; i<input.length; i++){
+                        out = input.charAt(i)+out;
+                    }
+                    if(uppercase){
+                        out = out.toUpperCase();
+                    }
+                    return out;
+                }
+            });
+        </script>
+    </body>
+</html>

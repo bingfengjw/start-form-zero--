@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/ionic.css" />
+		<script src="../js/ionic.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module("app", ['ionic']);
+			app.controller('ctrl', function($scope, $rootScope, $http) {
+
+			})
+			app.config(function($stateProvider) {
+				$stateProvider
+					.state('index', {
+						url: '/',
+						templateUrl: 'home.html'
+					})
+					.state('music', {
+						url: '/music',
+						templateUrl: 'music.html'
+					});
+			})
+		</script>
+	</head>
+
+	<body ng-app="app" ng-controller="ctrl">
+		<ion-nav-bar></ion-nav-bar>
+		<ion-nav-view animation="slide-left-right">
+			<!-- 中间内容 -->
+		</ion-nav-view>
+
+			<script id="home" type="text/ng-template">
+			<!-- ion-view的标题会在导航栏显示 -->
+			<ion-view title="'Home'">
+				<ion-content ng-controller="HomeCtrl">
+					<!-- 页面的内容 -->
+					<a href="#/music">跳转到音乐页面！!</a>
+				</ion-content>
+			</ion-view>
+		</script>
+
+	</body>
+
+</html>

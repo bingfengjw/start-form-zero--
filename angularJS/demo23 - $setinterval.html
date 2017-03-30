@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('myapp',[]);
+			app.controller('myctrl',function($scope,$interval){
+				$scope.oTime = new Date().toLocaleTimeString();
+				$interval(function(){
+					$scope.oTime = new Date().toLocaleTimeString();
+				},1000);
+			})
+		</script>
+	</head>
+
+	<body ng-app="myapp" ng-controller="myctrl">
+		{{oTime}}
+	</body>
+
+</html>

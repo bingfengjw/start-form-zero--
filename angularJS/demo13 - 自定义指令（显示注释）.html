@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js"></script>
+		<script>
+			var app = angular.module("myapp",[]);
+			app.directive("myDiv",function(){
+				return{
+					replace:true,
+					restrict:"M",
+					template:"<h1>这是一个注释自定义指令</h1>"
+				}
+			})
+		</script>
+	</head>
+	<body ng-app="myapp">
+		<!--↓  注：空格不能少    ↓-->
+		<!-- directive: my-div -->
+	</body>
+</html>

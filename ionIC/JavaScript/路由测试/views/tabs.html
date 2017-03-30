@@ -1,0 +1,16 @@
+<!--创建一个选项卡页面-->
+<!--
+	title	--	菜单按钮显示的文字
+	icon	--	菜单按钮图标
+	href	--	点击菜单跳转的页面
+	ion-nav-view	--	点击菜单后子页面显示的位置
+	ion-nav-view里面的name	--	这个tab的名称
+-->
+<ion-tabs class='tabs-icon-top tabs-positive'>
+	<ion-tab title='home' icon='ion-home' ui-sref="tabs.home">
+		<ion-nav-view name="tab-home"></ion-nav-view>
+	</ion-tab>
+	<ion-tab title="about" icon="ion-ios-information" ui-sref="tabs.about">
+		<ion-nav-view name="tab-about"></ion-nav-view>
+	</ion-tab>
+</ion-tabs>

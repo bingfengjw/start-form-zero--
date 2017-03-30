@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			span{
+				color: darkred;
+				width: 85px;
+				display: inline-block;
+			}
+		</style>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('myapp',[]);
+			app.controller('myctrl',function($scope,$http){
+				$http.get('json/records.json').success(function(response){
+					$scope.myRecords = response.records;
+				})
+			})
+		</script>
+	</head>
+	<body ng-app="myapp" ng-controller="myctrl">
+		搜索你想要找的：<input type="text" ng-model="mySearch"><br />
+		<ul>
+			<li ng-repeat="x in myRecords | filter:mySearch">
+				<!--注释为除去inline-block的边距-->
+				<span>Name:</span>{{x.Name}}<br /><!--
+				--><span>City:</span>{{x.City}}<br /><!--
+				--><span>Country:</span>{{x.Country}}
+				<hr />
+			</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a=4
+    function*go(e)
+    {
+        yield function()
+        {
+            return a+e
+        }
+        yield function()
+        {
+            return a-e
+        }
+        yield function()
+        {
+            return a*e
+        }
+        yield function()
+        {
+            return a/e
+        }
+    }
+    var b=go(4)
+    console.log(b.next().next());
+</script>
+</body>
+</html>

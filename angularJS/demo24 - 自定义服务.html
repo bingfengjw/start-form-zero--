@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('myapp',[]);
+			app.service('myService',function(){
+				this.myFunc = function(x){
+					return x.toString(16);
+				};
+			});
+			
+			app.controller('myctrl',function($scope,myService){
+				$scope.mynum = 255;
+				
+				$scope.num = myService.myFunc($scope.mynum);
+				
+			})
+		</script>
+	</head>
+	<body ng-app="myapp" ng-controller="myctrl">
+		<input type="number" ng-model="mynum">的16进制数字是：<br />
+		{{mynum}}<br />
+		{{num}}
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+<div ng-controller="ctrl">
+    <input type="text" ng-model="msg">
+    {{msg |tocmal}}
+</div>
+<script type="text/javascript">
+    var app=angular.module("myApp",[])
+    console.log(app)
+    //filter   1.已有的筛选过滤器     2.自定义过滤器
+    //功能：转换成驼峰格式
+    app.filter("tocmal",function(){
+       var a=function(data){
+           //data 当前输入的值
+//           console.log(arguments)
+          //  /\_(\w)/  除了下划线匹配所有
+                      //sf
+           var result=data.replace(/\_(\w)/g,function(match,newVal){
+               /*
+               * 第一个参数代表的是输入下划线以后原有的值
+               * 第二个参数就是现在的值
+               * 第三个参数带表现在值所在的索引
+               * 第四个参数带表所有的值
+
+               * */
+               console.log(arguments)
+                       //  a        A
+                return newVal.toUpperCase()
+           })
+           return  result
+       }
+        return a
+    })
+    app.controller("ctrl",function($scope){
+      $scope.msg="sf"
+    })
+</script>
+</body>
+</html>

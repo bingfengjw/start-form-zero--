@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js"></script>
+		<script>
+			var app = angular.module("myapp",[]);
+			app.controller("myctrl",function($scope){
+				$scope.persons = [
+					{name:"张三",age:20},
+					{name:"李四",age:22},
+					{name:"王五",age:54},
+				]
+			})
+		</script>
+	</head>
+	<body ng-app="myapp" ng-controller="myctrl">
+		<p>对象循环</p>
+		<ul>
+			<li ng-repeat="x in persons">
+				姓名：{{x.name}}，年龄：{{x.age}}
+			</li>
+		</ul>
+	</body>
+</html>

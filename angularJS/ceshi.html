@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/angular.min.js"></script>
+    <script>
+        var app = angular.module('myapp',[]);
+        app.controller('myctrl',function($scope){
+            $scope.main = {
+                name:'王',
+                age:20
+            };
+            $scope.reset = function(){
+                $scope.txt = angular.copy($scope.main)
+            };
+        })
+    </script>
+</head>
+<body ng-app="myapp">
+<div ng-controller="myctrl">
+    姓名：<input type="text" ng-model="txt.name"><br>
+    年龄：<input type="text" ng-model="txt.age"><br>
+    <input type="button" value="reset" ng-click="reset()"><br>
+    <p>现在的：【name:{{txt.name}},age:{{txt.age}}】</p>
+    <p>默认的：【name:{{main.name}},age:{{main.age}}】</p>
+</div>
+</body>
+</html>

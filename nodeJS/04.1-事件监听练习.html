@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload = function(){
+				//事件监听可以同时触发多个事件,事件绑定只能给一个元素绑定一个事件,事件监听和事件绑定可以共存
+				document.getElementById('user').addEventListener('keyup',function(){
+					console.log(this.value);
+				})
+				document.getElementById('user').addEventListener('keyup',function(){
+					console.log(this.value);
+				})
+				
+				document.getElementById('user').onkeyup = function(){
+					console.log(this.value);
+				};
+				document.getElementById('user').onkeyup = function(){
+					console.log(this.value);
+				};
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" name="user" id="user" />
+	</body>
+</html>

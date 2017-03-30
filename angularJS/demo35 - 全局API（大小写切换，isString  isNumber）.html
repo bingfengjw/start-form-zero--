@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('myapp',[]);
+			app.controller('myctrl1',function($scope){
+				$scope.x1 = 'zheSHIWodEweNZi';
+				$scope.x2 = angular.uppercase($scope.x1);
+			})
+			app.controller('myctrl2',function($scope){
+				$scope.x1 = 'zheSHIWodEweNZi';
+				$scope.x2 = angular.lowercase($scope.x1);
+			})
+			app.controller('myctrl3',function($scope){
+				$scope.x1 = 'zheSHIWodEweNZi';
+				$scope.x2 = angular.isString($scope.x1);
+			})
+			app.controller('myctrl4',function($scope){
+				$scope.x1 = 'zheSHIWodEweNZi';
+				$scope.x2 = angular.isNumber($scope.x1);
+			})
+		</script>
+	</head>
+	<body ng-app="myapp">
+		<div ng-controller="myctrl1">
+			X1：{{x1}}<br />
+			X2（uppercase）：{{x2}}
+		</div>
+		<hr />
+		<div ng-controller="myctrl2">
+			X1：{{x1}}<br />
+			X2（lowercase）：{{x2}}
+		</div>
+		<hr />
+		<div ng-controller="myctrl3">
+			X1：{{x1}}<br />
+			X2（isString）：{{x2}}
+		</div>
+		<hr />
+		<div ng-controller="myctrl4">
+			X1：{{x1}}<br />
+			X2（isNumber）：{{x2}}
+		</div>
+		
+	</body>
+</html>

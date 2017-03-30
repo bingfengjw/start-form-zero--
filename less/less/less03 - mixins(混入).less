@@ -1,0 +1,12 @@
+//此处的header定义为一个变量，在下面可以直接将其当成变量使用，之后会将.header里面的所有样式附加上去
+.header(@color:red){
+    background-color: @color;
+    box-shadow: 0 0 2px 0px @color;
+}
+
+.banner{
+    .header;
+}
+.main{
+    .header(skyblue);
+}

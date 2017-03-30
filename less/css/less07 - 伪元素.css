@@ -1,0 +1,11 @@
+a {
+	color: #f00
+}
+
+a:hover {
+	color: #ffa500
+}
+
+a:nth-of-type(2) {
+	background-color: #87ceeb
+}

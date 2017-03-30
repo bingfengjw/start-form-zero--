@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/angular.min.js"></script>
+    <script>
+        var app = angular.module("myapp",[]);
+        app.controller("myCtrl",function($scope){
+            $scope.num1 = 100;
+            $scope.num2 = 200;
+        })
+    </script>
+</head>
+<body ng-app="myapp">
+<div ng-controller="myCtrl">
+	第一个数字：<input type="text" ng-model="num1"><br>
+	第二个数字：<input type="text" ng-model="num2"><br>
+	乘积：{{num1 * num2}}<br />
+
+	<!--angularJS自带的计算方法-->
+	<!--{{num1}}={{$eval(num1+num2)}}-->
+	<!--通过下面这个方法可以直接使用字符串求和-->
+	{{num1 -- num2}}
+</div>
+</body>
+</html>

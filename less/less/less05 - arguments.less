@@ -1,0 +1,13 @@
+//像 JavaScript 中 arguments一样，Mixins 也有这样一个变量：@arguments。@arguments 在 Mixins 中具是一个很特别的参数，
+//当 Mixins 引用这个参数时，该参数表示所有的变量，很多情况下，这个参数可以省去你很多代码。
+
+//先定义一个样式选择器，在括号里面写入初始变量,在样式选择器里面调用形参时使用@arguments进行调用;
+//在调用时直接调用样式选择器的class名，中间需要用逗号分隔开
+//如果调用的样式的数量和预设的不等，则会使用预设的样式中事先定义好的内容
+.boxShadow(@x:0,@y:0,@blur:0,@z:0,@color:red){
+    box-shadow: @arguments;
+    -webkit-box-shadow: @arguments;
+}
+.header{
+    .boxShadow(0,0,20px,2px,black);
+}

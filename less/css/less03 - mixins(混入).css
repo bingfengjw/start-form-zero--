@@ -1,0 +1,9 @@
+.banner {
+	background-color: #f00;
+	box-shadow: 0 0 2px 0 #f00
+}
+
+.main {
+	background-color: #87ceeb;
+	box-shadow: 0 0 2px 0 #87ceeb
+}
