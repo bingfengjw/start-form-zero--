@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<button @click="clickChange">点我</button>
+			<br /><br />
+			{{name}}<br />{{url}}<br /><br />
+			{{setUrl}}
+		</div>
+		<script type="text/javascript">
+			var vm = new Vue({
+				el:"#app",
+				data:{
+					name:'百度',
+					url:'http://www.baidu.com'
+				},
+				computed:{
+					setUrl:{
+						//在computed属性里面的每一项中，默认只有一个getter，但如果需要的话也可以设置一个setter属性进行计算后内容的二次设置
+						//注：使用这种方法会同时改变上面data中的name和url
+						get:function(){
+							return this.name + ":" + this.url;
+						},
+						set:function(value){
+							//这里参数value是get中返回的内容
+							var nValue = value.split(':');
+							this.name = nValue[0];
+							this.url = nValue[nValue.length-1];
+						}
+					}
+				},
+				methods:{
+					clickChange:function(){
+						this.setUrl = 'Google:http://www.google.com';
+						/*this.setUrl.name = 'Google';
+						this.setUrl.url = 'http://www.google.com'*/
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "angular-ui-router": "^0.4.2",
+    "gulp": "^3.9.1"
+  }
+}

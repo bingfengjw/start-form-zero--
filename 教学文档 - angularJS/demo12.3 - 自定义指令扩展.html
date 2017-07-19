@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('app',[]);
+			app.controller('ctrl',function($scope){
+				$scope.name = '小明';
+				$scope.age = 12;
+				$scope.show = function(num){
+					console.log(num);
+				};
+			}).directive('myTab',function(){
+				return {
+					restrict:"ECMA",
+					replace:true,
+					scope:{
+						myId:'@',		//解析普通字符串
+			            myName : '=',   //解析数据
+			            myFn : '&'      //函数
+					}, 
+					controller : ['$scope',function($scope){
+			            //共享数据存放在这里
+			            $scope.name = 'this is a xiecg';
+			        }],
+			        template : '<div id="{{myId}}">\
+			                    <input type="button" value="1" class="active" ng-click="myFn({num:456})">\
+			                    <input type="button" value="2">\
+			                    <input type="button" value="3">\
+			                    <div style="display:block;">{{myName}}</div>\
+			                    <div>2222</div>\
+			                    <div>3333</div>\
+			                </div>'
+			   		 }
+			})
+		</script>
+	</head>
+	<body ng-app="app" ng-controller="ctrl">
+	    <div my-tab my-id="div1" my-name="name" my-fn="show(num)" class="J-tab"></div>
+	    <div my-tab my-id="div2" my-name="name" my-fn="show(num)" class="J-tab"></div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<button @click='countNum("点了我")'>点击计数{{count}}</button>
+			{{count}}
+		</div>
+		<script type="text/javascript">
+			var vm = new Vue({
+				el:"#app",
+				data:{
+					count:0
+				},
+				methods:{
+					countNum:function(e){
+						/*(function(e,message){
+							var a = e||window.event;
+							console.log(a);
+						})();*/
+						console.log(event);
+						//如果在调用的函数内部传参，则可以将参数代入进来
+						console.log(e);
+//						console.log(arguments[0]);
+						return this.count++;
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

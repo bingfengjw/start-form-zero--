@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//如果变量没有相对应的值可以赋予，则变量为undefined
+			let [a] = [];
+			console.log('a = ' + a);		//undefined
+			let [b,c] = [1];
+			console.log('b = ' + b);		//1
+			console.log('c = ' + c);		//undefined
+			/**************************/
+			//如果变量的数组只能匹配一部分值得数组，依然可以解构，这种情况被称为不完全解构
+			let [d] = [1,2,3,4];
+			console.log('d = ' + d);		//1
+			let [e,[f],g] = [10,[20,30,40],50];
+			console.log('e = ' + e);		//10
+			console.log('f = ' + f);		//20
+			console.log('g = ' + g);		//50
+			/**************************/
+			//而如果值得部分（等号右边）不是一个数组（不是一个可以循环的解构），则赋值会报错
+			let [h] = 1;
+			let [foo] = false;
+			let [foo] = NaN;
+			let [foo] = undefined;
+			let [foo] = null;
+			let [foo] = {};
+			//↑↑以上几种方式赋值都会报错，前五种是由于转换成对象之后不具有iterator接口，最后一种是本身就不具有iterator接口
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

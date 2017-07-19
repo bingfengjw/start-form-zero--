@@ -1,0 +1,6 @@
+#div {
+  font-size: 20px;
+}
+#div .inner {
+  float: left;
+}

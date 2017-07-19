@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/d3.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<svg></svg>
+		<script type="text/javascript">
+			var dataset = [1.2, 2.3, 0.9, 1.5, 3.3];
+			
+			var min = d3.min(dataset);			//找到数据中的最大值和最小值
+			var max = d3.max(dataset);	
+			var linear = d3.scaleLinear()
+			        .domain([min, max])			//比例尺的定义域 domain 为：[0.9, 3.3]
+			        .range([10, 300]);			//比例尺的值域 range 为：[0, 300]
+
+			var color = ["red", "blue", "green", "yellow", "black"];
+			var ordinal = d3.scaleOrdinal()
+			        .domain(dataset)
+			        .range(color);
+			
+			ordinal(0); //返回 red
+			ordinal(2); //返回 green
+			ordinal(4); //返回 black
+			
+			var rectHeight = 25;
+			d3
+				.select('svg')
+				.attr('width',300)
+				.attr('height',300)
+				.selectAll("rect")				//选择svg内所有的矩形
+			    .data(dataset)					//绑定数组
+			    .enter()						//指定选择集的enter部分(由于rect元素数量不够，所以需要补足)
+			    .append("rect")					//补足rect元素
+			    .attr("x",0)					
+			    .attr("y",function(d,i){
+			        return i * rectHeight;
+			    })
+			    .attr("width",function(d){
+			        return linear(d);
+			    })
+			    .attr("height",rectHeight-2)
+			    .attr("fill",function(d,i){
+			    	console.log(d);
+			    	console.log(i);
+			    	return ordinal(i);
+			    });
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/angular-ui-router.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//1 - 声明依赖模块[ui.router]，名字是angular-ui-router
+			//2.1 - 配置路由，使用$urlRouterProvider.when为配置默认路由，当后面为空时转至'/producers'
+			//2.2 - 配置路由，使用
+				/*$stateProvider.state('ui-sref对应名称',{
+					url:'显示的路径名',
+					templateUrl:'跳转的页面路径',
+					controller:'控制器名称'
+				})*/
+			//3 - 写入传值的控制器，使用$state.go(传递页面，{想要传递的对象})
+			//4 - 写入接受值的控制器，使用$stateParams接受传来的值
+			//ps：使用这种方式传值的同时会跳转页面，并将传的值显示在url上
+			var app = angular.module('app', ['ui.router']);
+			app.config(function($urlRouterProvider, $stateProvider) {
+				$urlRouterProvider.when('','/producers');
+				$stateProvider
+					.state('producers', {
+						url: '/producers',
+						templateUrl: 'producers.html',
+						controller: 'ProducersCtrl'
+					})
+					.state('producer', {
+						url: '/producer/:producerId&:password&:city&:age',
+						templateUrl: 'producer.html',
+						controller: 'ProducerCtrl'
+					})
+			})
+			app.controller('ProducersCtrl', function($scope, $state) {
+				$scope.toProducer = function(username,psd,city,age) {
+					$state.go('producer', {
+						producerId: username,
+						password: psd,
+						city:city,
+						age:age
+					});
+				};
+			})
+			app.controller('ProducerCtrl', function($scope, $state, $stateParams) {
+				$scope.username = $stateParams.producerId;
+				$scope.psd = $stateParams.password;
+				$scope.city = $stateParams.city;
+				$scope.age = $stateParams.age;
+				console.log($stateParams);
+			});
+		</script>
+	</head>
+
+	<body ng-app="app" ng-controller="ProducersCtrl">
+		<ul>
+			<li><a ui-sref='producers'>producers</a></li>
+			<li><a ui-sref='producer'>producer</a></li>
+		</ul>
+		<ui-view class=""></ui-view>
+	</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ClearButton.css"/>
+		<!--输入框清除值插件样式-->
+		<link rel="stylesheet" type="text/css" href="css/ext-all.css"/>
+		<!--修改ext的美化样式-->
+		<link rel="stylesheet" type="text/css" href="css/fc-all.css"/>
+		<!--项目公共样式-->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.css"/>
+		<!--图标字体样式-->
+		
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ext-all.js" type="text/javascript" charset="utf-8"></script>
+		<!--存放所有的extJS包-->
+		<script src="js/basicParameter.js" type="text/javascript" charset="utf-8"></script>
+		<!--项目的基础参数设定-->
+		<script src="js/basicExtModule.js" type="text/javascript" charset="utf-8"></script>
+		<!--项目作者对extJS的二次封装-->
+		<script src="js/ClearButton.js" type="text/javascript" charset="utf-8"></script>
+		<!--输入框清除值插件js-->
+		<script src="js/PagingToolBar.js" type="text/javascript" charset="utf-8"></script>
+		<!--分页JS-->
+		<script src="js/tools.js" type="text/javascript" charset="utf-8"></script>
+		<!--写好的项目工具方法-->
+		
+		<script type="text/javascript">
+			var GLOBAL = GLOBAL || {};
+			Ext.onReady(function(){
+				GLOBAL.panelbox = Ext.create('Ext.panel.Panel',function(){
+					//创建一个panel
+					renderTo:'panelBox',//指向的元素
+					title:'我是顶级panel',
+					layout:'',//布局的方式
+					margin:'10',//设置一个margin，单位默认是px
+					html:'<h1 style:"font-size:40px;color:red;">这是HTML里面的内容</h1>'
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="panelBox"></div>
+	</body>
+</html>

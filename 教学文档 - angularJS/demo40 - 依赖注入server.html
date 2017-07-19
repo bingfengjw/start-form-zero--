@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('app',[]);
+			app.controller('ctrl',function($scope,myService){
+				$scope.name = myService.fun();
+			});
+			app.service('myService',function(){
+				//Service 是用"new"关键字实例化的，因此，你应该给"this"添加属性，然后 service 返回"this"。
+				//你把 service 传进 controller 之后，在controller里 "this" 上的属性就可以通过 service 来使用了。
+				var name = '小明';
+				this.fun = function(){
+					return name;
+				}
+			});
+		</script>
+	</head>
+	<body ng-app="app" ng-controller="ctrl">
+		{{name}}
+	</body>
+</html>

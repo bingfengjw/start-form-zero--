@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('app',['ngRoute']);
+			app.controller('ctrl',function($scope,$rootScope){
+				$rootScope.b = '这是我的rootscope';
+				console.log($scope);
+				console.log($rootScope);
+				console.log('--------------')
+			})
+			app.controller('ctrl1',function($scope){
+				$scope.a = '这是第一个页面';
+				console.log($scope.b);
+				console.log('--------------')
+			})
+			app.controller('ctrl2',function($scope){
+				$scope.a = '这是第二个页面';
+				console.log($scope);
+				console.log('--------------')
+			})
+			app.config(function($routeProvider){
+				$routeProvider
+				.when('/a',{templateUrl:'a.html',controller:'ctrl1'})
+				.when('/b',{templateUrl:'b.html',controller:'ctrl2'})
+			});
+		</script>
+	</head>
+	<body ng-app="app" ng-controller="ctrl">
+		<ul>
+			<li><a href="#!/a">aaaaaaaa</a></li>
+			<li><a href="#!/b">bbbbbbbb</a></li>
+		</ul>
+		<input type="text" ng-model="b"><br />
+		{{b}}<br />
+		<div ng-view></div>
+	</body>
+</html>

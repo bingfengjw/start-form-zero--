@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//解构不仅可以使用数组，还可以使用对象进行解构
+			let {a,b} = {a:1,b:2};
+			console.log('a = ' + a);	//1
+			console.log('b = ' + b);	//2
+			//不同于数组，使用对象进行解构赋值时可以无视元素的位置，通过key和value的方式取值
+			let {c,d} = {d:30,c:20};
+			console.log('c = ' + c);	//20
+			console.log('d = ' + d);	//30
+			//相同于数组，使用对象进行解析赋值时如果找不到对应的key值，则变量=undefined
+			let {e} = {x:100,y:30,z:'aaaa'};
+			console.log('e = ' + e);	//undefined
+			//如果一定要使用不一样的key进行赋值，则需要写成下面的形式
+			let {f:x} = {f:'aaa',e:'bbbb'};
+			console.log('x = ' + x);	//aaa
+			//console.log('f = ' + f);	//报错Uncaught ReferenceError: f is not defined
+			//会出现上面的情况是因为对象的赋值是下面情况的简写：let {f:f} = {f:'aaa',e:'bbbb'};f=='aaa'
+			//其中，前面的f是匹配模式，冒号后面的f才是变量，赋值是需要先找到前面的f和等号后面的f进行匹配，然后再将变量f赋值
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

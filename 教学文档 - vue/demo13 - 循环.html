@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			v-for迭代对象：
+			<ul>
+				<li v-for='x in arr'>{{x}}</li>
+			</ul>
+			<br />
+			使用key、value迭代对象：
+			<ul>
+				<li v-for='(value,key) in arr'>{{key}} : {{value}}</li>
+			</ul>
+			<br />
+			第三个参数为index：
+			<ul>
+				<li v-for='(value,key,index) in arr'>{{index}}——{{key}}:{{value}}</li>
+			</ul>
+			<br />
+			直接迭代数字：
+			<ul>
+				<li v-for='x in 12'>{{x}}</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			var vm = new Vue({
+				el:'#app',
+				data:{
+					mes:'文字内容',
+					arr:{
+						arr1:11111111,
+						arr2:22222222,
+						arr3:33333333,
+						arr4:44444444
+					}
+				}
+			});
+		</script>
+	</body>
+</html>

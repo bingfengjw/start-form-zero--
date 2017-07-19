@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.min.js" charset="utf-8"></script>
+		<script>
+			//与angular不同，vue在进行加载的时候需要预加载
+			window.onload = function(){
+				new Vue({
+					el:'#app',
+					data:{
+						message:'这是我创建的第一个vue应用'
+					}
+				})
+			}
+		</script>
+	</head>
+	<body>
+		<div id="app">
+			<p>{{message}}</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="angular-ui-router.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('app',['ui.router']);
+			var content = null;
+			app.controller('ctrl',function($scope,$rootScope){
+				$scope.title = 'qwe';
+			})
+			app.config(function($urlRouterProvider,$stateProvider){
+				$urlRouterProvider.when('','/login')
+				$stateProvider
+					.state('login',{
+						url:'/login?name&password',
+						templateUrl:'login.html',
+						params:{
+							name:'abc',
+							password:'112233'
+						}
+					})
+					.state('register',{
+						url:'/register',
+						templateUrl:'register.html'
+					})
+			})
+		</script>
+	</head>
+	<body ng-app="app" ng-controller="ctrl">
+		<ul>
+			<li><a ui-sref='login'>aaaaaaaa</a></li>
+			<li><a ui-sref='register'>bbbbbbbb</a></li>
+		</ul>
+		<input type="text" ng-model="title"><br /><br /><br />
+		<ui-view class=""></ui-view>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//let声明的变量只在它所在的代码块有效。
+			for(let i=0;i<10;i++){
+				console.log(i);
+			};
+			console.log('------------------');
+			console.log(i);
+
+			//for循环还有一个特别之处，就是循环语句部分是一个父作用域，而循环体内部是一个单独的子作用域。
+			/*for(let i = 0; i < 3; i++) {
+				let i = 'abc';
+				console.log(i);
+			}*/
+			// abc
+			// abc
+			// abc
+			//上面代码输出了3次abc， 这表明函数内部的变量i和外部的变量i是分离的。
+		</script>
+	</head>
+
+	<body>
+	</body>
+
+</html>

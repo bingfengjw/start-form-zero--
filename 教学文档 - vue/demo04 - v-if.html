@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<p>和angular相同，vue也可以通过v-if、v-show来实现dom元素的显示和隐藏，v-if可以操控dom的生成，v-show是切换display</p>
+		<p>和angular不同，vue中没有类似于ng-hide的v-hide</p>
+		<hr>
+		<p>和angular不同，vue在事件中控制变量时，要把变量写在 data 里面，事件写在 methods 里面，调取变量时使用 this.变量名 调取</p>
+		<p>vue中的this指向的是vue的实例</p>
+		<p>v-else 、v-else-if 必须跟在 v-if 或者 v-else-if之后。</p>
+		<hr>
+		<div id="app">
+			<label><input type="checkbox" v-model='flag'>{{flag}}</label>
+			<p v-if='flag'>这是我想要显示的文字if</p>
+			<p v-else>如果flag为否的时候显示的文字</p>
+			<p v-show='flag'>这是我想要显示的文字show</p>
+			<p v-hide='flag'>这是我想要显示的文字hide</p>
+			<br /><br />
+			<button @click='count'>点击</button>{{num}}<br />
+			<p v-if="num<5">num<5</p>
+			<p v-else-if="num==5">num=5</p>
+			<p v-else>num>5</p>
+		</div>
+		<script type="text/javascript">
+			new Vue({
+				el:"#app",
+				data:{
+					flag:true,
+					num:0
+				},
+				methods:{
+					count:function(){
+						this.num++;
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

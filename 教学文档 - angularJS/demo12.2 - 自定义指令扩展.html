@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module("app",[]);
+			app.controller('ctrl',function($scope){
+				$scope.name = '这是我写在全局控制器里面的名字name';
+				console.log($scope);
+			}).directive('hello',function(){
+				return{
+					restrict:'EMCA',
+					replace:true,
+					transclude:true,	//允许自定义指令的嵌套，通过ng-transclude指定嵌套的范围(即如果该项为true，则在body中的自定义指令部分直接写入内容的话内容会自动填充在ng-transclude里面)
+					controller:function($scope){
+						$scope.name = '这是我的名字name';
+						this.name = '这是我的名字';	//使用this共享给其他指令
+					},
+					template : '<div>hello angular<h1 ng-transclude></h1></div>'
+				}
+			}).directive('hi',function(){
+				return{
+					restrict : 'E',
+			        replace : true,
+			        require : '^hello',//hello指令属性hi指令的父级，需要用^符号指定。如果无法指定，使用?容错处理。
+			        template : '<span>hi angular {{name}}</span>',
+			        link : function(scope,element,attr,reController){
+			        	console.log(scope);
+			        	console.log(element);
+			        	console.log(attr);
+			            console.log(reController);    //得到父级hello指令中共享出来的数据
+			        }
+				}
+			})
+		</script>
+	</head>
+	<body ng-app="app" ng-controller="ctrl">
+		<hello>
+			<hi></hi>
+		</hello>
+	</body>
+</html>

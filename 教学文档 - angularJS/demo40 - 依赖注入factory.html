@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('app',[]);
+			app.controller('ctrl',function($scope,myFactory){
+				$scope.person = myFactory;
+			});
+			app.factory('myFactory',function(){
+				//用 Factory 就是创建一个对象，为它添加属性，然后把这个对象返回出来。
+				//你把 service 传进 controller 之后，在 controller 里这个对象里的属性就可以通过 factory 使用了。
+				var person = {
+					name:'小明',
+					age:22,
+					city:'北京'
+				};
+				return person;
+			});
+		</script>
+	</head>
+	<body ng-app="app" ng-controller="ctrl">
+		{{person}}
+	</body>
+</html>

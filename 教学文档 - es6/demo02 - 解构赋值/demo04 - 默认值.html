@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//es6中允许在赋值的时候使用默认值
+			let [a = true] = [];
+			console.log('a = ' + a);	//true
+			let [b,c=10] = [true];
+			console.log('b = ' + b);	//true
+			console.log('c = ' + c);	//10
+			
+			/**********************************/
+			
+			//es6内部使用严格相等运算符('===')来对一个位置判断是否有值，只有严格等于undefined的值才可以被赋予默认值
+			let [d=20,e=30,f=40] = [10,undefined,null];
+			console.log('d = ' + d);	//10
+			console.log('e = ' + e);	//30
+			console.log('f = ' + f);	//null
+			console.log(null==undefined);	//true
+			//上面由于d被赋值为10，所以默认值不生效，f由于不严格等于undefined所以默认值不生效
+
+			/**********************************/
+			
+			//如果默认值是一个表达式，则这个表达式是惰性求值的，即-只有需要用到的时候才会执行表达式
+			function n(){
+				console.log('fff');
+			}
+			let [g=n()] = [1];
+			console.log('g = ' + g);	//1
+			//在上面的代码中，由于g可以取到值(1);所以函数n()不会执行，理论上上面的写法可以等价于下面的写法：
+			/*
+			let x;
+			if ([1][0] === undefined) {
+			  x = n();
+			} else {
+			  x = [1][0];
+			}
+			*/
+			
+			/***********************************/
+			
+			//解构赋值可以使用其他的变量进行赋值，但是被使用的变量必须已经声明
+			let [x1=1,y1=x1] = [];
+			console.log('x1 = ' + x1);	//1
+			console.log('y1 = ' + y1);	//1
+			//使用变量进行赋值的时候，如果变量不严格等于undefined时，赋值依然不会生效
+			let [x2=1,y2=x2] = [3,5];
+			console.log('x2 = ' + x2);	//3
+			console.log('y2 = ' + y2);	//5
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

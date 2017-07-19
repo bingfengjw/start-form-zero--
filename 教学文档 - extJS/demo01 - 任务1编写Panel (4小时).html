@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--项目作者自己创建的CSS文件-->
+		<link rel="stylesheet" type="text/css" href="css/ext-all.css"/>
+		<!--针对本项目定义的公共样式-->
+		<link rel="stylesheet" type="text/css" href="css/fc-all.css"/>
+		<!--extJS输入框清除值插件的样式文件-->
+		<link rel="stylesheet" type="text/css" href="css/ClearButton.css"/>
+		<!--字体文件-->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.css"/>
+		
+		
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--项目基础参数设定-->
+		<script src="js/basicParameter.js" type="text/javascript" charset="utf-8"></script>
+		<!--extjs的所有js包-->
+		<script src="js/ext-all.js" type="text/javascript" charset="utf-8"></script>
+		<!--项目作者对extJS的二次封装-->
+		<script src="js/basicExtModule.js" type="text/javascript" charset="utf-8"></script>
+		<!--封装好的分页JS-->
+		<script src="js/PagingToolBar.js" type="text/javascript" charset="utf-8"></script>
+		<!--包含了项目的一些工具方法-->
+		<script src="js/tools.js" type="text/javascript" charset="utf-8"></script>
+		<!--extJS输入框清除值插件的JS文件-->
+		<script src="js/ClearButton.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			var GLOBAL = GLOBAL || {};
+			//定义变量并且声明默认值，存放将来所有的全局变量
+			Ext.onReady(function(){
+				//ext的预加载
+				//以后执行的代码写在这里面
+				GLOBAL.panelbox = Ext.create('Ext.panel.Panel',{
+					//extJS中的panel是一个容器，类似于html中的div
+					renderTo:'panelBox',//页面标签的ID，表示此控件生成以后需要载入到此ID的页面标签当中
+					title:'我是顶级panel',//声明panel中的标题，如果没有的话则没有标题
+					layout:'',//布局方式，不写的话默认为纵向布局，如果给值hbox则为横向水平布局
+					margin:'10',//margin值，默认单位是px
+					items:[
+						//内部需要包含的组件都写在里面
+						{
+							xtype:'panel',
+							title:'这是上面的panel',
+							layout:'hbox',//使用横向布局，使里面的两个panel横向排列
+							margin:'20',
+							items:[{
+								xtype:'panel',
+								padding:'20',
+								html:'这是左边的html'
+							},{
+								xtype:'panel',
+								padding:'20',
+								html:'这是右边的html'
+							}]
+						},{
+							xtype:'panel',
+							title:'这是下面的panel',
+							padding:'20',
+							html:'<div style="margin-top:20px;">这是我在下面的html中创建的一个div</div>'
+						}
+					]
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="panelBox">
+			<!--后面用extJS生成的页面都放到这个div里面-->
+		</div>
+	</body>
+</html>

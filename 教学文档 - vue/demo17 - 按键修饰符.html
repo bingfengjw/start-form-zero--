@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<input type="text" @keyup.left='myEvent(msg)'/>
+			<input type="text" oncopy="alert('不允许复制');return false;">
+			<!--直接用oncopy的话就可以正常阻止复制，但是换成v-on:copy就不能阻止复制-->
+		</div>
+		<script type="text/javascript">
+			new Vue({
+				el:"#app",
+				data:{
+					msg:'这是我的内容'
+				},
+				methods:{
+					myEvent:function(msg){
+						alert(event);
+						console.log(event);
+						alert(msg);
+					},
+					stopEvent:function(){
+						alert(event);
+						console.log(event);
+						alert('禁止复制！');
+						return false;
+					}
+				}
+			});
+			/*
+			.enter
+			.tab
+			.delete (捕获 "删除" 和 "退格" 键)
+			.esc
+			.space
+			.up
+			.down
+			.left
+			.right
+			.ctrl
+			.alt
+			.shift
+			.meta
+			*/
+		</script>
+	</body>
+</html>

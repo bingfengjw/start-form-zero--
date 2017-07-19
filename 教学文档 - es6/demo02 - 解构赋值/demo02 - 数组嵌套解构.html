@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//使用嵌套结构时，可以在声明的变量和被声明的值中使用相同的结构嵌套，如果结构不同的话则会出现解构失败或者不完全解构的情况
+			let [a,[b,c]] = [1,[2,3]];
+			console.log('a = ' + a);	//1
+			console.log('b = ' + b);	//2
+			console.log('c = ' + c);	//3
+			/******************/
+			//对于下面这种变量和值不能完全匹配的形式，变量会和对应位置上面的值相匹配
+			let [ , , d] = [1,2,3];
+			console.log('d = ' + d);	//3
+			//由于声明时中间留出了一个赋值的位置，所以赋值的时候会把那个值跳过去
+			let [e , , f] = [4,5,6];
+			console.log('e = ' + e);	//4
+			console.log('f = ' + f);	//5
+			//使用省略号的模式匹配可以匹配到除了前面匹配的值之外剩下的值,之后会得到一个数组
+			let [g,...h] = [7,8,9,10];
+			console.log('g = ' + g);	//7
+			console.log('h = ' + h);	//[8,9,10]
+			let [x,y,...z] = ['a'];
+			console.log('x = ' + x);	//a
+			console.log('y = ' + y);	//undefined
+			console.log('z = ' + z);
+			/******************/
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

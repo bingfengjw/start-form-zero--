@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="bundle.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		在demo1目录下，有两个文件，app.js,cats.js，需要把它们合并成一个bundle.js文件
+		
+		如果是全局安装的webpack,那么直接在命令行窗口中输入webpack app.js bundle.js就可以了
+		
+		要得到压缩版的也很容易，在后面追加一个-p参数
+		
+		如果不想每改一次就在命令行下输一次命令，敲一次回车，只要追加一个" -w " 参数 (watch) 监视代码的改动。
+		*注意：用这种方式，请移除目录下的webpack.config.js文件。
+		
+		虽然简单，但是这里有一个重要的概念要说一下：
+		官方文档中把app.js这个文件称为“entry point”，即“入口”。
+		代表着webpack从哪开始。webpack会顺着这个入口文件自动寻找里边所依赖的文件，比如demo01中的cats.js会自动被载入。
+		而bundle.js 是我们指定打包之后输出的文件名，
+		默认的输出目录就是命令运行时所在的目录，也可以在指定输出目录，如./dist/bundle.js,
+		这样webpack就会自动创建dist目录，然后把bundle.js写在dist目录下。
+		由于app.js这个入口文件是纯js，webpack直接就可以支持，
+		如果是其它类型的文件，比如css，就需要用到"loader"，即“加载器”，后面会有详细介绍。
+		
+	</body>
+</html>

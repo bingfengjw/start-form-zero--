@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/d3.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<svg></svg>
+		<script type="text/javascript">
+			var dataset = [1.2, 2.3, 0.9, 1.5, 3.3];
+			var min = d3.min(dataset);			//找到数据中的最大值和最小值
+			var max = d3.max(dataset);			
+			var linear = d3.scaleLinear()
+			        .domain([min, max])			//比例尺的定义域 domain 为：[0.9, 3.3]
+			        .range([10, 300]);			//比例尺的值域 range 为：[0, 300]
+			//以上代码含义为比例尺以10开始，300是最大，其中最小的数值是0.9，最大的是3.3
+			
+			var rectHeight = 25;
+			d3
+				.select('svg')
+				.attr('width',300)
+				.attr('height',300)
+				.selectAll("rect")				//选择svg内所有的矩形
+			    .data(dataset)					//绑定数组
+			    .enter()						//指定选择集的enter部分(由于rect元素数量不够，所以需要补足)
+			    .append("rect")					//补足rect元素
+			    .attr("x",0)					
+			    .attr("y",function(d,i){
+			    	console.log(d);				//数据
+			    	console.log(i);				//顺序
+			        return i * rectHeight;
+			    })
+			    .attr("width",function(d){
+			    	console.log(d);
+			        return linear(d);
+			    })
+			    .attr("height",rectHeight-2)
+			    .attr("fill","steelblue");
+			    
+			//d3.scale.linear() 的返回值，是可以当做函数来使用的。因此，才有这样的用法：linear(0.9)。
+			linear(0.9);    //返回 0
+			linear(2.3);    //返回 175
+			linear(3.3);    //返回 300
+		</script>
+	</body>
+</html>

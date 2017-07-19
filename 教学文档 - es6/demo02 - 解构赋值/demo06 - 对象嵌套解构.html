@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			let obj = {
+				a:[
+					'hello',
+					{y:'world'}
+				]
+			};
+			let {a:[x,{y}]} = obj;
+			//上面的形式等于↓
+			/* let {a:[x,{y}]} = {a:['hello',{y:'world'}]}
+			 * 可见其中两端的形式完全相同，而a只是一个匹配模式，所以a没有值
+			 */
+			console.log(x);	//hello
+			console.log(y)	//world
+			
+			//对象的赋值同样可以指定默认值，默认值指定的前提同样是严格等于undefined,和数组解构赋值有同样的规则限制
+			let {a1:a='aa',b1:b=a,c1:c='cc'} = {a1:undefined,b1:'bb',c1:null};
+			console.log(a);	//aa
+			console.log(b);	//bb
+			console.log(c);	//null
+			
+			//对象的解构赋值，可以很方便地将现有对象的方法，赋值到某个变量。
+			let { log, sin, cos } = Math;
+			console.log(log);
+			console.log(sin);
+			console.log(cos);
+			
+			//由于数组本质是特殊的对象，因此可以对数组进行对象属性的解构。
+			let arr = [1, 2, 3];
+			let {0 : first, [arr.length - 1] : last} = arr;
+			console.log(first) // 1
+			console.log(last) // 3
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

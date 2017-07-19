@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<p>使用以下两种方法均可以执行一个函数，没有参数时，括号不是必须的</p>
+		<hr>
+		<div id="app">
+			<button v-on:click='doSomthing'>点我！</button>
+			<button @click='doSomthing'>点我！</button>
+		</div>
+		<script type="text/javascript">
+			new Vue({
+				el:'#app',
+				data:{
+					doSomthing:function(){
+						alert('执行了一个函数！')
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//https://market.aliyun.com/products/57096001/cmapi010812.html#sku=yuncode481200005
+			var app = angular.module('app',[]);
+			app.controller('ctrl',function($scope,$http){
+				$http({
+					url:'http://ali-weather.showapi.com/area-to-weather',
+					method:'get',
+					headers:{'Authorization':'APPCODE b76a6ff25f0a494597ab48c510f04937'},
+					params:{
+						'area':'北京',
+					}
+				}).then(function(res){
+					$scope.res = res;
+					console.log(res)
+				}),function(err){
+					console.log(err);
+				}
+			})
+		</script>
+	</head>
+	<body ng-app="app" ng-controller="ctrl">
+		{{res}}
+	</body>
+</html>

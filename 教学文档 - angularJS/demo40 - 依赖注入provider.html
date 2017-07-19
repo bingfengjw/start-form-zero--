@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var app = angular.module('app',[]);
+			app.controller('ctrl',function($scope,myProvider){
+				console.log($scope);
+				console.log(myProvider);
+				$scope.person = myProvider;
+			});
+			app.provider('myProvider',function(){
+				//Providers 是唯一一种你可以传进 .config() 函数的 service。
+				//当你想要在 service 对象启用之前，先进行模块范围的配置，那就应该用 provider。
+				var person = {name:'小明',age:22};
+				this.$get = function(){
+					var that = this;
+					return this.person;
+				};
+			})
+		</script>
+	</head>
+	<body ng-app="app" ng-controller="ctrl">
+		{{person}}
+	</body>
+</html>

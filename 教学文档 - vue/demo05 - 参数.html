@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<p>使用v-bind:xxxx就可以在标签内生成名称为xxxx的属性，通过这个特性我们可以给某一个属性动态赋值</p>
+		<hr>
+		<div id="app">
+			<a v-bind:href='url'>百度首页</a>
+		</div>
+		<script type="text/javascript">
+			new Vue({
+				el:'#app',
+				data:{
+					url:'http://www.baidu.com'
+				}
+			})
+		</script>
+	</body>
+</html>

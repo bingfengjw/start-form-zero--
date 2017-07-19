@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<p>vue中使用" :绑定属性名称 "的方式来简写" v-bind:绑定属性名称 ",使用" @事件名称 "的方式来简写" v-on:click "</p>
+		<hr>
+		<div id="app">
+			<input type="text" :value="message"><br />
+			<button @click='doSome'>1111111111</button>
+		</div>
+		<script type="text/javascript">
+			new Vue({
+				el:"#app",
+				data:{
+					message:'这是我的文字',
+					doSome:function(){
+						alert('点我！')
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

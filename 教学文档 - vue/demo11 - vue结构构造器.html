@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<p>每个 Vue 实例都会代理其 data 对象里所有的属性：</p>
+		<hr>
+		<div id="app">
+			{{meg}}
+		</div>
+		<script type="text/javascript">
+			var data = {meg:'这是我使用构造器创建的文字'};
+			var el = "#app";
+			var nVue = new Vue({
+				el:el,
+				data:data
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/template" id="hello.html">
+			<div>
+				<h1>这是我使用页面模板加载进来的内容</h1></div>
+		</script>
+		<script type="text/javascript">
+			var app = angular.module('app', []);
+			app.directive('myDire1', function() {
+				return {
+					template: "<div>这是我的内容</div>"
+				}
+			})
+			app.directive('myDire2', function() {
+				//当template为一个函数时，里面可以传两个参数，tElement代表这个自定义指令本身，tAttrs代表这个自定义指令的属性
+				return {
+					template: function(tElement, tAttrs) {
+						console.log(tElement);
+						console.log(tAttrs);
+						return tElement;
+					}
+				}
+			})
+			
+			app.directive('myDire3', function() {
+				//使用templateUrl加载一个页面模板，如果使用函数同样可以接受两个参数tElement和tAttrs，同上
+				//该方法需要使用下面的app.run进行预加载，否则本地无法实现，需要打开服务器
+				//另一种预加载方式(上面的使用script标签+id)加载的方式不可以使用，原因暂时未知
+				return {
+					templateUrl: 'hello.html',
+					replace: true
+				}
+			});
+			/*app.run(["$templateCache", function($templateCache) {
+				$templateCache.put("hello.html",
+					"<div><h1>Hi 我是林炳文~~~</h1></div>");
+			}]);*/
+		</script>
+	</head>
+
+	<body ng-app="app">
+		<div>
+			<p>11111111111</p>
+			<my-dire1>
+				<h1>这是这个自定义标签里面一些原本的内容</h1>
+			</my-dire1>
+			<my-dire2 a='这是a属性' b='这是b'>
+				<h1>这是这个自定义标签里面一些原本的内容</h1>
+			</my-dire2>
+			<my-dire3>
+				<h1>这是这个自定义标签里面一些原本的内容</h1>
+			</my-dire3>
+			<p>22222222222</p>
+		</div>
+	</body>
+
+</html>

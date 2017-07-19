@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			原本的内容为：{{mes}}
+			<br />
+			第二段文字为：{{ms}}
+			<br />
+			计算之后的内容为：{{reversedMs}}
+			<br />
+			使用methods计算的结果为：{{reversedMs2()}}
+		</div>
+		<script type="text/javascript">
+			new Vue({
+				el:'#app',
+				data:{
+					mes:'这是我想要呈现的文字',
+					ms:'这是我的第二段文字'
+				},
+				computed:{
+					//这是一个计算属性,使用reversed+使用this.内容，可以实现计算
+					reversedMs:function(){
+						//使用split将内容转换为数组，然后使用reverse将数组倒序排列，然后使用join转换为字符串
+						return this.ms.split('').reverse().join('')
+					}
+				},
+				methods:{
+					//我们可以使用 methods 来替代 computed，效果上两个都是一样的，
+					//但是 computed 是基于它的依赖缓存，只有相关依赖发生改变时才会重新取值。而使用 methods ，在重新渲染的时候，函数总会重新调用执行。
+					reversedMs2:function(){
+						return this.ms.split('').reverse().join('')
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

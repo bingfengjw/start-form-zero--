@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<p>和angular基本相同，vue的过滤器同样使用|和文本分隔开，使用多个|可以同时使多个过滤器生效，过滤器的第一个参数是内容本身，第二个开始为传入的参数</p>
+		<hr>
+		<div id="app">
+			{{message | filterA('？？？')}}
+		</div>
+		<script type="text/javascript">
+			new Vue({
+				el:'#app',
+				data:{
+					message:"这是我的文字"
+				},
+				filters:{
+					filterA:function(value,a){
+						console.log(value);
+						console.log(a);
+						var meg = value + a;
+						return meg;
+					}
+				}
+			})
+		</script>
+	</body>
+</html>
