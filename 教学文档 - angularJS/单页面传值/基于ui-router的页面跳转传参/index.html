@@ -12,7 +12,7 @@
 				$scope.title = 'qwe';
 			})
 			app.config(function($urlRouterProvider,$stateProvider){
-				$urlRouterProvider.when('','/login')
+				$urlRouterProvider.when('','/login');
 				$stateProvider
 					.state('login',{
 						url:'/login?name&password',

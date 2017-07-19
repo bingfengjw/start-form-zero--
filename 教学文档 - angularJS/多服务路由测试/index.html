@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>这是主页</title>
+    <script type="text/javascript" src="../js/angular.min.js"></script>
+    <script src="../js/angular-ui-router.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/route.js"></script>
+    <script src="js/2.js"></script>
+</head>
+<body ng-app="app">
+<div style="border: 1px solid red;">
+    {{abc}}
+    <ul>
+        <li><a ui-sref="aaa">aaa</a> </li>
+        <li><a ui-sref="bbb">bbb</a> </li>
+    </ul>
+</div>
+<ui-view class=""></ui-view>
+</body>
+</html>
