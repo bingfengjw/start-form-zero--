@@ -1,6 +1,7 @@
 module.exports = {
-	entry:'./app.js',	//入口文件地址
+	entry:__dirname  + '/app.js',	//入口文件地址
 	output:{
-		filename:'bundle.js'
+		path:__dirname + "/public",//打包后的文件存放的地方
+        filename:'bundle.js'//打包后输出文件的文件名
 	}
 }

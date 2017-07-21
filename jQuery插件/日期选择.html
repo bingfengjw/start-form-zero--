@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>日期选择</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+</head>
+
+<body>
+
+<div class="form-group">
+    <label class="col-sm-3 control-label"></label>
+    <div class="col-sm-9">
+        <div class="input-group">
+            <button type="button" class="btn btn-default pull-right" id="daterange-btn">
+	                    <span>
+	                      <i class="fa fa-calendar"></i> 日期选择
+	                    </span>
+                <i class="fa fa-caret-down"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/moment.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script>
+    $('#daterange-btn').daterangepicker({
+            ranges: {
+                '今天': [moment(), moment()],
+                '本周': [moment().startOf('week'), moment().endOf('week')],
+                '本月': [moment().startOf('month'), moment().endOf('month')],
+                '今年': [moment().startOf('year'), moment().endOf('year')]
+            },
+            startDate: moment(),
+            endDate: moment().endOf('month')
+        },
+        function(start, end) {
+            $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+            alert(start.format('YYYYMMDD') + " " + end.format('YYYYMMDD'));
+        }
+    );
+
+    //Date picker
+    $('#datepicker').datepicker({
+        autoclose: true
+    });
+</script>
+</body>
+
+</html>
