@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/angular.min.js"></script>
+    <script>
+        var app = angular.module('app',[]);
+        app.controller('ctrl',function ($scope) {
+            $scope.arr = [
+                {name:'张三',age:20,city:"北京"},
+                {name:'张三',age:20,city:"北京"},
+                {name:'张三',age:20,city:"北京"},
+                {name:'张三',age:20,city:"北京"},
+                {name:'张三',age:20,city:"北京"},
+                {name:'李四',age:33,city:"天津"},
+                {name:'李四',age:33,city:"天津"},
+                {name:'李四',age:33,city:"天津"},
+                {name:'王五',age:24,city:"日本"},
+                {name:'王五',age:24,city:"日本"},
+                {name:'王五',age:24,city:"日本"},
+                {name:'赵六',age:13,city:"西安"},
+                {name:'赵六',age:13,city:"西安"},
+                {name:'赵六',age:13,city:"西安"},
+                {name:'赵六',age:13,city:"西安"},
+            ];
+            $scope.aa = [];
+            $scope.arr2 = function (n) {
+                return new Array(n);
+            }
+        })
+    </script>
+</head>
+<body ng-app="app" ng-controller="ctrl">
+<input type="text" ng-model="int">
+<table border="1">
+    <thead>
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>age</td>
+            <td>city</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="x in arr | filter:int | limitTo:10 as aa">
+            <td>{{$index + 1}}</td>
+            <td>{{x.name}}</td>
+            <td>{{x.age}}</td>
+            <td>{{x.city}}</td>
+        </tr>
+        <tr ng-repeat="x in arr2(10) | limitTo:10-aa.length track by $index">
+            <td>{{(aa.length+1) + $index}}</td>
+            <td>{{aa.length}}</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
