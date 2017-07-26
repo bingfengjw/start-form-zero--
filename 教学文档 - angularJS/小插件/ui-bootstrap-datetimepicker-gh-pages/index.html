@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--Jquery-->
+    <script src="libs/jquery.min.js"></script>
+    <!--Angular-->
+    <script src="libs/angular.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <script src="libs/bootstrap.min.js"></script>
+    <!--plugin : bootstrap timepicker-->
+    <link rel="stylesheet" href="plugins/timepicker/css/bootstrap-datetimepicker.min.css">
+    <script src="plugins/timepicker/bootstrap-datetimepicker.js"></script>
+    <script src="plugins/timepicker/bootstrap-datetimepicker.fr.js"></script>
+    <!--App-->
+    <script src="app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/directives.js"></script>
+
+</head>
+<style>
+    p{
+        line-height: 250%;
+        text-indent: 2em;
+    }
+    h2{
+        margin-top: 50px;;
+    }
+</style>
+<body ng-app="app" ng-controller="appCtrl">
+<h2>背景:angular与jquery类库的协作</h2>
+<p>第三方类库中，不得不提的是大名鼎鼎的jquery,现在基本上已经是国内web开发的必修工具了。它灵活的dom操作，让很多web开发人员欲罢不能。再加上已经很成熟的jquery UI 库和大量jquery 插件，几乎是一个取之不尽用之不竭的宝库。然而，它是否能与angularjs结合呢？</p>
+<p>很多angularjs原教旨主义者对此持否定态度。他们认为，既然已经使用了angularjs做web应用框架，那就必须避免其他类库的干扰，做纯净的MvvM模式应用。任何类似jquery的dom操作，都是不洁的。把所有和界面相关的, 比如dom操作, 都放在directive中, 这样页面中directive而没有代码，跟JSF思想一致。MVVM,DSL,组件化的思想这才是web的趋势。嗯，想法很好，原教旨主义者想法都是这么纯洁。但事实情况是，使用了angularjs我们就离不开jquery。</p>
+<p>众所周知，angularjs里面事实上已经内置了jquery lite.，而且angularjs源码中很多方法直接就是使用jquery方法。例如angularjs的事件绑定机制。既然先知们都在用，我们又何苦不用？组件化的思想没有错，但没必要因此把自己的手脚绑住。唯一要注意的问题是，不要用jquery的代码破坏了angularjs的结构。<a href="http://www.angularjs.cn/A0fG" target="_blank">原文链接</a></p>
+
+<h2>案例:用angular封装bootstrap官网的时间插件</h2>
+
+    <div class="form-group">
+        <label for="dtp_input1" class="col-md-2 control-label">DateTime Picking</label>
+        <div  ng-model='timepickerTest'  ng-time class="input-group date form_datetime col-md-5" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+            <input class="form-control" size="16" type="text" value="" readonly>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+        </div>
+        <input type="hidden" id="dtp_input1" value="" /><br/>
+    </div>
+
+    <div class="form-group">
+        <label for="dtp_input2" class="col-md-2 control-label">Date Picking</label>
+        <div  ng-model='timepickerTest'  ng-time class="input-group date form_date col-md-5" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+            <input class="form-control" size="16" type="text" value="" readonly>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+        </div>
+        <input type="hidden" id="dtp_input2" value="" /><br/>
+    </div>
+
+    <div class="form-group">
+        <label for="dtp_input3" class="col-md-2 control-label">Time Picking</label>
+        <div  ng-model='timepickerTest'  ng-time class="input-group date form_time col-md-5" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
+            <input class="form-control" size="16" type="text" value="" readonly>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+        </div>
+        <input type="hidden" id="dtp_input3" value="" /><br/>
+    </div>
+
+<h2>使用说明：</h2>
+<p>在原先bootstrap-datetimepicker的html片段上添加 <code> ng-model='timepickerTest'  ng-time</code></p>
+<img src="img/1.png" alt="">
+</body>
+</html>

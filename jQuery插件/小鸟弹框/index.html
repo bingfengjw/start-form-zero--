@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery实现可拖动弹出层特效 - 站长素材</title>
+<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/tc.min.js"></script>
+<style type="text/css">
+body{margin:0; padding:0;font-size:12px;}
+dt{padding:10px;}
+p{ height:100px; line-height:100px; border:1px solid #eee; margin:10px; }
+i{ font-style:normal;}
+#detail{	position:absolute;width:400px;height:200px;border:1px solid #ccc;background:#efefef; display:none;}
+#detail .tit{ background:#ddd; display:block; height:33px; cursor:move;}
+#detail .tit i{ float:right; line-height:33px; padding:0 8px;cursor:default;}
+#detail2{position:absolute;width:300px;height:100px;border:1px solid #555;background:#555;display:none;}
+#detail2 .tit{ background:#333; display:block; height:33px;cursor:move;}
+#detail2 .tit i{ float:right; line-height:33px; padding:0 8px; color:#777; cursor:default;}
+</style>
+</head>
+<body>
+<br /><br />
+<center>
+<dl>
+	<dt><button id="t1">点我弹一个</button></dt>
+    <dt><button  id="t2">点我再弹一个</button></dt>
+</dl>
+</center>
+<div id="detail">
+<div class="tit"><i class="close">关闭</i></div>
+<pre>
+	/***
+	 * 小鸟弹窗，按ESC可以关闭窗口。
+	 * 小鸟弹窗不带样式，大家可以根据自己的项目写样式。
+	 * 小鸟弹窗很小，min版的只1.15k，因为小所以值得应用。
+	 * 小鸟弹窗希望有网友可以再改进，希望他变得更小。
+	***/
+</pre>
+</div>
+<div id="detail2">
+<div class="tit"><i class="close">关闭</i></div>
+再弹出一个窗
+</div>
+<script type="text/javascript">
+	$("#t1").click(function(){
+			popWin("detail");
+	});
+	$("#t2").click(function(){
+			popWin("detail2");
+	});
+</script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.</p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+</body>
+</html>

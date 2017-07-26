@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1ed8281-12ba-466b-a7f0-7a6184b7b291" name="Default" comment="插件更新">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Font-Awesome" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/jQueryCalendar703420160303.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/jQueryPage5189201705042204.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/jiaoben2073.rar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/paging284020150909.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/awesomeStyle/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/metroStyle/img/line_conn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/metroStyle/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/metroStyle/img/metro.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/metroStyle/img/metro.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/zTreeStyle/img/diy/1_close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/zTreeStyle/img/diy/1_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/zTreeStyle/img/diy/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/zTreeStyle/img/diy/3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/zTreeStyle/img/diy/4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/zTreeStyle/img/diy/5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/zTreeStyle/img/diy/6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/zTreeStyle/img/diy/7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/zTreeStyle/img/diy/8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/zTreeStyle/img/diy/9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/zTreeStyle/img/line_conn.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/zTreeStyle/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/zTreeStyle/img/zTreeStandard.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/zTreeStyle/img/zTreeStandard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/js/ztree.3.5.26.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/img/apiMenu.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/img/apiMenu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/img/background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/img/chinese.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/img/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/img/contact-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/img/english.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/img/header-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/img/lightbulb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/img/overlay_arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/img/overlay_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/img/overlay_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/img/overlay_close_IE6.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/img/zTreeStandard.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/img/zTreeStandard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/awesomeStyle/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/metroStyle/img/line_conn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/metroStyle/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/metroStyle/img/metro.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/metroStyle/img/metro.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/zTreeStyle/img/diy/1_close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/zTreeStyle/img/diy/1_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/zTreeStyle/img/diy/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/zTreeStyle/img/diy/3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/zTreeStyle/img/diy/4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/zTreeStyle/img/diy/5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/zTreeStyle/img/diy/6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/zTreeStyle/img/diy/7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/zTreeStyle/img/diy/8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/zTreeStyle/img/diy/9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/zTreeStyle/img/line_conn.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/zTreeStyle/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/zTreeStyle/img/zTreeStandard.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/zTreeStyle/img/zTreeStandard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/left_menuForOutLook.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/left_menuForOutLook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/left_menuForOutLook.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/left_menuForOutLook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/js/ztree.3.5.26.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/img/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/css/fixed_table_rc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/jquery 表行列固定.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/js/fixed_table_rc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/js/sortable_table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/awesomeStyle/awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/awesomeStyle/awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/awesomeStyle/fa.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/metroStyle/metroStyle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/css/zTreeStyle/zTreeStyle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/html/checkbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/html/checkbox_count.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/html/demo01.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/html/demo02-checkbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/js/jquery-1.4.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/js/jquery.ztree.all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/js/jquery.ztree.all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/js/jquery.ztree.core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/js/jquery.ztree.core.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/js/jquery.ztree.excheck.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/js/jquery.ztree.excheck.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/js/jquery.ztree.exedit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/js/jquery.ztree.exedit.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/js/jquery.ztree.exhide.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/myDemo/js/jquery.ztree.exhide.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/API_cn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/API_en.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/common.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/common_ie6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/jquery-1.6.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/jquery.ztree.core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/apiCss/zTreeStyleForApi.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/fn.zTree._z.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/fn.zTree.destroy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/fn.zTree.getZTreeObj.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/fn.zTree.init.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.async.autoParam.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.async.contentType.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.async.dataFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.async.dataType.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.async.enable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.async.otherParam.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.async.type.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.async.url.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.beforeAsync.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.beforeCheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.beforeClick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.beforeCollapse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.beforeDblClick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.beforeDrag.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.beforeDragOpen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.beforeDrop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.beforeEditName.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.beforeExpand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.beforeMouseDown.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.beforeMouseUp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.beforeRemove.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.beforeRename.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.beforeRightClick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onAsyncError.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onAsyncSuccess.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onCheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onClick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onCollapse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onDblClick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onDrag.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onDragMove.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onDrop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onExpand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onMouseDown.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onMouseUp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onNodeCreated.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onRemove.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onRename.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.callback.onRightClick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.check.autoCheckTrigger.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.check.chkDisabledInherit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.check.chkStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.check.chkboxType.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.check.enable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.check.nocheckInherit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.check.radioType.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.data.keep.leaf.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.data.keep.parent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.data.key.checked.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.data.key.children.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.data.key.name.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.data.key.title.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.data.key.url.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.data.simpleData.enable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.data.simpleData.idKey.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.data.simpleData.pIdKey.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.data.simpleData.rootPId.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.drag.autoExpandTrigger.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.drag.autoOpenTime.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.drag.borderMax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.drag.borderMin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.drag.inner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.drag.isCopy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.drag.isMove.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.drag.maxShowNodeNum.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.drag.minMoveSize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.drag.next.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.drag.prev.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.editNameSelectAll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.enable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.removeTitle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.renameTitle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.showRemoveBtn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.edit.showRenameBtn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.treeId.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.treeObj.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.view.addDiyDom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.view.addHoverDom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.view.autoCancelSelected.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.view.dblClickExpand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.view.expandSpeed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.view.fontCss.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.view.nameIsHTML.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.view.removeHoverDom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.view.selectedMulti.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.view.showIcon.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.view.showLine.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.view.showTitle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/setting.view.txtSelectedEnable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.check_Child_State.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.check_Focus.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.checked.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.checkedOld.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.children.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.chkDisabled.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.click.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.diy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.editNameFlag.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.getCheckStatus.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.getIndex.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.getNextNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.getParentNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.getPath.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.getPreNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.halfCheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.icon.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.iconClose.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.iconOpen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.iconSkin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.isAjaxing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.isFirstNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.isHidden.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.isHover.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.isLastNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.isParent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.level.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.name.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.nocheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.open.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.parentTId.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.tId.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.target.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.url.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/treeNode.zAsync.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.addNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.cancelEditName.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.cancelSelectedNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.checkAllNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.checkNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.copyNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.destroy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.editName.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.expandAll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.expandNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.getChangeCheckedNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.getCheckedNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.getNodeByParam.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.getNodeByTId.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.getNodeIndex.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.getNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.getNodesByFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.getNodesByParam.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.getNodesByParamFuzzy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.getSelectedNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.hideNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.hideNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.moveNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.reAsyncChildNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.refresh.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.removeChildNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.removeNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.selectNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.setChkDisabled.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.setEditable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.setting.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.showNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.showNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.transformToArray.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.transformTozTreeNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/cn/zTreeObj.updateNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/fn.zTree._z.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/fn.zTree.destroy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/fn.zTree.getZTreeObj.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/fn.zTree.init.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.async.autoParam.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.async.contentType.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.async.dataFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.async.dataType.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.async.enable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.async.otherParam.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.async.type.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.async.url.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.beforeAsync.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.beforeCheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.beforeClick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.beforeCollapse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.beforeDblClick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.beforeDrag.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.beforeDragOpen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.beforeDrop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.beforeEditName.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.beforeExpand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.beforeMouseDown.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.beforeMouseUp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.beforeRemove.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.beforeRename.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.beforeRightClick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onAsyncError.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onAsyncSuccess.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onCheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onClick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onCollapse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onDblClick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onDrag.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onDragMove.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onDrop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onExpand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onMouseDown.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onMouseUp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onNodeCreated.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onRemove.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onRename.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.callback.onRightClick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.check.autoCheckTrigger.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.check.chkDisabledInherit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.check.chkStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.check.chkboxType.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.check.enable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.check.nocheckInherit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.check.radioType.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.data.keep.leaf.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.data.keep.parent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.data.key.checked.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.data.key.children.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.data.key.name.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.data.key.title.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.data.key.url.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.data.simpleData.enable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.data.simpleData.idKey.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.data.simpleData.pIdKey.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.data.simpleData.rootPId.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.drag.autoExpandTrigger.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.drag.autoOpenTime.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.drag.borderMax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.drag.borderMin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.drag.inner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.drag.isCopy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.drag.isMove.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.drag.maxShowNodeNum.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.drag.minMoveSize.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.drag.next.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.drag.prev.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.editNameSelectAll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.enable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.removeTitle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.renameTitle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.showRemoveBtn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.edit.showRenameBtn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.treeId.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.treeObj.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.view.addDiyDom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.view.addHoverDom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.view.autoCancelSelected.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.view.dblClickExpand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.view.expandSpeed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.view.fontCss.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.view.nameIsHTML.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.view.removeHoverDom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.view.selectedMulti.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.view.showIcon.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.view.showLine.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.view.showTitle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/setting.view.txtSelectedEnable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.check_Child_State.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.check_Focus.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.checked.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.checkedOld.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.children.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.chkDisabled.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.click.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.diy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.editNameFlag.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.getCheckStatus.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.getIndex.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.getNextNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.getParentNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.getPath.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.getPreNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.halfCheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.icon.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.iconClose.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.iconOpen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.iconSkin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.isAjaxing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.isFirstNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.isHidden.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.isHover.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.isLastNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.isParent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.level.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.name.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.nocheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.open.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.parentTId.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.tId.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.target.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.url.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/treeNode.zAsync.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.addNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.cancelEditName.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.cancelSelectedNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.checkAllNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.checkNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.copyNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.destroy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.editName.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.expandAll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.expandNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.getChangeCheckedNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.getCheckedNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.getNodeByParam.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.getNodeByTId.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.getNodeIndex.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.getNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.getNodesByFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.getNodesByParam.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.getNodesByParamFuzzy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.getSelectedNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.hideNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.hideNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.moveNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.reAsyncChildNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.refresh.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.removeChildNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.removeNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.selectNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.setChkDisabled.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.setEditable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.setting.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.showNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.showNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.transformToArray.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.transformTozTreeNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/api/en/zTreeObj.updateNode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/awesomeStyle/awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/awesomeStyle/awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/awesomeStyle/fa.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/metroStyle/metroStyle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/css/zTreeStyle/zTreeStyle.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/asyncData/getNodes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/asyncData/getNodesForBigData.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/bigdata/common.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/bigdata/diy_async.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/bigdata/page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/core/async.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/core/async_fun.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/core/click.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/core/custom_font.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/core/custom_icon.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/core/custom_iconSkin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/core/expand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/core/noicon.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/core/noline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/core/otherMouse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/core/searchNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/core/simpleData.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/core/standardData.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/core/update_fun.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/core/url.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/excheck/checkbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/excheck/checkbox_chkDisabled.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/excheck/checkbox_count.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/excheck/checkbox_fun.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/excheck/checkbox_halfCheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/excheck/checkbox_nocheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/excheck/radio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/excheck/radio_chkDisabled.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/excheck/radio_fun.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/excheck/radio_halfCheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/excheck/radio_nocheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/exedit/async_edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/exedit/drag.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/exedit/drag_fun.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/exedit/drag_super.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/exedit/edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/exedit/edit_fun.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/exedit/edit_super.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/exedit/multiTree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/exhide/checkbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/exhide/common.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/exhide/radio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/asyncForAll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/awesome.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/checkbox_radio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/diydom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/dragWithOther.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/left_menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/left_menuForOutLook.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/metro.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/oneclick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/oneroot.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/rightClickMenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/select_menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/select_menu_checkbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/select_menu_radio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/cn/super/singlepath.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/asyncData/getNodes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/asyncData/getNodesForBigData.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/bigdata/common.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/bigdata/diy_async.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/bigdata/page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/core/async.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/core/async_fun.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/core/click.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/core/custom_font.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/core/custom_icon.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/core/custom_iconSkin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/core/expand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/core/noicon.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/core/noline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/core/otherMouse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/core/searchNodes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/core/simpleData.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/core/standardData.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/core/update_fun.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/core/url.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/excheck/checkbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/excheck/checkbox_chkDisabled.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/excheck/checkbox_count.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/excheck/checkbox_fun.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/excheck/checkbox_halfCheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/excheck/checkbox_nocheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/excheck/radio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/excheck/radio_chkDisabled.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/excheck/radio_fun.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/excheck/radio_halfCheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/excheck/radio_nocheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/exedit/async_edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/exedit/drag.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/exedit/drag_fun.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/exedit/drag_super.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/exedit/edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/exedit/edit_fun.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/exedit/edit_super.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/exedit/multiTree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/exhide/checkbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/exhide/common.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/exhide/radio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/asyncForAll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/awesome.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/checkbox_radio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/diydom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/dragWithOther.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/left_menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/left_menuForOutLook.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/metro.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/oneclick.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/oneroot.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/rightClickMenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/select_menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/select_menu_checkbox.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/select_menu_radio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/singlepath.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/demo/en/super/ztree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/js/jquery-1.4.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/js/jquery.ztree.all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/js/jquery.ztree.all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/js/jquery.ztree.core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/js/jquery.ztree.core.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/js/jquery.ztree.excheck.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/js/jquery.ztree.excheck.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/js/jquery.ztree.exedit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/js/jquery.ztree.exedit.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/js/jquery.ztree.exhide.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/js/jquery.ztree.exhide.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/log v3.x.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/ztree/zTree_v3-master/zTree.v3.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/下拉菜单select.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/小鸟弹框/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/小鸟弹框/js/jquery-1.7.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/小鸟弹框/js/tc.all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/小鸟弹框/js/tc.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/小鸟弹框/说明.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jQuery插件/小鸟弹框/说明.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/.npminstall.done" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/.npminstall.done" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/dist/ui-bootstrap-csp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/dist/ui-bootstrap-tpls.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/dist/ui-bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/accordion/accordion.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/accordion/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/accordion/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/accordion/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/accordion/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/accordion/test/accordion.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/alert/alert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/alert/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/alert/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/alert/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/alert/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/alert/test/alert.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/buttons/buttons.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/buttons/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/buttons/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/buttons/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/buttons/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/buttons/test/buttons.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/docs/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/index-nocss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/test/carousel.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/collapse/collapse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/collapse/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/collapse/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/collapse/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/collapse/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/collapse/test/collapse.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/collapse/test/collapseHorizontally.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dateparser/dateparser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dateparser/docs/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dateparser/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dateparser/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dateparser/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dateparser/test/dateparser.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/datepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/datepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/index-nocss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/test/datepicker.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/index-nocss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/popup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/popup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/test/popup.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/debounce/debounce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/debounce/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/debounce/test/debounce.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dropdown/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dropdown/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dropdown/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dropdown/dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dropdown/index-nocss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dropdown/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dropdown/test/dropdown.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/isClass/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/isClass/isClass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/isClass/test/isClass.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/modal/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/modal/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/modal/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/modal/index-nocss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/modal/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/modal/modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/modal/test/modal.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/multiMap/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/multiMap/multiMap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/multiMap/test/multiMap.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pager/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pager/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pager/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pager/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pager/pager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pager/test/pager.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pagination/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pagination/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pagination/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pagination/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pagination/pagination.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pagination/test/pagination.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/paging/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/paging/paging.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/paging/test/paging.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/index-nocss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/popover.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/test/popover-html.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/test/popover-template.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/test/popover.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/index-nocss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/position.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/position.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/test/position.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/test/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/progressbar/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/progressbar/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/progressbar/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/progressbar/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/progressbar/progressbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/progressbar/test/progressbar.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/rating/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/rating/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/rating/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/rating/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/rating/rating.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/rating/test/rating.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/stackedMap/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/stackedMap/stackedMap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/stackedMap/test/stackedMap.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabindex/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabindex/tabindex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabindex/test/tabindex.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabs/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabs/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabs/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabs/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabs/tabs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabs/test/tabs.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/index-nocss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/test/timepicker.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/timepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/timepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/index-nocss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/test/tooltip-template.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/test/tooltip.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/test/tooltip2.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/tooltip.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/tooltip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/docs/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/docs/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/docs/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/index-nocss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/test/typeahead-highlight-ngsanitize.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/test/typeahead-highlight.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/test/typeahead-parser.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/test/typeahead-popup.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/test/typeahead.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/typeahead.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/typeahead.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/accordion/accordion-group.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/accordion/accordion-group.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/accordion/accordion.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/accordion/accordion.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/alert/alert.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/alert/alert.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/carousel/carousel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/carousel/carousel.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/carousel/slide.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/carousel/slide.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/datepicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/datepicker.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/day.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/day.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/month.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/month.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/year.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/year.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepickerPopup/popup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepickerPopup/popup.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/modal/window.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/modal/window.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/pager/pager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/pager/pager.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/pagination/pagination.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/pagination/pagination.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/popover/popover-html.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/popover/popover-html.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/popover/popover-template.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/popover/popover-template.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/popover/popover.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/popover/popover.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/progressbar/bar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/progressbar/bar.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/progressbar/progress.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/progressbar/progress.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/progressbar/progressbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/progressbar/progressbar.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/rating/rating.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/rating/rating.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tabs/tab.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tabs/tab.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tabs/tabset.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tabs/tabset.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/timepicker/timepicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/timepicker/timepicker.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tooltip/tooltip-html-popup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tooltip/tooltip-html-popup.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tooltip/tooltip-popup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tooltip/tooltip-popup.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tooltip/tooltip-template-popup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tooltip/tooltip-template-popup.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/typeahead/typeahead-match.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/typeahead/typeahead-match.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/typeahead/typeahead-popup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/typeahead/typeahead-popup.html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/.idea/ui-bootstrap-timepicker.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/js/controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/js/directives.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/libs/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/libs/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/libs/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/libs/jquery v2.2.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/plugins/timepicker/bootstrap-datetimepicker.fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/plugins/timepicker/bootstrap-datetimepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/plugins/timepicker/bootstrap-datetimepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/plugins/timepicker/css/bootstrap-datetimepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - angularJS/小插件/ui-bootstrap-datetimepicker-gh-pages/plugins/timepicker/css/bootstrap-datetimepicker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - webpack/demo02 - 最简单的webpack配置/public/bundle.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/教学文档 - angularJS/demo37 - 路由.html" afterPath="$PROJECT_DIR$/教学文档 - angularJS/demo37 - 路由.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/教学文档 - angularJS/多服务路由测试/index.html" afterPath="$PROJECT_DIR$/教学文档 - angularJS/多服务路由测试/index.html" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/jQuery插件/插件测试/日历.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="976" />
+    <option name="height" value="1030" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="start-form-zero--" type="b2602c69:ProjectViewProjectNode" />
+              <item name="start-form-zero--" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="start-form-zero--" type="b2602c69:ProjectViewProjectNode" />
+              <item name="start-form-zero--" type="462c0819:PsiDirectoryNode" />
+              <item name="jQuery插件" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1ed8281-12ba-466b-a7f0-7a6184b7b291" name="Default" comment="" />
+      <created>1501052313947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1501052313947</updated>
+      <workItem from="1501052315139" duration="1210000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1210000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="插件更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="插件更新" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/jQuery插件/插件测试/日历.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

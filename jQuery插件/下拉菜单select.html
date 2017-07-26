@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body,
+			li,
+			ul {
+				margin: 0;
+				padding: 0;
+				font-size: 13px;
+			}
+			
+			li,
+			ul {
+				list-style: none;
+			}
+			
+			.w-dropdown {
+				width: 186px;
+				margin: 80px auto;
+				position: relative;
+				z-index: 10000;
+			}
+			
+			.w-dropdown:before {
+				content: "";
+				border-top: 4px dashed;
+				border-right: 4px solid transparent;
+				border-left: 4px solid transparent;
+				position: absolute;
+				right: 10px;
+				top: 50%;
+				margin-top: -2px;
+			}
+			
+			.w-dropdown .dropdown-sel {
+				width: 150px;
+				height: 24px;
+				line-height: 24px;
+				display: block;
+				color: #807a62;
+				cursor: pointer;
+				font-style: normal;
+				padding-left: 4px;
+				padding-right: 30px;
+				border: 1px solid #cfd6d9;
+				outline: line;
+			}
+			
+			.w-dropdown .dropdown-sel:focus {
+				outline: none;
+			}
+			
+			.w-dropdown .dropdown-sel:hover {
+				border: 1px solid #abb9c2;
+			}
+			
+			.w-dropdown ul {
+				width: 184px;
+				border: 1px solid #c0c5cc;
+				background-color: #ffffff;
+				position: absolute;
+				z-index: 20000;
+				margin-top: -1px;
+				display: none;
+			}
+			
+			.w-dropdown ul li {
+				height: 24px;
+				line-height: 24px;
+			}
+			
+			.w-dropdown ul li a {
+				display: block;
+				height: 24px;
+				color: #999;
+				text-decoration: none;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			
+			.w-dropdown ul li a:hover {
+				color: #333;
+				background-color: #f0f0f0;
+			}
+			
+			.w-dropdown ul li a.hover {
+				color: #333;
+				background-color: #f0f0f0;
+			}
+		</style>
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://www.jq22.com/demo/w-dropdown201706272152/js/jquery.dropdown.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="w-dropdown J_dropdown">
+			<input class="dropdown-sel" value="ASP" readonly="readonly">
+			<ul class="dropdown-option">
+				<li>
+					<a href="javascript:;" selectid="1">ASP</a>
+				</li>
+				<li>
+					<a href="javascript:;" selectid="1">ASP</a>
+				</li>
+				<li>
+					<a href="javascript:;" selectid="1">ASP</a>
+				</li>
+				<li>
+					<a href="javascript:;" selectid="1">ASP</a>
+				</li>
+				<li>
+					<a href="javascript:;" selectid="2">.NET</a>
+				</li>
+				<li>
+					<a href="javascript:;" selectid="3">PHP</a>
+				</li>
+				<li>
+					<a href="javascript:;" selectid="4">Javascript</a>
+				</li>
+				<li>
+					<a href="javascript:;" selectid="5">Java</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+
+</html>
