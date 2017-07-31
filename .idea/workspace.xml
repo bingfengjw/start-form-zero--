@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="d1ed8281-12ba-466b-a7f0-7a6184b7b291" name="Default" comment="插件更新">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/原生/数组去重.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - jQuery/发布订阅.html" />
@@ -590,7 +591,484 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/jQuery插件/小鸟弹框/说明.htm" afterPath="$PROJECT_DIR$/教学文档 - jQuery/jQuery插件/小鸟弹框/说明.htm" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/jQuery插件/小鸟弹框/说明.txt" afterPath="$PROJECT_DIR$/教学文档 - jQuery/jQuery插件/小鸟弹框/说明.txt" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/jQuery插件/日期选择.html" afterPath="$PROJECT_DIR$/教学文档 - jQuery/jQuery插件/日期选择.html" />
+=======
+    <list default="true" id="ecde9659-b496-4431-81b6-860c151a604e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - gulp/公司gulp配置测试/app/css/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - gulp/公司gulp配置测试/app/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - gulp/公司gulp配置测试/app/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/教学文档 - gulp/公司gulp配置测试/gulpfile.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.npminstall.done" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/.npminstall.done" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/dist/ui-bootstrap-csp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/dist/ui-bootstrap-tpls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/dist/ui-bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/accordion/accordion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/accordion/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/accordion/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/accordion/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/accordion/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/accordion/test/accordion.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/alert/alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/alert/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/alert/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/alert/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/alert/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/alert/test/alert.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/buttons/buttons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/buttons/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/buttons/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/buttons/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/buttons/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/buttons/test/buttons.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/carousel.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/docs/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/carousel/test/carousel.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/collapse/collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/collapse/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/collapse/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/collapse/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/collapse/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/collapse/test/collapse.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/collapse/test/collapseHorizontally.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dateparser/dateparser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dateparser/docs/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dateparser/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dateparser/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dateparser/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dateparser/test/dateparser.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepicker/test/datepicker.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/popup.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/popup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/datepickerPopup/test/popup.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/debounce/debounce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/debounce/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/debounce/test/debounce.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dropdown/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dropdown/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dropdown/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dropdown/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dropdown/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dropdown/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/dropdown/test/dropdown.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/isClass/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/isClass/isClass.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/isClass/test/isClass.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/modal/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/modal/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/modal/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/modal/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/modal/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/modal/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/modal/test/modal.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/multiMap/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/multiMap/multiMap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/multiMap/test/multiMap.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pager/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pager/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pager/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pager/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pager/pager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pager/test/pager.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pagination/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pagination/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pagination/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pagination/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pagination/pagination.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/pagination/test/pagination.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/paging/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/paging/paging.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/paging/test/paging.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/test/popover-html.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/test/popover-template.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/popover/test/popover.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/position.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/position.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/test/position.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/position/test/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/progressbar/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/progressbar/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/progressbar/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/progressbar/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/progressbar/progressbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/progressbar/test/progressbar.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/rating/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/rating/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/rating/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/rating/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/rating/rating.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/rating/test/rating.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/stackedMap/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/stackedMap/stackedMap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/stackedMap/test/stackedMap.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabindex/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabindex/tabindex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabindex/test/tabindex.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabs/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabs/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabs/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabs/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabs/tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tabs/test/tabs.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/test/timepicker.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/timepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/timepicker/timepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/test/tooltip-template.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/test/tooltip.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/test/tooltip2.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/tooltip/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/test/typeahead-highlight-ngsanitize.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/test/typeahead-highlight.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/test/typeahead-parser.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/test/typeahead-popup.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/test/typeahead.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/typeahead.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/src/typeahead/typeahead.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/accordion/accordion-group.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/accordion/accordion-group.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/accordion/accordion.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/accordion/accordion.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/alert/alert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/alert/alert.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/carousel/carousel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/carousel/carousel.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/carousel/slide.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/carousel/slide.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/datepicker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/datepicker.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/day.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/day.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/month.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/month.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/year.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepicker/year.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepickerPopup/popup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/datepickerPopup/popup.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/modal/window.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/modal/window.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/pager/pager.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/pager/pager.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/pagination/pagination.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/pagination/pagination.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/popover/popover-html.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/popover/popover-html.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/popover/popover-template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/popover/popover-template.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/popover/popover.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/popover/popover.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/progressbar/bar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/progressbar/bar.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/progressbar/progress.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/progressbar/progress.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/progressbar/progressbar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/progressbar/progressbar.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/rating/rating.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/rating/rating.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tabs/tab.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tabs/tab.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tabs/tabset.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tabs/tabset.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/timepicker/timepicker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/timepicker/timepicker.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tooltip/tooltip-html-popup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tooltip/tooltip-html-popup.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tooltip/tooltip-popup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tooltip/tooltip-popup.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tooltip/tooltip-template-popup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/tooltip/tooltip-template-popup.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/typeahead/typeahead-match.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/typeahead/typeahead-match.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/typeahead/typeahead-popup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/_angular-ui-bootstrap@2.5.0@angular-ui-bootstrap/template/typeahead/typeahead-popup.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/.npminstall.done" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/accordion/accordion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/accordion/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/accordion/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/accordion/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/accordion/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/accordion/test/accordion.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/alert/alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/alert/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/alert/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/alert/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/alert/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/alert/test/alert.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/buttons/buttons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/buttons/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/buttons/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/buttons/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/buttons/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/buttons/test/buttons.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/carousel.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/docs/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/carousel/test/carousel.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/collapse/collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/collapse/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/collapse/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/collapse/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/collapse/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/collapse/test/collapse.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/collapse/test/collapseHorizontally.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dateparser/dateparser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dateparser/docs/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dateparser/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dateparser/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dateparser/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dateparser/test/dateparser.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepicker/test/datepicker.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/popup.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/popup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/datepickerPopup/test/popup.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/debounce/debounce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/debounce/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/debounce/test/debounce.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dropdown/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dropdown/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dropdown/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dropdown/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dropdown/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dropdown/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/dropdown/test/dropdown.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/isClass/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/isClass/isClass.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/isClass/test/isClass.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/modal/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/modal/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/modal/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/modal/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/modal/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/modal/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/modal/test/modal.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/multiMap/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/multiMap/multiMap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/multiMap/test/multiMap.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pager/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pager/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pager/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pager/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pager/pager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pager/test/pager.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pagination/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pagination/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pagination/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pagination/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pagination/pagination.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/pagination/test/pagination.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/paging/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/paging/paging.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/paging/test/paging.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/test/popover-html.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/test/popover-template.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/popover/test/popover.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/position.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/position.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/test/position.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/position/test/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/progressbar/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/progressbar/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/progressbar/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/progressbar/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/progressbar/progressbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/progressbar/test/progressbar.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/rating/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/rating/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/rating/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/rating/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/rating/rating.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/rating/test/rating.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/stackedMap/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/stackedMap/stackedMap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/stackedMap/test/stackedMap.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabindex/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabindex/tabindex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabindex/test/tabindex.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabs/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabs/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabs/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabs/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabs/tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tabs/test/tabs.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/test/timepicker.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/timepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/timepicker/timepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/test/tooltip-template.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/test/tooltip.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/test/tooltip2.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/tooltip/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/docs/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/docs/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/docs/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/index-nocss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/test/typeahead-highlight-ngsanitize.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/test/typeahead-highlight.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/test/typeahead-parser.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/test/typeahead-popup.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/test/typeahead.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/typeahead.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/src/typeahead/typeahead.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/accordion/accordion-group.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/accordion/accordion-group.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/accordion/accordion.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/accordion/accordion.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/alert/alert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/alert/alert.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/carousel/carousel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/carousel/carousel.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/carousel/slide.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/carousel/slide.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/datepicker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/datepicker.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/day.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/day.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/month.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/month.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/year.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepicker/year.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepickerPopup/popup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/datepickerPopup/popup.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/modal/window.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/modal/window.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/pager/pager.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/pager/pager.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/pagination/pagination.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/pagination/pagination.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/popover/popover-html.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/popover/popover-html.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/popover/popover-template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/popover/popover-template.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/popover/popover.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/popover/popover.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/progressbar/bar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/progressbar/bar.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/progressbar/progress.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/progressbar/progress.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/progressbar/progressbar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/progressbar/progressbar.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/rating/rating.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/rating/rating.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tabs/tab.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tabs/tab.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tabs/tabset.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tabs/tabset.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/timepicker/timepicker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/timepicker/timepicker.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tooltip/tooltip-html-popup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tooltip/tooltip-html-popup.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tooltip/tooltip-popup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tooltip/tooltip-popup.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tooltip/tooltip-template-popup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/tooltip/tooltip-template-popup.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/typeahead/typeahead-match.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/typeahead/typeahead-match.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/typeahead/typeahead-popup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-ui-bootstrap/template/typeahead/typeahead-popup.html.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/教学文档 - gulp/testLess/CSS/less.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/start-form-zero--.iml" afterPath="$PROJECT_DIR$/.idea/start-form-zero--.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/教学文档 - gulp/gulpfile.js" afterPath="$PROJECT_DIR$/教学文档 - gulp/gulpfile.js" />
+>>>>>>> 896b603b75e51bf7256eef0997bc7032d9d232e7
     </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -599,22 +1077,49 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="数组去重.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/原生/数组去重.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="434">
               <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+=======
+    <leaf>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/教学文档 - gulp/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="75" lean-forward="false" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
+>>>>>>> 896b603b75e51bf7256eef0997bc7032d9d232e7
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="发布订阅.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/教学文档 - jQuery/发布订阅.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
               <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+=======
+      <file leaf-file-name="less.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/教学文档 - gulp/testLess/css/less.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/教学文档 - gulp/公司gulp配置测试/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="113" column="42" lean-forward="true" selection-start-line="113" selection-start-column="42" selection-end-line="113" selection-end-column="42" />
+>>>>>>> 896b603b75e51bf7256eef0997bc7032d9d232e7
               <folding />
             </state>
           </provider>
@@ -625,7 +1130,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -635,21 +1142,40 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/jQuery插件/插件测试/日历.html" />
         <option value="$PROJECT_DIR$/jQuery插件/jQuerySlider20160819/index.html" />
         <option value="$PROJECT_DIR$/原生/数组去重.html" />
         <option value="$PROJECT_DIR$/教学文档 - jQuery/发布订阅.html" />
+=======
+        <option value="$PROJECT_DIR$/教学文档 - gulp/公司gulp配置测试/css/base.css" />
+        <option value="$PROJECT_DIR$/教学文档 - gulp/公司gulp配置测试/js/index.js" />
+        <option value="$PROJECT_DIR$/教学文档 - gulp/公司gulp配置测试/index.html" />
+        <option value="$PROJECT_DIR$/教学文档 - gulp/gulpfile.js" />
+        <option value="$PROJECT_DIR$/教学文档 - gulp/公司gulp配置测试/gulpfile.js" />
+>>>>>>> 896b603b75e51bf7256eef0997bc7032d9d232e7
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/教学文档 - gulp/node_modules" />
+    <handled-path value="$PROJECT_DIR$/教学文档 - gulp/公司gulp配置测试/node_modules" />
+    <handled-path value="$PROJECT_DIR$/教学文档 - svg/node_modules" />
+    <handled-path value="$PROJECT_DIR$/教学文档 - vue/my-project/node_modules" />
+    <handled-path value="$PROJECT_DIR$/教学文档 - vue/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="976" />
@@ -670,8 +1196,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -682,24 +1206,51 @@
             <path>
               <item name="start-form-zero--" type="b2602c69:ProjectViewProjectNode" />
               <item name="start-form-zero--" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="教学文档 - jQuery" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="教学文档 - gulp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="start-form-zero--" type="b2602c69:ProjectViewProjectNode" />
+              <item name="start-form-zero--" type="462c0819:PsiDirectoryNode" />
+              <item name="教学文档 - gulp" type="462c0819:PsiDirectoryNode" />
+              <item name="公司gulp配置测试" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="start-form-zero--" type="b2602c69:ProjectViewProjectNode" />
+              <item name="start-form-zero--" type="462c0819:PsiDirectoryNode" />
+              <item name="教学文档 - gulp" type="462c0819:PsiDirectoryNode" />
+              <item name="公司gulp配置测试" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 896b603b75e51bf7256eef0997bc7032d9d232e7
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="E:\m\教程\start-form-zero--\教学文档 - jQuery" />
+=======
+      <recent name="E:\软件\翡翠\test\start-form-zero--\教学文档 - gulp\公司gulp配置测试" />
+      <recent name="E:\软件\翡翠\test\start-form-zero--\教学文档 - gulp\公司gulp配置测试\app" />
+>>>>>>> 896b603b75e51bf7256eef0997bc7032d9d232e7
     </key>
   </component>
   <component name="RunDashboard">
@@ -717,21 +1268,30 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d1ed8281-12ba-466b-a7f0-7a6184b7b291" name="Default" comment="" />
-      <created>1501052313947</created>
+      <changelist id="ecde9659-b496-4431-81b6-860c151a604e" name="Default" comment="" />
+      <created>1501387339730</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1501052313947</updated>
       <workItem from="1501052315139" duration="1265000" />
       <workItem from="1501055718962" duration="143000" />
       <workItem from="1501057215805" duration="2922000" />
       <workItem from="1501121701042" duration="918000" />
+=======
+      <updated>1501387339730</updated>
+      <workItem from="1501387342269" duration="4648000" />
+>>>>>>> 896b603b75e51bf7256eef0997bc7032d9d232e7
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="5248000" />
   </component>
   <component name="ToolWindowManager">
@@ -747,6 +1307,32 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+=======
+    <option name="totallyTimeSpent" value="4648000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20930232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> 896b603b75e51bf7256eef0997bc7032d9d232e7
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -758,20 +1344,31 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/教学文档 - vue/my-project/node_modules/_karma@1.7.0@karma/config.tpl.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="插件更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="插件更新" />
+    <MESSAGE value="gulp" />
+    <option name="LAST_COMMIT_MESSAGE" value="gulp" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/原生/数组去重.html">
+=======
+    <entry file="file://$PROJECT_DIR$/教学文档 - gulp/package.json">
+>>>>>>> 896b603b75e51bf7256eef0997bc7032d9d232e7
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -779,7 +1376,35 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/教学文档 - jQuery/jQuery插件/jQuerySlider20160819/index.html">
+=======
+    <entry file="file://$PROJECT_DIR$/教学文档 - gulp/公司gulp配置测试/app/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/教学文档 - gulp/公司gulp配置测试/app/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/教学文档 - gulp/公司gulp配置测试/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/教学文档 - gulp/testLess/less/less.less">
+>>>>>>> 896b603b75e51bf7256eef0997bc7032d9d232e7
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -787,27 +1412,48 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/jQuery插件/插件测试/日历.html" />
     <entry file="file://$PROJECT_DIR$/教学文档 - jQuery/jQuery插件/jQuerySlider20160819/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="16" column="82" lean-forward="false" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="82" />
+=======
+    <entry file="file://$PROJECT_DIR$/教学文档 - gulp/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="75" lean-forward="false" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
+>>>>>>> 896b603b75e51bf7256eef0997bc7032d9d232e7
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/原生/数组去重.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
           <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+=======
+    <entry file="file://$PROJECT_DIR$/教学文档 - gulp/testLess/css/less.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+>>>>>>> 896b603b75e51bf7256eef0997bc7032d9d232e7
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/教学文档 - jQuery/发布订阅.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+=======
+    <entry file="file://$PROJECT_DIR$/教学文档 - gulp/公司gulp配置测试/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="113" column="42" lean-forward="true" selection-start-line="113" selection-start-column="42" selection-end-line="113" selection-end-column="42" />
+>>>>>>> 896b603b75e51bf7256eef0997bc7032d9d232e7
           <folding />
         </state>
       </provider>
