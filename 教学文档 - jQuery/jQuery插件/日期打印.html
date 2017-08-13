@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let date = new Date();
+        let nYear = date.getFullYear();
+        let nMon = date.getMonth();
+        let nDay = date.getDate();
+        let nWeek = date.getDay();
+
+        switch (nWeek){
+            case 0:
+                nWeek = '星期日';
+                break;
+            case 1:
+                nWeek = '星期一';
+                break;
+            case 2:
+                nWeek = '星期二';
+                break;
+            case 3:
+                nWeek = '星期三';
+                break;
+            case 4:
+                nWeek = '星期四';
+                break;
+            case 5:
+                nWeek = '星期五';
+                break;
+            case 6:
+                nWeek = '星期六';
+                break;
+        }
+
+        console.log('今天是'+nYear+'年'+nMon+'月'+nDay+'日'+','+nWeek);
+        console.log('今天是'+nWeek);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

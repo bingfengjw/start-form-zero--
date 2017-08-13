@@ -32,7 +32,7 @@
 						templateUrl: 'producer.html',
 						controller: 'ProducerCtrl'
 					})
-			})
+			});
 			app.controller('ProducersCtrl', function($scope, $state) {
 				$scope.toProducer = function(username,psd,city,age) {
 					$state.go('producer', {
@@ -42,7 +42,7 @@
 						age:age
 					});
 				};
-			})
+			});
 			app.controller('ProducerCtrl', function($scope, $state, $stateParams) {
 				$scope.username = $stateParams.producerId;
 				$scope.psd = $stateParams.password;

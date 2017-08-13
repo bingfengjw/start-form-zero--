@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let oDateNow = new Date();
+        let oYear = oDateNow.getFullYear();
+        let oDateEnd = new Date();
+        oDateEnd.setFullYear(oYear+1);
+        oDateEnd.setMonth(0);
+        oDateEnd.setDate(0);
+        oDateEnd.setHours(0);
+        oDateEnd.setMinutes(0);
+        oDateEnd.setSeconds(0);
+        function upDate(){
+            let oDateNow = new Date();
+            let iTime = oDateEnd.getTime()-oDateNow.getTime();
+            let iRemain = iTime/1000;
+            let iDay=parseInt(iRemain/86400);
+            iRemain%=86400;
+            let iHour=parseInt(iRemain/3600);
+            iRemain%=3600;
+            let iMin=parseInt(iRemain/60);
+            iRemain%=60;
+            let iSec=parseInt(iRemain);
+            console.log(oYear+"年还剩"+iDay+"天"+iHour+"时"+iMin+"分"+iSec+"秒");
+        }
+        setInterval(function(){ upDate() },1000);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
