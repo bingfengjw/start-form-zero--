@@ -9,13 +9,15 @@
 		<p>除了 data 属性， Vue 实例暴露了一些有用的实例属性与方法。这些属性与方法都有前缀 $，以便与代理的 data 属性区分。</p>
 		<hr>
 		<div id="app">
-			{{meg | filter1}}
+			{{meg | filter1}}<br>
+			<input type="text" v-model="a">
 		</div>
 		<script type="text/javascript">
 			var vm = new Vue({
 				el:'#app',
 				data:{
-					meg:'这是我使用vue构造器创建的文字'
+					meg:'这是我使用vue构造器创建的文字',
+					a:''
 				},
 				filters:{
 					filter1:function(v){
@@ -25,9 +27,10 @@
 			})
 			console.log(vm.$el);
 			console.log(vm.$data);
-			console.log(vm.$filters);
 			vm.$watch('a', function (newVal, oldVal) {
 				// 这个回调将在 `vm.a`  改变后调用
+				console.log('newVal = ' + newVal);
+				console.log('oldVal = ' + oldVal);
 			})
 		</script>
 	</body>

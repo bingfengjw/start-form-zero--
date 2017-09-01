@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //解构赋值时，如果等号右边是数值和布尔值，则会先转为对象。
+        //数值和布尔值的包装对象都有toString属性，因此变量s都能取到值。
+        let {toString:s} = '123';
+        console.log(s===Number.prototype.toString);     //false     因为'123'是字符串
+        console.log(s===String.prototype.toString);     //true     因为'123'是字符串
+
+        console.log('\n');
+
+        let {toNumber:n} = 123;
+       console.log(n===Number.prototype.toNumber);      //true      123是数字
+       console.log(n===String.prototype.toNumber);      //false      123是数字
+
+
+        console.log('-----------');
+
+        //解构赋值的规则是，只要等号右边的值不是对象或数组，就先将其转为对象。
+        //由于undefined和null无法转为对象，所以对它们进行解构赋值，都会报错。
+        let {to:a} = undefined;
+        console.log(a);
+        let {to:d} = null;
+        console.log(d);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

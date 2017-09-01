@@ -19,14 +19,11 @@
 				<!-- 阻止单击事件冒泡 -->
 				<a v-on:click.stop="doThis"></a>
 				
-				<!-- 提交事件不再重载页面 -->
+				<!-- 提交事件不再重载页面(只执行当前vue事件,阻止默认事件) -->
 				<form v-on:submit.prevent="onSubmit"></form>
 				
 				<!-- 修饰符可以串联 -->
 				<a v-on:click.stop.prevent="doThat"></a>
-				
-				<!-- 只有修饰符 -->
-				<form v-on:submit.prevent></form>
 				
 				<!-- 添加事件侦听器时使用事件捕获模式 -->
 				<div v-on:click.capture="doThis">...</div>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../教学文档%20-%20jQuery/jQuery插件/js/jquery.min.js"></script>
+    <script>
+        (function () {
+            console.log('交换变量的值');
+            let x = 1;
+            let y = 2;
+            console.log('转换之前');
+            console.log('x = ' + x);    //  1
+            console.log('y = ' + y);    //  2
+            [x,y] = [y,x];
+            console.log('转换之后');
+            console.log('x = ' + x);    //  2
+            console.log('y = ' + y);    //  1
+            //  上面代码交换变量x和y的值，这样的写法不仅简洁，而且易读，语义非常清晰。
+        })();
+
+        console.log('\n');
+        console.log('------------');
+        console.log('\n');
+
+        (function () {
+            console.log('从函数返回多个值');
+            //  函数只能返回一个值，如果要返回多个值，只能将它们放在数组或对象里返回。有了解构赋值，取出这些值就非常方便。
+            function example() {
+                //数组
+                return [1,2,3];
+            }
+            let [a,b,c] = example();
+            console.log(a);     //  1
+            console.log(b);     //  2
+            console.log(c);     //  3
+
+            function objExample() {
+                //对象
+                return {
+                    x:'这是x',
+                    y:'这是y',
+                    z:undefined
+                }
+            }
+            //对象的赋值同样可以使用默认值
+            let {x,y,z=100} = objExample();
+            console.log(x);     //  这是x
+            console.log(y);     //  这是y
+            console.log(z);     //  100
+        })();
+
+        console.log('\n');
+        console.log('------------');
+        console.log('\n');
+
+        (function () {
+            console.log('函数参数的定义');
+            //解构赋值可以方便地将一组参数与变量名对应起来。
+
+            //使用数组产生有序的排列
+            function example1([x,y,z]) {
+                return [x,y,z]
+            }
+            console.log(example1([1,2,3]));     //  [1,2,3]
+
+            //使用对象产生无序排列
+            function example2({x,y,z}) {
+                return [x,y,z]
+            }
+            console.log(example2({y:'y',x:'x',z:'z'}))      //  [1,2,3]
+        })();
+
+        console.log('\n');
+        console.log('------------');
+        console.log('\n');
+
+        (function () {
+            console.log('提取JSON数据');
+            //解构赋值对提取JSON对象中的数据，尤其有用。
+            let json = {
+                id: 42,
+                status: "OK",
+                data: [867, 5309]
+            };
+            let {id,status,data:number} = json;
+            console.log('id = ' + id);               //  42
+            console.log('status = ' + status);      //  "OK"
+            console.log('data = ' + number);        //  [867,5309]
+        })();
+
+        console.log('\n');
+        console.log('------------');
+        console.log('\n');
+
+        (function () {
+            console.log('函数参数的默认值');
+            //指定参数的默认值，就避免了在函数体内部再写var foo = config.foo || 'default foo';这样的语句。
+            jQuery.ajax = function (url, {
+                async = true,
+                beforeSend = function () {},
+                cache = true,
+                complete = function () {},
+                crossDomain = false,
+                global = true,
+                // ... more config
+            }) {
+                // ... do stuff
+            };
+        })();
+
+        console.log('\n');
+        console.log('------------');
+        console.log('\n');
+
+        (function () {
+            console.log('遍历Map结构');
+            //任何部署了Iterator接口的对象，都可以用for...of循环遍历。Map结构原生支持Iterator接口，配合变量的解构赋值，获取键名和键值就非常方便。
+            let map = new Map();
+            map.set('first', 'hello');
+            map.set('second', 'world');
+
+            for (let [key, value] of map) {
+                console.log(key + " is " + value);
+            }
+            console.log('=====================================================');
+
+            console.log('如果只想获取键名，或者只想获取键值，可以写成下面这样。')
+            // 获取键名
+            for (let [key] of map) {
+                // ...
+                console.log(key);
+            }
+            // 获取键值
+            for (let [,value] of map) {
+                // ...
+                console.log(value);
+            }
+        })()
+
+
+        //  输入模块的指定方法
+        //  加载模块时，往往需要指定输入哪些方法。解构赋值使得输入语句非常清晰。
+        //  例:
+        //  const { SourceMapConsumer, SourceNode } = require("source-map");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
