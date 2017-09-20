@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <first></first>
+</div>
+<script>
+    Vue.component("first",{
+        template:'<h1>这是我的第一个全局组件</h1>'
+    });
+    // 创建vue实例对象
+    new Vue({
+        el:"#app"
+    })
+</script>
+</body>
+</html>

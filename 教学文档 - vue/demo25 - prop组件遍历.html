@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <ol>
+        <child v-for="i in items" :q="i"></child>
+    </ol>
+</div>
+<script>
+    Vue.component('child',{
+        props:['q'],
+        template:'<li>{{q.name}}今年{{q.age}}岁了</li>'
+    });
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            items:[
+                {name:'土豆',age:10},
+                {name:'面包',age:4},
+                {name:'豆包',age:13}
+            ]
+        }
+    });
+    console.log(vm.items[0].name);
+</script>
+</body>
+</html>

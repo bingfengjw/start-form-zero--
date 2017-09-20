@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h3{
+            color: red;
+        }
+    </style>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <first></first>
+    <secend></secend>
+</div>
+<script>
+    new Vue({
+        el:'#app',
+        components:{
+            'first':{
+                template:'<h1>这是我的第一个组件</h1>'
+            },
+            'secend':{
+                template:'<h3>这是我的第二个组件</h3>'
+            }
+        }
+    })
+</script>
+</body>
+</html>

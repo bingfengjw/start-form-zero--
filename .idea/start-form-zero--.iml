@@ -5,6 +5,10 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/教学文档 - vue/bor-sendmessage/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/教学文档 - vue/my-project/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/教学文档 - vue/my-project2/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/教学文档 - vue/my-vue/node_modules" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

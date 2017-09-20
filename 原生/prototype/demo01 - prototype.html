@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        const animalColor = function (color) {
+            this.color = '白色';
+        };
+        //  定义一个构造函数cat,并且为这个函数定义两个方法name和age
+        const cat = function (name, age) {
+            this.name = name;
+            this.age = age;
+        };
+        //  创建两个cat,豆包和土豆
+        const cat1 = new cat('豆包','三岁');
+        const cat2 = new cat('土豆','七个月');
+        console.log(cat1.name);     //  豆包
+        console.log(cat2.name);     //  土豆
+        console.log('-----------------------');
+        //  使用实例对象的constructor属性来查看这个函数的构造函数
+        console.log(cat1.constructor);
+        /*
+        function (name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        */
+        console.log(cat2.constructor);
+        /*
+        function (name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        */
+        console.log('-----------------------');
+        console.log(cat1.constructor == cat2.constructor);      // true
+        console.log('-----------------------');
+        console.log(cat1.constructor === cat2.constructor);     // true
+        console.log('-----------------------');
+        console.log(cat1.constructor === cat);      // true
+        console.log(cat2.constructor === cat);      // true
+        console.log('-----------------------');
+        //  当然也可以直接使用cat.color的方式创建一个属性
+        /*
+        const cat = function(name, age){
+            this.name = name;
+            this.age = age;
+            this.color = '黄色';
+            this.eat = function(){
+                console.log('吃老鼠');
+            }
+        }
+         */
+        // 这样做表面上好像没有什么问题但是实际上这样做，有一个很大的弊端。
+        // 那就是对于每一个实例对象，type属性和eat()方法都是一模一样的内容，每一次生成一个实例，都必须为重复的内容，多占用一些内存。
+        // 这样既不环保，也缺乏效率。
+        cat1.color = '黄色';
+        console.log(cat1.color);        //  黄色
+        console.log(cat2.color);        //  undefined
+        console.log(cat1);
+        console.log('-----------------------');
+        // 为这个构造函数的圆形创建两个属性color和type
+        // 使用prototype的方式可以简单地理解为为这个构造函数添加了默认值,
+        // 当一个函数访问属性或者使用一个方法的时候,会从本身出发,开始一层一层的向上查找这个属性或者方法,直到这个函数的构造函数为止,
+        // 如果都没有找到的话,则返回undefined
+        cat.prototype.color = '绿色';
+        cat.prototype.type = '猫';
+        cat.prototype.eat = function () {
+            console.log('吃老鼠');     // cat {name: "豆包", age: "三岁", color: "黄色"}
+        };
+        console.log(cat1.color);        //  黄色
+        console.log(cat2.color);        //  绿色
+        console.log('-----------------------');
+        // Javascript规定，每一个构造函数都有一个prototype属性，指向另一个对象。这个对象的所有属性和方法，都会被构造函数的实例继承。
+        // 这意味着，我们可以把那些不变的属性和方法，直接定义在prototype对象上。
+        console.log(cat1.type);     // 猫
+        cat1.eat();     // 吃老鼠
+        console.log(cat2.type);     // 猫
+        cat2.eat();     // 吃老鼠
+        console.log('-----------------------');
+        // 为了配合prototype属性，Javascript定义了一些辅助方法，帮助我们使用它。
+
+        // isPrototypeOf()
+        // 这个方法用来判断，某个proptotype对象和某个实例之间的关系。
+        console.log(cat.prototype.isPrototypeOf(cat1));     // true
+        console.log(cat.prototype.isPrototypeOf(cat2));     // true
+        console.log('-----------------------');
+        // hasOwnProperty()
+        // 每个实例对象都有一个hasOwnProperty()方法,用来判断某一个属性到底是本地属性还是继承自prototype对象的属性
+        console.log(cat1.hasOwnProperty('name'));       // true
+        console.log(cat1.hasOwnProperty('type'));       // false
+        console.log(cat1.hasOwnProperty('eat'));        // false
+        console.log('-----------------------');
+        // in运算符可以用来判断，某个实例是否含有某个属性，不管是不是本地属性。
+        console.log('name' in cat1);        // true
+        console.log('color' in cat1);       // true
+        console.log('type' in cat1);        // true
+        console.log('eat' in cat1);         // true
+    </script>
+</head>
+<body>
+
+</body>
+</html>

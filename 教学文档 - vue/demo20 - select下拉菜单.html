@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <select v-model="val">
+        <option value="1111">111111111111</option>
+        <option value="bbbb">2222222222</option>
+        <option value="CCCC">3333333333333</option>
+    </select>
+    <br>
+    {{val}}
+</div>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            val:''
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="radio" id="baidu" value="baidu" v-model="choose">
+    <label for="baidu">Baidu</label>
+    <br>
+    <input type="radio" id="google" value="google" v-model="choose">
+    <label for="google">Google</label>
+    <br>
+
+    <p>选中的值是{{choose}}</p>
+</div>
+<script>
+    var vt = new Vue({
+        el:'#app',
+        data:{
+            choose:''
+        }
+    })
+</script>
+</body>
+</html>

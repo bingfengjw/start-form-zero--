@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .result{border:1px solid red;}
+    </style>
+    <script src="../../教学文档%20-%20jQuery/jQuery插件/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="result result1"></div>
+<script>
+    //下面，我们来看一个通过模板字符串，生成正式模板的实例。
+    const data = {
+        supplies:[1,2,3,4,5,6,7]
+    };
+    /*
+    const template = `
+        <ul>
+          <% for(var i=0; i < data.supplies.length; i++) { %>
+            <li><%= data.supplies[i] %></li>
+          <% } %>
+        </ul>
+        `;
+    $(".result1").html(template);
+
+    上面代码在模板字符串之中，放置了一个常规模板。该模板使用<%...%>放置JavaScript代码，使用<%= ... %>输出JavaScript表达式。
+
+    怎么编译这个模板字符串呢？
+
+    一种思路是将其转换为JavaScript表达式字符串。
+    echo('<ul>');
+    for(var i=0; i < data.supplies.length; i++) {
+      echo('<li>');
+      echo(data.supplies[i]);
+      echo('</li>');
+    };
+    echo('</ul>');
+
+    这个转换使用正则表达式就行了。
+    var evalExpr = /<%=(.+?)%>/g;
+    var expr = /<%([\s\S]+?)%>/g;
+
+    template = template
+      .replace(evalExpr, '`); \n  echo( $1 ); \n  echo(`')
+      .replace(expr, '`); \n $1 \n  echo(`');
+
+    template = 'echo(`' + template + '`);';
+
+    然后，将template封装在一个函数里面返回，就可以了。
+    var script =
+    `(function parse(data){
+      var output = "";
+
+      function echo(html){
+        output += html;
+      }
+
+      ${ template }
+
+      return output;
+    })`;
+
+    return script;
+     */
+
+    //将上面的内容拼装成一个模板编译函数compile。
+
+    function compile(template){
+      var evalExpr = /<%=(.+?)%>/g;
+      var expr = /<%([\s\S]+?)%>/g;
+
+      template = template
+        .replace(evalExpr, '`); \n  echo( $1 ); \n  echo(`')
+        .replace(expr, '`); \n $1 \n  echo(`');
+
+      template = 'echo(`' + template + '`);';
+
+      var script =
+      `(function parse(data){
+        var output = "";
+
+        function echo(html){
+          output += html;
+        }
+
+        ${ template }
+
+        return output;
+      })`;
+
+      return script;
+    }
+    //compile函数的用法如下。
+
+    var parse = eval(compile(template));
+    //div.innerHTML = parse({ supplies: [ "broom", "mop", "cleaner" ] });
+    //   <ul>
+    //     <li>broom</li>
+    //     <li>mop</li>
+    //     <li>cleaner</li>
+    //   </ul>
+</script>
+</body>
+</html>

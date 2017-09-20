@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //ES5 对字符串对象提供charAt方法，返回字符串给定位置的字符。该方法不能识别码点大于0xFFFF的字符。
+        console.log('abc'.charAt(0));    // "a"
+        console.log('𠮷'.charAt(0));     // "\uD842"
+
+        //目前，有一个提案，提出字符串实例的at方法，可以识别 Unicode 编号大于0xFFFF的字符，返回正确的字符。
+         console.log('abc'.at(0)); // "a"
+         console.log('𠮷'.at(0)); // "𠮷"
+
+        // ********这个方法可以通过  垫片库  实现。***********
+        // (如果没有使用  垫片库  则不能实现这个效果
+    </script>
+</head>
+<body>
+
+</body>
+</html>
