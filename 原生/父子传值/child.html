@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn">点击我传值</button>
+<script>
+    document.getElementById('btn').onclick = function () {
+//        window.opener.document.getElementById('myP').innerHTML = '111111'
+        console.log(window.opener.document.getElementById('btn'))
+    }
+</script>
+</body>
+</html>
