@@ -15,9 +15,12 @@
         $.publish = function(){
             obj.trigger.apply(obj, arguments);
         }
+
+        // 订阅
         $.subscribe("app.myevent",function (e, a) {
             console.log(a);
         })
+        // 发布
         $.publish('app.myevent', "qqqqqqq");
     </script>
 </head>

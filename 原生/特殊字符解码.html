@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //console.log(eval(%20));           //报错
+    //console.log(eval('%20'));           //报错
+    decodeURI("%20");           // ' '
+    decodeURIComponent("%20");  // ' '
+
+    /*
+    http://www.cnblogs.com/shuiyi/p/5277233.html
+
+    * encodeURI 和 decodeURI 函数操作的是完整的 URI；这俩函数假定 URI 中的任何保留字符都有特殊意义，所有不会编码它们。
+    * encodeURIComponent 和 decodeURIComponent 函数操作的是组成 URI 的个别组件；
+    * 这俩函数假定任何保留字符都代表普通文本，所以必须编码它们，所以它们（保留字符）出现在一个完整 URI 的组件里面时不会被解释成保留字符了。
+    * */
+
+</script>
+</body>
+</html>
