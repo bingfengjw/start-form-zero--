@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #color{
+            width:300px;
+            height:300px;
+            margin:auto;
+            position: absolute;
+            left:0;
+            top:0;
+            right:0;
+            bottom:0;
+            border-radius: 50%;
+            background-image:
+                    radial-gradient(200px 200px at 50px 50px,red,transparent),
+                    radial-gradient(200px 200px at 200px 50px,yellow,transparent),
+                    radial-gradient(200px 200px at 50px 200px,green,transparent),
+                    radial-gradient(200px 200px at 200px 200px,blue,transparent);
+        }
+        #color:before{
+            content: '';
+            position: absolute;
+            left:0;
+            top:0;
+            bottom: 0;
+            right:0;
+            margin:auto;
+            border-radius: 50%;
+            height: 50%;
+            width: 50%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+<div id="color"></div>
+</body>
+</html>

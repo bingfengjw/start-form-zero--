@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // exec() 方法用于检索字符串中的正则表达式的匹配。
+    // 返回一个数组，其中存放匹配的结果。如果未找到匹配，则返回值为 null。
+
+    // 除了u修饰符，ES6 还为正则表达式添加了y修饰符，叫做“粘连”（sticky）修饰符。
+    // y修饰符的作用与g修饰符类似，也是全局匹配，后一次匹配都从上一次匹配成功的下一个位置开始。
+    // 不同之处在于，g修饰符只要剩余位置中存在匹配就可，而y修饰符确保匹配必须从剩余的第一个位置开始，这也就是“粘连”的涵义。
+    var s = 'aaa_aa_a';
+    var r1 = /a+/g;
+    var r2 = /a+/y;
+    console.log(r1.exec(s));        // ["aaa"]
+    console.log(r2.exec(s));        // ["aaa"]
+    console.log(r1.exec(s));        // ["aa"]
+    console.log(r2.exec(s));        // null
+
+    // 上面代码有两个正则表达式，一个使用g修饰符，另一个使用y修饰符。
+    // 这两个正则表达式各执行了两次，第一次执行的时候，两者行为相同，剩余字符串都是_aa_a。
+    // 由于g修饰没有位置要求，所以第二次执行会返回结果，而y修饰符要求匹配必须从头部开始，所以返回null。
+
+    console.log('---------------------------------');
+
+    // 如果改一下正则表达式，保证每次都能头部匹配，y修饰符就会返回结果了。
+    var s1 = 'aaa_aa_a';
+    var r1 = /a+_/y;
+    console.log(r1.exec(s1));        // ["aaa_"]
+    console.log(r1.exec(s1));        // ["aa_"]
+    // 上面代码每次匹配，都是从剩余字符串的头部开始。
+
+    console.log('---------------------------------');
+
+    // 使用lastIndex属性，可以更好地说明y修饰符。
+    const REGEX = /a/g;
+    // 指定从2号位置（y）开始匹配
+    REGEX.lastIndex = 2;
+    // 匹配成功
+    const match = REGEX.exec('xaya');
+    // 在3号位置匹配成功
+    console.log(match.index);                   // 3
+    // 下一次匹配从4号位开始
+    console.log(REGEX.lastIndex);               // 4
+    // 4号位开始匹配失败
+    console.log(REGEX.exec('xaxa'));            // null
+    // 上面代码中，lastIndex属性指定每次搜索的开始位置，g修饰符从这个位置开始向后搜索，直到发现匹配为止。
+
+    console.log('---------------------------------');
+
+    // y修饰符同样遵守lastIndex属性，但是要求必须在lastIndex指定的位置发现匹配。
+    const REGEX2 = /a/y;
+    // 指定从2号位置开始匹配
+    REGEX2.lastIndex = 2;
+    // 不是粘连，匹配失败
+    REGEX2.exec('xaya'); // null
+    // 指定从3号位置开始匹配
+    REGEX2.lastIndex = 3;
+    // 3号位置是粘连，匹配成功
+    const match2 = REGEX2.exec('xaxa');
+    console.log(match2.index); // 3
+    console.log(REGEX2.lastIndex); // 4
+
+    console.log('---------------------------------');
+
+    // 实际上，y修饰符号隐含了头部匹配的标志^。
+    console.log(/b/y.exec('aba'));        // null
+    // 上面代码由于不能保证头部匹配，所以返回null。y修饰符的设计本意，就是让头部匹配的标志^在全局匹配中都有效。
+
+    console.log('---------------------------------');
+
+    // 在split方法中使用y修饰符，原字符串必须以分隔符开头。这也意味着，只要匹配成功，数组的第一个成员肯定是空字符串。
+    console.log('x##'.split(/#/y));         // 没有找到匹配 [ 'x##' ]
+    console.log('##x'.split(/#/y));         // ["", "", "x"]
+    // 后续的分隔符只有紧跟前面的分隔符，才会被识别。
+    console.log('#x#'.split(/#/y));         // [ '', 'x#' ]
+    console.log('##'.split(/#/y));          // [ '', '', '' ]
+
+    console.log('---------------------------------');
+
+    // 下面是字符串对象的replace方法的例子。
+    const REGEX3 = /a/gy;
+    console.log('aaxa'.replace(REGEX3, '-'));           // '--xa'
+    // 上面代码中，最后一个a因为不是出现在下一次匹配的头部，所以不会被替换。
+
+    console.log('---------------------------------');
+
+    // 单单一个y修饰符对match方法，只能返回第一个匹配，必须与g修饰符联用，才能返回所有匹配。
+    console.log('a1a2a3'.match(/a\d/y));                      // ["a1"]
+    console.log('a1a2a3'.match(/a\d/gy));                     // ["a1", "a2", "a3"]
+    // y修饰符的一个应用，是从字符串提取 token（词元），y修饰符确保了匹配之间不会有漏掉的字符。
+
+    console.log('---------------------------------');
+
+    const TOKEN_Y = /\s*(\+|[0-9]+)\s*/y;
+    const TOKEN_G  = /\s*(\+|[0-9]+)\s*/g;
+    tokenize(TOKEN_Y, '3 + 4');    // [ '3', '+', '4' ]
+    tokenize(TOKEN_G, '3 + 4');    // [ '3', '+', '4' ]
+    function tokenize(TOKEN_REGEX, str) {
+        let result = [];
+        let match;
+        while (match = TOKEN_REGEX.exec(str)) {
+            result.push(match[1]);
+        }
+        return result;
+    }
+    // 上面代码中，如果字符串里面没有非法字符，y修饰符与g修饰符的提取结果是一样的。但是，一旦出现非法字符，两者的行为就不一样了。
+    tokenize(TOKEN_Y, '3x + 4');    // [ '3' ]
+    tokenize(TOKEN_G, '3x + 4');    // [ '3', '+', '4' ]
+    // 上面代码中，g修饰符会忽略非法字符，而y修饰符不会，这样就很容易发现错误。
+</script>
+</body>
+</html>

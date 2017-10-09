@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    在 ES5 中，RegExp构造函数的参数有两种情况。
+    第一种情况是，参数是字符串，这时第二个参数表示正则表达式的修饰符（flag）。
+    */
+    let regex1 = new RegExp('xyz','i');
+    console.log(regex1);         // /xyz/i
+    // 基本等价于/xyz/i   （==返回true，=== 返回false）
+
+    // 第二种情况是，参数是一个正则表示式，这时会返回一个原有正则表达式的拷贝。
+    let regex2 = new RegExp(/xyz/i);
+    console.log(regex2);          // /xyz/i
+        // 基本等价于/xyz/i   （==返回true，=== 返回false）
+    // 但是，ES5 不允许此时使用第二个参数添加修饰符，否则会报错。
+    let regex3 = new RegExp(/xyz/, 'i');
+    console.log(regex4);        // Uncaught TypeError: Cannot supply flags when constructing one RegExp from another
+    // （由于现在浏览器已经可以自动解析es6，所以现在这样写不会报错
+
+    // ES6 改变了这种行为。
+    // 如果RegExp构造函数第一个参数是一个正则对象，那么可以使用第二个参数指定修饰符。
+    // 而且，返回的正则表达式会忽略原有的正则表达式的修饰符，只使用新指定的修饰符。
+    let regex4 = new RegExp(/abc/ig, 'i').flags;
+    console.log(regex4);        // i
+    // 上面代码中，原有正则对象的修饰符是ig，它会被第二个参数i覆盖。
+</script>
+</body>
+</html>
