@@ -5,11 +5,38 @@
     <title>Title</title>
 </head>
 <body>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
 <button id="btn">点击我传值</button>
 <script>
+    function getP(id){
+        return document.getElementById(id);
+    }
+    getP('p1').innerHTML = decodeURIComponent(window.opener.location.href) || 'p1';
+    getP('p2').innerHTML = decodeURIComponent(window.opener.location.pathname) || 'p2';
+    getP('p3').innerHTML = decodeURIComponent(document.referrer) || 'p3';
+    // http://10.2.6.178:8080/CMRI/new/taskdetails.jsp
+    // '/CMRI/new/taskdetails.jsp'.indexOf("taskdetails.jsp") || ''.indexOf("taskdetails.jsp")
+    console.log('/CMRI/new/taskdetails.jsp'.indexOf("taskdetails.jsp") || ''.indexOf("taskdetails.jsp") !== -1);
+    if('/CMRI/new/taskdetails.jsp'.indexOf("taskdetails.jsp") || ''.indexOf("taskdetails.jsp") !== -1){
+        console.log(111);
+    }else{
+        console.log(222);
+    }
     document.getElementById('btn').onclick = function () {
 //        window.opener.document.getElementById('myP').innerHTML = '111111'
-        console.log(window.opener.document.getElementById('btn'))
+        console.log(window.opener.document.getElementById('btn'));
+    };
+
+    var count = 0;
+    setInterval(function () {
+        count++;
+        console.log(count);
+    },1000);
+    function coco(n){
+        count++;
+        console.log(n);
     }
 </script>
 </body>

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <!--[if !IE]><!-->
+    <script src="FirefoxEventPreventDefault.js"></script>
+    <!--<![endif]-->
 </head>
 <body>
 <!--[if !IE]><!--> 除IE外都可识别 <!--<![endif]-->
@@ -15,5 +18,36 @@
 <!--[if gte IE 7]> IE7以及IE7以上版本可识别 <![endif]-->
 <!--[if IE 8]> 仅IE8可识别 <![endif]-->
 <!--[if IE 9]> 仅IE9可识别 <![endif]-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="" id="btn">1111</a>
+<script>
+    document.getElementById("btn").onclick = function(){
+        console.log(event.preventDefault);
+        preventDefault(event);
+    }
+
+    function preventDefault(event){
+        if(!event.preventDefault){
+            window.event.returnValue = false;
+        }else{
+            event.preventDefault();
+        }
+    }
+</script>
 </body>
 </html>

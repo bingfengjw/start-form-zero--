@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="start">2016.11.31 13:20:18</p>
+<p id="end">2017.1.1 13:52:18</p>
+<p id="result"></p>
+<script>
+    document.querySelector('#result').innerHTML = time(document.querySelector('#start').innerHTML,document.querySelector('#end').innerHTML);
+    function time(start,end){
+        console.log(start);
+        console.log(end);
+        console.log('--------------------');
+        if(start == 0||end == 0){
+            return 0;
+        }
+        // 解析获取到的时间
+        let _start = {
+            date: {
+                year: start.split(' ')[0].split('.')[0],
+                mon: start.split(' ')[0].split('.')[1],
+                day: start.split(' ')[0].split('.')[2]
+            },
+            time: {
+                h: start.split(' ')[1].split(':')[0],
+                m: start.split(' ')[1].split(':')[1],
+                s: start.split(' ')[1].split(':')[2]
+            }
+        };
+        let _end = {
+            date : {
+                year:end.split(' ')[0].split('.')[0],
+                mon:end.split(' ')[0].split('.')[1],
+                day:end.split(' ')[0].split('.')[2]
+            },
+            time : {
+                h:end.split(' ')[1].split(':')[0],
+                m:end.split(' ')[1].split(':')[1],
+                s:end.split(' ')[1].split(':')[2]
+            }
+        };
+        // 判断任务的时间跨度
+        if(_start.date.year < _end.date.year){
+            console.log('跨年');
+            var startDaysNum = 0;
+            var endDaysNum = 0;
+            var yearDaysNum = 0;
+            for(var i=1;i<_start.date.mon;i++){
+                startDaysNum += getMonDays(i,_start.date.year);
+            }
+            startDaysNum += Number(_start.date.day);
+            for(var i=1;i<_end.date.mon;i++){
+                endDaysNum += getMonDays(i,_end.date.year);
+            }
+            endDaysNum += Number(_end.date.day);
+            isLeapYear(_start.date.year)?yearDaysNum=366:yearDaysNum=365;
+            h = (yearDaysNum - startDaysNum)*24 + endDaysNum*24 ;
+        }else if(_start.date.mon < _end.date.mon){
+            // 任务跨月执行时
+            console.log('跨月');
+            let startH = getMonDays(_start.date.mon,_start.date.year) * 24;
+            let endH = _end.date.day*24;
+            h = endH + Math.abs(_start.time.h-_end.time.h) + (getMonDays(_start.date.mon,_start.date.year) - _start.date.day)*24;
+        }else if(_start.date.day < _end.date.day ){
+            // 任务跨天执行时
+            console.log('跨天');
+            let _days = Math.abs(_start.date.day-_end.date.day)*24;
+            _h = Math.abs(_start.time.h-(Number(_end.time.h)+_days));
+        }else if(_start.date.day===_end.date.day){
+            // 开始和结束时同一天时
+            console.log('同一天');
+            h = Math.abs(_start.time.h-_end.time.h);
+        }
+        console.log(h);
+        return h + '小时' + Math.abs(_start.time.m-_end.time.m) + '分钟' + Math.abs(_start.time.s-_end.time.s) + '秒';
+    }
+    function getMonDays(mon,year){
+        // 获取当前月份的时间
+        var days = 0;
+        var _mon = Number(mon);
+        var _year = Number(year);
+        if(_mon===1||_mon===3||_mon===5||_mon===7||_mon===8||_mon===10||_mon===12){
+            days = 31;
+        }else if(_mon===4||_mon===6||_mon===9||_mon===11){
+            days = 30;
+        }else{
+            if(isLeapYear(year)){
+                days = 29;
+            }else {
+                days = 28;
+            }
+        }
+        return days;
+    }
+    // 判断是不是闰年（获取一年的天数）
+    function isLeapYear(year) {  return (year % 4 == 0) && (year % 100 != 0 || year % 400 == 0);  }
+</script>
+</body>
+</html>
