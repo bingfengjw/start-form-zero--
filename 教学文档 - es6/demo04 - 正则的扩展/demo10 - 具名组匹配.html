@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 正则表达式使用圆括号进行组匹配。
+    const RE_DATE = /(\d{4})-(\d{2})-(\d{2})/;
+    // 上面代码中，正则表达式里面有三组圆括号。使用exec方法，就可以将这三组匹配结果提取出来。
+    const matchObj = RE_DATE.exec('1999-12-31');
+    const year = matchObj[1]; // 1999
+    const month = matchObj[2]; // 12
+    const day = matchObj[3]; // 31
+    // 组匹配的一个问题是，每一组的匹配含义不容易看出来，而且只能用数字序号引用，要是组的顺序变了，引用的时候就必须修改序号。
+
+    // 现在有一个“具名组匹配”（Named Capture Groups）的提案，允许为每一个组匹配指定一个名字，既便于阅读代码，又便于引用。
+    // 由于还在提案当中，没有完全确定下来，所以浏览器不能识别
+        // const RE_DATE = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/;
+
+        // const matchObj = RE_DATE.exec('1999-12-31');
+        // const year = matchObj.groups.year; // 1999
+        // const month = matchObj.groups.month; // 12
+        // const day = matchObj.groups.day; // 31
+    // 上面代码中，“具名组匹配”在圆括号内部，模式的头部添加“问号 + 尖括号 + 组名”（?<year>），
+    // 然后就可以在exec方法返回结果的groups属性上引用该组名。同时，数字序号（matchObj[1]）依然有效。
+
+    // 具名组匹配等于为每一组匹配加上了 ID，便于描述匹配的目的。如果组的顺序变了，也不用改变匹配后的处理代码。
+    // 如果具名组没有匹配，那么对应的groups对象属性会是undefined。
+
+        // const RE_OPT_A = /^(?<as>a+)?$/;
+        // const matchObj = RE_OPT_A.exec('');
+
+        // matchObj.groups.as // undefined
+        // 'as' in matchObj.groups // true
+    // 上面代码中，具名组as没有找到匹配，那么matchObj.groups.as属性值就是undefined，并且as这个键名在groups是始终存在的。
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // ES6 在Number对象上，新提供了Number.isFinite()和Number.isNaN()两个方法。
+
+    // Number.isFinite()用来检查一个数值是否为有限的（finite）。
+    console.log(Number.isFinite(15)); // true
+    console.log(Number.isFinite(0.8)); // true
+    console.log(Number.isFinite(NaN)); // false
+    console.log(Number.isFinite(Infinity)); // false
+    console.log(Number.isFinite(-Infinity)); // false
+    console.log(Number.isFinite('foo')); // false
+    console.log(Number.isFinite('15')); // false
+    console.log(Number.isFinite(true)); // false
+
+    // ES5 可以通过下面的代码，部署Number.isFinite方法。
+    (function (global) {
+        var global_isFinite = global.isFinite;
+        console.log(global_isFinite);
+
+        Object.defineProperty(Number, 'isFinite', {
+            value: function isFinite(value) {
+                return typeof value === 'number' && global_isFinite(value);
+            },
+            configurable: true,
+            enumerable: false,
+            writable: true
+        });
+    })(this);
+</script>
+</body>
+</html>

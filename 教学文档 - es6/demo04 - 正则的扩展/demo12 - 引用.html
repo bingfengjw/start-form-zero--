@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 如果要在正则表达式内部引用某个“具名组匹配”，可以使用\k<组名>的写法。
+    /*
+    const RE_TWICE = /^(?<word>[a-z]+)!\k<word>$/;
+        RE_TWICE.test('abc!abc') // true
+        RE_TWICE.test('abc!ab') // false
+        数字引用（\1）依然有效。
+
+    const RE_TWICE = /^(?<word>[a-z]+)!\1$/;
+        RE_TWICE.test('abc!abc') // true
+        RE_TWICE.test('abc!ab') // false
+        这两种引用语法还可以同时使用。
+
+    const RE_TWICE = /^(?<word>[a-z]+)!\k<word>!\1$/;
+        RE_TWICE.test('abc!abc!abc') // true
+        RE_TWICE.test('abc!abc!ab') // false
+    */
+</script>
+</body>
+</html>
