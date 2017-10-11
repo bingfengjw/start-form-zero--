@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置localStorage</title>
+</head>
+<body>
+<input type="text" id="username">
+<input type="text" id="password">
+<button>set localStorage</button>
+<a href="2.html">go to 2.html</a>
+<div id="content"></div>
+<script>
+    document.querySelector('button').onclick = function(){
+        localStorage.username = document.querySelector('#username').value;
+        localStorage.password = document.querySelector('#password').value;
+        document.querySelector('#content').innerHTML = 'username = ' + localStorage.username + '<br>password = ' + localStorage.password;
+    };
+    document.querySelector('#content').innerHTML = 'username = ' + localStorage.username + '<br>password = ' + localStorage.password;
+</script>
+</body>
+</html>

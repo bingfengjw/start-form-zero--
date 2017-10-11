@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>js中cookie操作</title>
+
+    <script type="text/javascript">
+        //保存表单中的信息到Cookie中
+        function saveCookie(){
+            var userName = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            console.log(userName+password);
+            var date = new Date();
+            //  date.setDate(date.getDate()+1);
+            date.setTime(date.getTime()+5000);
+            //将cookie保存5秒钟
+            setCookie("userName",userName,date.toGMTString(),"","","");
+            setCookie("password",password,date.toGMTString(),"","","");
+            showCookie()
+        }
+
+        //设置Cookie
+        /*
+        在cookie的名或值中不能使用分号（;）、逗号（,）、等号（=）以及空格。在cookie的名中做到这点很容易，但要保存的值是不确定的。如何
+        来存储这些值呢？方法是用encodeURI()函数进行编码，它能将一些特殊符号使用十六进制表示，例如空格将会编码为“20%”，从而可以存储于
+        cookie值中，而且使用此种方案还可以避免中文乱码的出现。在获取cookie时可以通过decodeURI()方法对cookie进行解码。
+
+        Cookie的保存格式为："name=value; expires=evalue; path=pvalue;"
+        每个属性之间通过：'分号+空格'(; )隔开;
+
+        参数值的意思:
+        name:表示要存入对象的名称，唯一必须设置（通常使用：user@domain格式命名，user为本地用户，domain为所访问网站的域名）。value：表示要存入得值。
+        expires：该对象的有效时间（可选）（默认为当前浏览器会话有用，关闭浏览器就消失）;
+        path:指定该Cookie作用范围（可选）(即：在那些网页上可用)；
+        domain:设置web服务器的Cookie共享域（可选）(如：test*.com)表示域名为test*.com的服务器共享该Cookie
+        secure：设置Cookie的传输过程是否加密（可选）（一般为SSH加密）
+        */
+        function setCookie(name,value,expires,path,domain,secure){
+            document.cookie=name+"="+encodeURI(value)+
+                ((expires) ? "; expires=" + expires : "")+
+                ((path) ? "; path=" + path : "")+
+                ((domain) ? "; domain=" + domain : "")+
+                ((secure) ? "; secure=" + secure : "");
+        }
+        /**
+         获取浏览器中的Cookie时，只能够一次获取所有的cookie值，而不能指定cookie名称来获得指定的值，这正是处理cookie值最麻 烦的一部分。
+         用户必须自己分析这个字符串，来获取指定的cookie值
+         **/
+        //获取浏览器中的Cookie
+        function getCookie(cName){
+            var cookieString = decodeURI(document.cookie);
+            var cookieArray = cookieString.split("; ");
+            console.log(cookieArray.length);
+            for(var i = 0; i < cookieArray.length; i++){
+                var cookieNum = cookieArray[i].split("=");
+                console.log(cookieNum.toString());
+                var cookieName = cookieNum[0];
+                var cookieValue = cookieNum[1];
+
+                if(cookieName == cName){
+                    return cookieValue;
+                }
+            }
+            return false;
+        }
+        function showCookie(){
+            var txt =  document.getElementById("txt_showCookie");
+            txt.value = "用户名："+getCookie("userName")+"\n密码："+getCookie("password");
+        }
+
+        //删除Cookie就是简单的将cookie的expires属性设置为一个过去的时间即可。
+        function deleteCookie(){
+            var date = new Date();
+            date.setTime(date.getTime()-1000);
+            setCookie("userName",password,date.toGMTString(),"","","");
+            setCookie("password",password,date.toGMTString(),"","","");
+            showCookie();
+        }
+    </script>
+
+</head>
+<body onLoad="showCookie()">
+<from>
+    <input type="text" id="username" name="username" placeholder="用回名"/><br/>
+    <input type="password" id="password" name="password" placeholder="密码"><br/>
+    <input type="button" onClick="saveCookie()" value="保存cookie" />
+    <input type="button" onClick="deleteCookie()" value="删除cookie"/>
+    <br/>
+    <label>cookie显示区域</label><br/>
+    <textarea id="txt_showCookie" placeholder="cookie显示区域" rows="6" cols="30">
+
+</textarea>
+</from>
+</body>
+</html>

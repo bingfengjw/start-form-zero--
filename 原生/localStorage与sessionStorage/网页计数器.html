@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //      localStorage与sessionStorage.getItem("count")等价于localStorage.count
+    if(localStorage.getItem("count")){
+        var count = Number(localStorage.count)+1;
+        //下面两者等价
+        localStorage.setItem("count",count);
+//          localStorage与sessionStorage.count=count;
+    }else{
+        //下面两者等价
+//          localStorage与sessionStorage.count = 1;
+        localStorage.setItem("count",1);
+    }
+    if(sessionStorage.count){
+        sessionStorage.count = Number(sessionStorage.count)+1;
+    }else{
+        sessionStorage.count = 1;
+    }
+    document.write("localStorage中记录您访问该网站次数为："+localStorage.count+"次 <br>");
+    document.write("sessionStorage中记录您访问该网站次数为："+sessionStorage.count+"次<br>");
+    document.write(sessionStorage.count);
+</script>
+</body>
+</html>

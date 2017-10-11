@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取cookie</title>
+</head>
+<body>
+<button>get cookie</button>
+<div></div>
+<script>
+    console.log(document.cookie);
+    document.querySelector('button').onclick = function(){
+        document.querySelector('div').innerHTML = document.cookie;
+    }
+</script>
+</body>
+</html>
