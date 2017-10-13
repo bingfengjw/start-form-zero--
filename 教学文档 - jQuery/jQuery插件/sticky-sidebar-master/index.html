@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="src/sticky-sidebar.js"></script>
+</head>
+<body>
+<div class="main-content">
+    <div class="sidebar">
+        <div class="sidebar__inner">
+            <!-- Content goes here -->
+        </div>
+    </div>
+    <div class="content">
+        <!-- Content goes here -->
+    </div>
+</div>
+<script type="text/javascript">
+    var sidebar = new StickySidebar('.sidebar', {
+        topSpacing: 20,
+        bottomSpacing: 20,
+        containerSelector: '.main-content',
+        innerWrapperSelector: '.sidebar__inner'
+    });
+</script>
+
+</body>
+</html>
