@@ -55,41 +55,7 @@
         }
     </style>
     <script src="../jQuery插件/js/jquery.min.js"></script>
-    <script>
-        $(function(){
-            var itemRange = [];
-            var oMenuItem = $(".menu li");
-            $.each($(".content"),function(index,item){
-                var itemHeight = $(item).height();
-                itemRange.push({
-                    name:$(item).find('h1').attr('contentName'),
-                    minHeight:$(item).offset().top,
-                    maxHeight:$(item).offset().top + itemHeight
-                })
-            });
-            console.log(itemRange);
-            $(document).scroll(function(e){
-                var dH = $(document).scrollTop();           // 当前浏览到的高度
-                // 每次滑动屏幕的时候遍历所有的右侧内容区，检测当前的高度符合哪个区域，就给对应的菜单标签加上class=active
-                $.each(itemRange,function(index,item){
-                    if(dH>=item.minHeight&&dH<=item.maxHeight){
-                        var oActiveLi = $('.menu li[id='+item.name+']');
-                        if(!oActiveLi.hasClass('active')){
-                            oMenuItem.removeClass('active');
-                            oActiveLi.addClass('active');
-                        }
-                    }else if(dH<itemRange[0].minHeight||dH>itemRange[itemRange.length-1].maxHeight){
-                        // 超出content的范围则左侧的菜单栏不响应
-                        oMenuItem.removeClass('active');
-                    }
-                })
-            });
-            oMenuItem.click(function(){
-                console.log(itemRange[$(this).index()]);
-                $("html,body").animate({"scrollTop":itemRange[$(this).index()].minHeight},'fast')
-            })
-        })
-    </script>
+    <script src="slideMenu.js"></script>
 </head>
 <body>
 <ul class="menu">
@@ -99,6 +65,9 @@
     <li id="4444">4444</li>
     <li id="5555">5555</li>
     <li id="6666">6666</li>
+    <li id="7777">6666</li>
+    <li id="88">6666</li>
+    <li id="qqwe">qqwe</li>
 </ul>
 <br>
 <br>
@@ -106,29 +75,41 @@
 <br>
 <br>
 <content>
-    <div class="content content1">
+    <div class="content">
         <h1 contentName="1111">1111</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
-    <div class="content content2">
+    <div class="content">
         <h1 contentName="2222">2222</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
-    <div class="content content3">
+    <div class="content">
         <h1 contentName="3333">3333</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
-    <div class="content content4">
+    <div class="content">
         <h1 contentName="4444">4444</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
-    <div class="content content5">
+    <div class="content">
         <h1 contentName="5555">5555</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
-    <div class="content content6">
+    <div class="content">
         <h1 contentName="6666">6666</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div class="content">
+        <h1 contentName="7777">777777</h1>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div class="content">
+        <h1 contentName="88">88888888888</h1>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div class="content">
+        <h1 contentName="qqwe">qweewqewq</h1>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
 </content>
 <br clear="all"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
