@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Math.imul方法返回两个数以32位带符号整数形式相乘的结果， 返回的也是一个32位的带符号整数。
+
+        Math.imul(2, 4) // 8
+        Math.imul(-1, 8) // -8
+        Math.imul(-2, -2) // 4
+        // 如果只考虑最后32位， 
+        // 大多数情况下， Math.imul(a, b) 与a * b的结果是相同的， 
+        // 即该方法等同于(a * b) | 0 的效果（ 超过32位的部分溢出）。 
+        // 之所以需要部署这个方法， 是因为JavaScript有精度限制， 超过2的53次方的值无法精确表示。 
+        // 这就是说， 对于那些很大的数的乘法， 低位数值往往都是不精确的， Math.imul方法可以返回正确的低位数值。
+
+        (0x7fffffff * 0x7fffffff) | 0 // 0
+        // 上面这个乘法算式， 返回结果为0。 
+        // 但是由于这两个二进制数的最低位都是1， 所以这个结果肯定是不正确的，
+        // 因为根据二进制乘法， 计算结果的二进制最低位应该也是1。 
+        // 这个错误就是因为它们的乘积超过了2的53次方， JavaScript无法保存额外的精度， 
+        // 就把低位的值都变成了0。 Math.imul方法可以返回正确的值1。
+
+        Math.imul(0x7fffffff, 0x7fffffff) // 1
+    </script>
+</body>
+
+</html>

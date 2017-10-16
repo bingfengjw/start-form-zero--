@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Math.log1p(x) 方法返回1 + x的自然对数， 即Math.log(1 + x)。 如果x小于 - 1， 返回NaN。
+
+        Math.log1p(1) // 0.6931471805599453
+        Math.log1p(0) // 0
+        Math.log1p(-1) // -Infinity
+        Math.log1p(-2) // NaN
+        // 对于没有部署这个方法的环境， 可以用下面的代码模拟。
+
+        Math.log1p = Math.log1p || function (x) {
+            return Math.log(1 + x);
+        };
+    </script>
+</body>
+
+</html>

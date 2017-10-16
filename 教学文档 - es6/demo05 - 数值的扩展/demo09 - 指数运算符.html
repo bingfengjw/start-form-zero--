@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ES2016 新增了一个指数运算符（ ** ）。
+
+        2 ** 2 // 4 = 2 * 2
+        2 ** 3 // 8 = 2 * 2 * 2
+        // 指数运算符可以与等号结合， 形成一个新的赋值运算符（ **= ）。
+
+        let a = 1.5;
+        a **= 2;
+        // 等同于 a = a * a;
+
+        let b = 4;
+        b **= 3;
+        // 等同于 b = b * b * b;
+        // 注意， 在 V8 引擎中， 指数运算符与Math.pow的实现不相同， 对于特别大的运算结果， 两者会有细微的差异。
+
+        Math.pow(99, 99)
+        // 3.697296376497263e+197
+
+        99 ** 99
+        // 3.697296376497268e+197
+        // 上面代码中， 两个运算结果的最后一位有效数字是有差异的。
+    </script>
+</body>
+
+</html>

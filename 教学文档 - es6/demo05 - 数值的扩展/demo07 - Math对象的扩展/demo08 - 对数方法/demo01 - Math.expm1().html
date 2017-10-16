@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Math.expm1(x) 返回ex - 1， 即Math.exp(x) - 1。
+
+        Math.expm1(-1) // -0.6321205588285577
+        Math.expm1(0) // 0
+        Math.expm1(1) // 1.718281828459045
+        // 对于没有部署这个方法的环境， 可以用下面的代码模拟。
+
+        Math.expm1 = Math.expm1 || function (x) {
+            return Math.exp(x) - 1;
+        };
+    </script>
+</body>
+
+</html>

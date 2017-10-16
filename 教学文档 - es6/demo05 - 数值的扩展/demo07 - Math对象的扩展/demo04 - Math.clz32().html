@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // JavaScript的整数使用32位二进制形式表示， Math.clz32方法返回一个数的32位无符号整数形式有多少个前导0。
+
+        Math.clz32(0) // 32
+        Math.clz32(1) // 31
+        Math.clz32(1000) // 22
+        Math.clz32(0b01000000000000000000000000000000) // 1
+        Math.clz32(0b00100000000000000000000000000000) // 2
+        // 上面代码中， 0 的二进制形式全为0， 所以有32个前导0； 1 的二进制形式是0b1， 只占1位， 所以32位之中有31个前导0； 1000 的二进制形式是0b1111101000， 一共有10位， 所以32位之中有22个前导0。
+
+        // clz32这个函数名就来自” count leading zero bits in 32 - bit binary representations of a number“（ 计算32位整数的前导0） 的缩写。
+
+        // 左移运算符（ << ）与Math.clz32方法直接相关。
+
+        Math.clz32(0) // 32
+        Math.clz32(1) // 31
+        Math.clz32(1 << 1) // 30
+        Math.clz32(1 << 2) // 29
+        Math.clz32(1 << 29) // 2
+        // 对于小数， Math.clz32方法只考虑整数部分。
+
+        Math.clz32(3.2) // 30
+        Math.clz32(3.9) // 30
+        // 对于空值或其他类型的值， Math.clz32方法会将它们先转为数值， 然后再计算。
+
+        Math.clz32() // 32
+        Math.clz32(NaN) // 32
+        Math.clz32(Infinity) // 32
+        Math.clz32(null) // 32
+        Math.clz32('foo') // 32
+        Math.clz32([]) // 32
+        Math.clz32({}) // 32
+        Math.clz32(true) // 31
+    </script>
+</body>
+
+</html>

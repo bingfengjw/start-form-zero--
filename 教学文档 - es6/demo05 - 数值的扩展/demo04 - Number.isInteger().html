@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Number.isInteger() 用来判断一个值是否为整数。 需要注意的是， 在 JavaScript 内部， 整数和浮点数是同样的储存方法， 所以3和3 .0 被视为同一个值。
+
+        Number.isInteger(25) // true
+        Number.isInteger(25.0) // true
+        Number.isInteger(25.1) // false
+        Number.isInteger("15") // false
+        Number.isInteger(true) // false
+        // ES5 可以通过下面的代码， 部署Number.isInteger()。
+
+        (function (global) {
+            var floor = Math.floor,
+                isFinite = global.isFinite;
+
+            Object.defineProperty(Number, 'isInteger', {
+                value: function isInteger(value) {
+                    return typeof value === 'number' &&
+                        isFinite(value) &&
+                        floor(value) === value;
+                },
+                configurable: true,
+                enumerable: false,
+                writable: true
+            });
+        })(this);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0;}
+        body{
+            background-image: url('http://bpic.ooopic.com/16/08/57/16085797-3b570f316b2e080d4f8122f229f703fb-3.jpg');
+            background-size: cover;
+        }
+        .content{
+            height: 200px;
+            width: 500px;
+            background-color: blue;
+            position: relative;
+            margin: 100px auto;
+        }
+        .content>div{
+            position: absolute;
+        }
+        /* 左上 */
+        .raidal1 {
+            left: -100px;
+            top: 0;
+            height: 100px;
+            width: 100px;
+            background: radial-gradient(200px at left top, transparent 50%, blue 50%);
+        }
+        /* 右上 */
+        .raidal2 {
+            right:-100px;
+            top:0;
+            height: 100px;
+            width: 100px;
+            background: radial-gradient(200px at right top, transparent 50%, blue 50%);
+        }
+        /* 右下 */
+        .raidal3 {
+            right:-100px;
+            bottom:0;
+            height: 100px;
+            width: 100px;
+            background: radial-gradient(200px at right bottom, transparent 50%, blue 50%);
+        }
+        /* 左下 */
+        .raidal4 {
+            left:-100px;
+            bottom:0;
+            height: 100px;
+            width: 100px;
+            background: radial-gradient(200px at left bottom, transparent 50%, blue 50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class='raidal1'></div>
+        <div class='raidal2'></div>
+        <div class='raidal3'></div>
+        <div class='raidal4'></div>
+    </div>
+</body>
+</html>
