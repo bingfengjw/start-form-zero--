@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 阶乘算法
+        function factorial(num) {
+            if (num <= 1) {
+                return 1;
+            } else {
+                console.log(arguments);
+                return num * arguments.callee(num - 1);
+            }
+        }
+        console.log(factorial(5));
+        // 5 * 4 * 3 * 2 * 1
+
+        function a(x){
+            if(x>=5){
+                return x;
+            }else{
+                return x + a(x+1);
+            }
+        }
+        console.log(a(1));
+        // 1传入，返回1 + a(1+1)
+        // 执行函数，2传入函数，返回2 + a(2+1);
+        // 执行函数，3传入函数，返回3 + a(3+1);
+        // 执行函数，4传入函数，返回4 + a(4+1);
+        // 执行函数，5传入函数，进入if判断，5>=5，直接返回5，所以结果为1+2+3+4+5;
+        // 整个流程为1 + (1+1) + (2+1) + (3+1) + (4+1)
+    </script>
+</body>
+
+</html>
