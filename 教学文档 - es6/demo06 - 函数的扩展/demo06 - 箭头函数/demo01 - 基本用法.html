@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        (function () {
+            // ES6 允许使用“ 箭头”（ => ）定义函数。
+            var f1 = v => v;
+            // 上面的箭头函数等同于：
+            var f2 = function (v) {
+                return v;
+            };
+            console.log(f1(1));
+            console.log(f2(1));
+        })();
+
+        console.log('------------------------');
+
+        (function () {
+            // 如果箭头函数不需要参数或需要多个参数，就使用一个圆括号代表参数部分。
+            var f = () => 5;
+            // 等同于
+            var f = function () {
+                return 5
+            };
+
+            var sum = (num1, num2) => num1 + num2;
+            // 等同于
+            var sum = function (num1, num2) {
+                return num1 + num2;
+            };
+        })();
+        (function () {
+            // 如果箭头函数的代码块部分多于一条语句， 就要使用大括号将它们括起来， 并且使用return语句返回。
+            var sum = (num1, num2) => {
+                return num1 + num2;
+            }
+        })();
+
+        console.log('------------------------');
+
+        (function () {
+            // 由于大括号被解释为代码块， 所以如果箭头函数直接返回一个对象， 必须在对象外面加上括号， 否则会报错。
+
+            // 报错
+            // let getTempItem = id => {
+            //     id: id,
+            //     name: "Temp"
+            // };
+
+            // 不报错
+            let getTempItem = id => ({
+                id: id,
+                name: "Temp"
+            });
+            console.log(getTempItem('id'));
+        })();
+
+        console.log('------------------------');
+
+        (function () {
+            // 如果箭头函数只有一行语句，且不需要返回值，可以采用下面的写法，就不用写大括号了。
+            let fn = () => void doesNotReturn();
+            console.log(fn);
+        })();
+
+        console.log('------------------------');
+
+        (function () {
+            // 箭头函数可以与变量解构结合使用。
+
+            const person = {
+                first: '章',
+                last: '泽天'
+            };
+            const full1 = ({
+                first,
+                last
+            }) => first + ' ' + last;
+
+            // 等同于
+            function full2(person) {
+                return person.first + ' ' + person.last;
+            }
+            console.log(full1(person));
+            console.log(full2(person));
+        })();
+
+        console.log('------------------------');
+
+        (function () {
+            // 箭头函数使得表达更加简洁。
+
+            const isEven = n => n % 2 == 0;
+            const square = n => n * n;
+            // 上面代码只用了两行， 就定义了两个简单的工具函数。 
+            // 如果不用箭头函数， 可能就要占用多行， 而且还不如现在这样写醒目。
+        })();
+
+        console.log('------------------------');
+
+        (function () {
+            // 箭头函数的一个用处是简化回调函数。
+
+            // 正常函数写法
+            const result1 = [1, 2, 3].map(function (x) {
+                return x * x;
+            });
+
+            // 箭头函数写法
+            const result2 = [1, 2, 3].map(x => x * x);
+
+            console.log(result1);
+            console.log(result2);
+        })();
+        (function () {
+            // 另一个例子是
+            const values = [22, 3, 6, 8, 26, 3, 2]
+            // 正常函数写法
+            var result1 = values.sort(function (a, b) {
+                return a - b;
+            });
+
+            // 箭头函数写法
+            var result2 = values.sort((a, b) => a - b);
+
+            console.log(result1);
+            console.log(result2);
+        })();
+        (function () {
+            // 下面是 rest 参数与箭头函数结合的例子。
+
+            const numbers = (...nums) => nums;
+
+            console.log(numbers(1, 2, 3, 4, 5)); // [1,2,3,4,5]
+
+            const headAndTail = (head, ...tail) => [head, tail];
+
+            console.log(headAndTail(1, 2, 3, 4, 5)); // [1,[2,3,4,5]]
+        })();
+    </script>
+</body>
+
+</html>
