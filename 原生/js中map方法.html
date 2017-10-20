@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<script type="text/javascript">
-			var arr = [1,2,3,4,5,6];
-			console.log(arr);
-			//使用map方法可以对原数组进行加工，item为原数组中的每一项，return item + 2则可以使其中的每一项+2，返回一个新的数组
-			var arr2 = arr.map(function(item){
-				return item + 2;
-			});
-			console.log(arr);
-			//map方法不会对原数组产生影响
-			console.log(arr2);
-			//返回的新数组
-		</script>
-	</head>
-	<body>
-	</body>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript">
+		var arr = [1, 2, 3, 4];
+		console.log(arr); // [1,2,3,4]
+		//使用map方法可以对原数组进行加工，item为原数组中的每一项，return item + 2则可以使其中的每一项+2，返回一个新的数组
+		var arr2 = arr.map(function (item) {
+			return item + 2;
+		});
+		console.log(arr); // [1,2,3,4]
+		//map方法不会对原数组产生影响
+		console.log(arr2); // [3,4,5,6]
+		//返回的新数组
+
+		// 可以使用这个方法快速对数组中的每一个元素进行操作
+		// ↓↓↓将数组中的所有元素转换为字符串
+		let arr3 = arr.map(function (item) {
+			return item + '';
+		})
+		console.log(arr3);
+	</script>
+</head>
+
+<body>
+</body>
+
 </html>
