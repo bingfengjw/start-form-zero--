@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 由于扩展运算符可以展开数组，所以不再需要apply方法，将数组转为函数的参数了。
+        // ES5 的写法
+        function f1(x, y, z) {
+            // ...
+            console.log(x, y, z)
+        }
+        var args1 = [0, 1, 2];
+        f1.apply(null, args1);
+
+        // ES6的写法
+        function f2(x, y, z) {
+            // ...
+            console.log(x, y, z)
+        }
+        let args2 = [0, 1, 2];
+        f2(...args2);
+
+        // 下面是扩展运算符取代apply方法的一个实际的例子，应用Math.max方法，简化求出一个数组最大元素的写法。
+
+        // ES5 的写法
+        console.log(Math.max.apply(null, [14, 3, 77]));
+
+        // ES6 的写法
+        console.log(Math.max(...[14, 3, 77]));
+
+        // 等同于
+        console.log(Math.max(14, 3, 77));
+
+        // 上面代码中，
+        // 由于 JavaScript 不提供求数组最大元素的函数，所以只能套用Math.max函数，将数组转为一个参数序列，然后求最大值。
+        // 有了扩展运算符以后，就可以直接用Math.max了。
+
+        // 另一个例子是通过push函数，将一个数组添加到另一个数组的尾部。
+        // ES5的 写法
+        var arr1 = [0, 1, 2];
+        var arr2 = [3, 4, 5];
+        Array.prototype.push.apply(arr1, arr2);
+        console.log(arr1);
+        // ES6 的写法
+        let arr3 = [0, 1, 2];
+        let arr4 = [3, 4, 5];
+        arr3.push(...arr4);
+        console.log(arr3);
+        // 上面代码的 ES5 写法中，push方法的参数不能是数组，所以只好通过apply方法变通使用push方法。
+        // 有了扩展运算符，就可以直接将数组传入push方法。
+
+        // 下面是另外一个例子。
+        // ES5
+        console.log(new(Date.bind.apply(Date, [null, 2015, 1, 1])));
+        // ES6
+        console.log(new Date(...[2015, 1, 1]));
+    </script>
+</body>
+
+</html>

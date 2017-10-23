@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 扩展运算符还可以将字符串转为真正的数组。
+    console.log([...'hello']); // [ "h", "e", "l", "l", "o" ]
+    // 上面的写法，有一个重要的好处，那就是能够正确识别四个字节的 Unicode 字符。
+
+    console.log('x\uD83D\uDE80y'.length) // 4
+    console.log([...'x\uD83D\uDE80y'].length); // 3
+    // 上面代码的第一种写法，JavaScript 会将四个字节的 Unicode 字符，识别为2个字符，采用扩展运算符就没有这个问题。
+
+    // 因此，正确返回字符串长度的函数，可以像下面这样写。
+    function length(str) {
+      return [...str].length;
+    }
+    length('x\uD83D\uDE80y') // 3
+
+    // 凡是涉及到操作四个字节的 Unicode 字符的函数，都有这个问题。因此，最好都用扩展运算符改写。
+    let str = 'x\uD83D\uDE80y';
+
+    console.log(str.split('').reverse().join('')); // 'y\uDE80\uD83Dx'
+
+    console.log([...str].reverse().join('')); // 'y\uD83D\uDE80x'
+    // 上面代码中，如果不用扩展运算符，字符串的reverse操作就不正确。
+  </script>
+</body>
+
+</html>
