@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 目前，有一个提案，允许try...catch结构中的catch语句调用时不带有参数。这个提案跟参数有关，也放在这一章介绍。
+        // 传统的写法是catch语句必须带有参数，用来接收try代码块抛出的错误。
+        try {
+            //  ···
+        } catch (error) {
+            //  ···
+        }
+
+        // 新的写法允许省略catch后面的参数，而不报错。
+            // try {
+            //     //  ···
+            // } catch {
+            //     //  ···
+            // }
+
+        // 新写法只在不需要错误实例的情况下有用，因此不及传统写法的用途广。
+
+            // let jsonData;
+            // try {
+            //     jsonData = JSON.parse(str);
+            // } catch {
+            //     jsonData = DEFAULT_DATA;
+            // }
+        // 上面代码中， JSON.parse报错只有一种可能： 解析失败。 因此， 可以不需要抛出的错误实例。
+    </script>
+</body>
+
+</html>
