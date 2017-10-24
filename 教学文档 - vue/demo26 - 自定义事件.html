@@ -30,8 +30,12 @@
     </div>
     <script>
         const childVue = Vue.component('child', {
-            template: '<input v-model="mes" type="number" @change="countSend">',
-            props:['mes'],
+            template: '<input v-model="mes" type="number" @click="countSend">',
+            data(){
+                return {
+                    mes: 00
+                }
+            },
             methods: {
                 countSend: function (e) {
                     this.$emit('count', this.mes);
