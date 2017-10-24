@@ -10,17 +10,17 @@
 		<p>使用v-bind:class和v-bind:id可以动态生成class和id</p>
 		<hr>
 		<div id="app">
-			12+20={{12+20}}<br />
-			12-20={{12-20}}<br />
-			12*20={{12*20}}<br />
-			12/20={{12/20}}<br />
-			num+20={{num1+20}}<br />
-			num1+num2={{num1+num2}}<br />
-			str1+(num1+num2)+str2={{str1+(num1+num2)+str2}}<br />
-			a?'yes':'no'={{a?'yes':'no'}}<br />
-			b.split('').reverse().join('')={{b.split('').reverse().join('')}}<br />
-			<div v-bind:class="'list-' + myClass">动态生成class</div>
-			<div v-bind:id="'list-' + myId">动态生成id</div>
+			12+20 = {{12+20}}<br />
+			12-20 = {{12-20}}<br />
+			12*20 = {{12*20}}<br />
+			12/20 = {{12/20}}<br />
+			num+20 = {{num1+20}}<br />
+			num1+num2 = {{num1+num2}}<br />
+			str1+(num1+num2)+str2 = {{str1+(num1+num2)+str2}}<br />
+			a?'yes':'no' = {{a?'yes':'no'}}<br />
+			b.split('').reverse().join('') = {{b.split('').reverse().join('')}}<br />
+			<div v-bind:class = "'list-' + myClass">动态生成class</div>
+			<div v-bind:id = "'list-' + myId">动态生成id</div>
 		</div>
 		<script type="text/javascript">
 			new Vue({

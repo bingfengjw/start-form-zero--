@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .title{
-            padding:10px;
+        .title {
+            padding: 10px;
             margin-bottom: 5px;
-            border:1px solid red;
+            border: 1px solid red;
         }
-        .shopcar{
+
+        .shopcar {
             padding: 5px;
             border: 3px solid skyblue;
         }
     </style>
     <script src="js/vue.min.js"></script>
 </head>
+
 <body>
-<div id="app">
-    <div class="title">商品的总价为<span>{{result}}</span></div>
-    <div class="shopcar">
-        <child @count="shopresult"></child>
+    <div id="app">
+        <div class="title">商品的总价为
+            <span>{{result}}</span>
+        </div>
+        <div class="shopcar">
+            <child v-on:count="shopresult"></child>
+        </div>
     </div>
-</div>
-<script>
-    Vue.component('child',{
-        template:'<input type="number" @change="count">',
-        data:{
-            number:0
-        },
-        methods:{
-            count:function () {
-                this.$emit('count',this.number);
+    <script>
+        const childVue = Vue.component('child', {
+            template: '<input v-model="mes" type="number" @change="countSend">',
+            props:['mes'],
+            methods: {
+                countSend: function (e) {
+                    this.$emit('count', this.mes);
+                }
             }
-        }
-    });
-    const vm = new Vue({
-        el:"#app",
-        data:{
-            result:0
-        },
-        methods:{
-            shopresult:function (v) {
-                console.log(v);
+        });
+        const vm = new Vue({
+            el: "#app",
+            data: {
+                result: 0
+            },
+            methods: {
+                shopresult: function (v) {
+                    console.log(v);
+                    this.result = v;
+                }
+            },
+            component: {
+                childVue
             }
-        },
-        created: function () {
-            // `this` 指向 vm 实例
-            this.$on('count',function (a) {
-                console.log(a)
-            })
-        }
-    });
-</script>
+        });
+    </script>
 </body>
+
 </html>

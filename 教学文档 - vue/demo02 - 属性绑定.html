@@ -12,16 +12,23 @@
 			.addClass{
 				background-color: skyblue;
 			}
+			.padding{
+				padding:10px;
+			}
 		</style>
 		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
-		<p>类似于angular的ng-model，使用v-model可以绑定一个变量，绑定在复选框上面时可以根据复选框的选用与否更改这个变量的true或false</p>
+		<p>
+			类似于angular的ng-model，使用v-model可以绑定一个变量，
+			绑定在复选框上面时可以根据复选框的选用与否更改这个变量的true或false
+		</p>
 		<p>使用v-bind:class可以实现和ng-class类似的效果</p>
+		<p>v-bind:class可以直接使用:class简写</p>
 		<hr>
 		<div id="app">
 			<label><input type="checkbox" v-model='class1'>{{class1}}</label>
-			<div class="box" v-bind:class={'addClass':class1}></div>
+			<div class="box" v-bind:class={'addClass':class1,'padding':class1}></div>
 		</div>
 		<script type="text/javascript">
 			new Vue({

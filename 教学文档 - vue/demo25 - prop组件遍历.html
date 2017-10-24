@@ -7,14 +7,15 @@
 </head>
 <body>
 <div id="app">
-    <ol>
-        <child v-for="i in items" :q="i"></child>
-    </ol>
+    <child :arr="items"></child>
 </div>
 <script>
     Vue.component('child',{
-        props:['q'],
-        template:'<li>{{q.name}}今年{{q.age}}岁了</li>'
+        props:['arr'],
+        template:`
+        <ol>
+            <li v-for="i in arr">{{i.name}}今年{{i.age}}岁啦</li>
+        </ol>`
     });
     var vm = new Vue({
         el:"#app",

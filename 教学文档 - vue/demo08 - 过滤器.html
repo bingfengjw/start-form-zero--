@@ -1,88 +1,126 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<style>
-			table tr:nth-child(1){
-				background-color: lightblue;
-			}
-		</style>
-		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
 
-	</head>
-	<body>
-		<p>和angular基本相同，vue的过滤器同样使用|和文本分隔开，使用多个|可以同时使多个过滤器生效，过滤器的第一个参数是内容本身，第二个开始为传入的参数</p>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		table tr:nth-child(1) {
+			background-color: lightblue;
+		}
+	</style>
+	<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+	<p>和angular基本相同，vue的过滤器同样使用|和文本分隔开，使用多个|可以同时使多个过滤器生效，过滤器的第一个参数是内容本身，第二个开始为传入的参数</p>
+	<hr>
+	<div id="app">
+		{{message | filterA('？？？')}}
+
+		<!--
+	注!:vue2.0之后几乎废弃了所有的过滤器,只保留了自定义过滤器,所以现在的过滤器需要自己写了
+	以下过滤器全部废弃==>
+		uppercase过滤器 : 将输入的字符串转换成大写字母的过滤器。
+		filterBy过滤器 : 过滤器的值必须是一个数组，filterBy + 过滤条件。过滤条件是：‘string || function’ + in ‘optionKeyName’
+		orderBy过滤器 : 过滤器的值必须是一个数组，orderBy + 过滤条件。过滤条件是：‘string || array ||function’ + ‘order ≥ 0 为升序 || order < 0 为降序’
+		capitalize过滤器 : 将输入的字符串首字母转换成大写字母的过滤器。
+		currency过滤器 : 将输入的数字转换成现金的过滤器。可以跟上货币符号（默认$）和保留的小数位（默认2）。
+
+-->
+
 		<hr>
-		<div id="app">
-			{{message | filterA('？？？')}}
 
-			<!--
-			注!:vue2.0之后几乎废弃了所有的过滤器,只保留了自定义过滤器,所以现在的过滤器需要自己写了
-			以下过滤器全部废弃==>
-				uppercase过滤器 : 将输入的字符串转换成大写字母的过滤器。
-				filterBy过滤器 : 过滤器的值必须是一个数组，filterBy + 过滤条件。过滤条件是：‘string || function’ + in ‘optionKeyName’
-				orderBy过滤器 : 过滤器的值必须是一个数组，orderBy + 过滤条件。过滤条件是：‘string || array ||function’ + ‘order ≥ 0 为升序 || order < 0 为降序’
-				capitalize过滤器 : 将输入的字符串首字母转换成大写字母的过滤器。
-				currency过滤器 : 将输入的数字转换成现金的过滤器。可以跟上货币符号（默认$）和保留的小数位（默认2）。
-
-			-->
-
-			<hr>
-
-			<input type="text" v-model="vInput" >
-			<table border="1">
-				<tr>
-					<td>name</td>
-					<td>price</td>
-					<td>category</td>
-				</tr>
-				<tr v-for="x in filteredUsers">
-					<td>{{x.name}}</td>
-					<td>{{x.price}}</td>
-					<td>{{x.category}}</td>
-				</tr>
-			</table>
-		</div>
-		<script type="text/javascript">
-			let myV = new Vue({
-				el:'#app',
-				data:{
-					message:"这是我的文字",
-					content:'啦啦啦啦啦',
-                    vInput:'',
-                    products : [
-                        {name: 'microphone', price: 25, category: 'electronics'},
-                        {name: 'laptop case', price: 15, category: 'accessories'},
-                        {name: 'screen cleaner', price: 17, category: 'accessories'},
-                        {name: 'laptop charger', price: 70, category: 'electronics'},
-                        {name: 'mouse', price: 40, category: 'electronics'},
-                        {name: 'earphones', price: 20, category: 'electronics'},
-                        {name: 'monitor', price: 120, category: 'electronics'}
-                    ]
-				},
-                computed: {
-                    filteredUsers: function () {
-                        var self = this;
-                        return self.products.filter(function (d) {
-                            console.log(d);
-                            console.log(self);
-                            console.log(self.vInput);
-							if (d.name.indexOf(self.vInput) !== -1){
-							    return d;
-							}
-                        });
-                    }
-                },
-				filters:{
-					filterA:function(value,a){
-						console.log(value);
-						console.log(a);
-						var meg = value + a;
-						return meg;
+		<input type="text" v-model="vInput">
+		<table border="1">
+			<tr>
+				<td>name</td>
+				<td @click="resetList">price</td>
+				<td>category</td>
+			</tr>
+			<tr v-for="x in filteredUsers">
+				<td>{{x.name}}</td>
+				<td>{{x.price}}</td>
+				<td>{{x.category}}</td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript">
+		let myV = new Vue({
+			el: '#app',
+			data: {
+				message: "这是我的文字",
+				content: '啦啦啦啦啦',
+				vInput: '',
+				resetFlag:true,				
+				products: [{
+						name: 'microphone',
+						price: 25,
+						category: 'electronics'
+					},
+					{
+						name: 'laptop case',
+						price: 15,
+						category: 'accessories'
+					},
+					{
+						name: 'screen cleaner',
+						price: 17,
+						category: 'accessories'
+					},
+					{
+						name: 'laptop charger',
+						price: 70,
+						category: 'electronics'
+					},
+					{
+						name: 'mouse',
+						price: 40,
+						category: 'electronics'
+					},
+					{
+						name: 'earphones',
+						price: 20,
+						category: 'electronics'
+					},
+					{
+						name: 'monitor',
+						price: 120,
+						category: 'electronics'
 					}
+				],
+			},
+			methods: {
+				resetList: function () {
+					this.products.sort((a, b) => {
+						if(this.flag){
+							return a.price - b.price;
+						}else{
+							return b.price - a.price;
+						}
+					});
+					this.flag = !this.flag;
 				}
-			})
-		</script>
-	</body>
+			},
+			computed: {
+				filteredUsers: function () {
+					var self = this;
+					return self.products.filter(function (d) {
+						if (d.name.indexOf(self.vInput) !== -1) {
+							return d;
+						}
+					});
+				}
+			},
+			filters: {
+				filterA: function (value) {
+					console.log(value);
+					return value;
+				}
+			}
+		})
+	</script>
+</body>
+
 </html>
