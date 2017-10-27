@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="css/element.css">
+</head>
+<body>
+  <div id="app">
+    <el-button @click="visible = true">按钮</el-button>
+    <el-dialog :visible.sync="visible" title="Hello world">
+      <p>欢迎使用 Element</p>
+    </el-dialog>
+  </div>
+</body>
+  <!-- 先引入 Vue -->
+  <script src="js/vue.min.js"></script>
+  <!-- 引入组件库 -->
+  <script src="js/element.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return { visible: false }
+      }
+    })
+  </script>
+</html>
