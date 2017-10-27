@@ -23,6 +23,7 @@
 			},
 			computed: {
 				//这是一个计算属性,使用reversed+使用this.内容，可以实现计算
+				//计算属性不能添加参数，如果需要添加参数只能使用methods进行计算
 				reversedMs: function () {
 					//使用split将内容转换为数组，然后使用reverse将数组倒序排列，然后使用join转换为字符串
 					return this.ms.split('').reverse().join('')
