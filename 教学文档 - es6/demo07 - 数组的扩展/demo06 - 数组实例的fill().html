@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // fill方法使用给定值，填充一个数组。
+    console.log(['a', 'b', 'c'].fill(7)); // [7, 7, 7]
+
+    console.log(new Array(3).fill(7)); // [7, 7, 7]
+    // 上面代码表明，fill方法用于空数组的初始化非常方便。数组中已有的元素，会被全部抹去。
+
+    // fill方法还可以接受第二个和第三个参数，用于指定填充的起始位置和结束位置。
+
+    console.log(['a', 'b', 'c'].fill(7, 1, 2)); // ['a', 7, 'c']
+    // 上面代码表示，fill方法从1号位开始，向原数组填充7，到2号位之前结束。
+  </script>
+</body>
+
+</html>
