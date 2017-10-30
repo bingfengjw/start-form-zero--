@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    (function () {
+      // 函数的name属性，返回函数名。对象方法也是函数，因此也有name属性。
+
+      const person = {
+        sayName() {
+          console.log('hello!');
+        },
+      };
+
+      console.log(person.sayName.name); // "sayName"
+      // 上面代码中，方法的name属性返回函数名（即方法名）。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 如果对象的方法使用了取值函数（getter）和存值函数（setter），则name属性不是在该方法上面，
+      // 而是该方法的属性的描述对象的get和set属性上面，返回值是方法名前加上get和set。
+      const obj = {
+        num: 10,
+        num2: 20,
+        get foo() {
+          return this.num
+        },
+        get foo1() {
+          return this.num2
+        },
+        set foo(x) {
+          this.num = this.num - x
+        },
+        set foo2(x) {
+          this.num2 = this.num2 + x
+        }
+      };
+      // console.log(obj.foo.name);
+      // TypeError: Cannot read property 'name' of undefined
+      console.log(obj);
+      console.log(obj.num); // 10
+      console.log(obj.foo); // 10
+      obj.foo = 3;
+      console.log(obj.foo); // 7
+      console.log(obj.foo1); // 20
+      obj.foo2 = 5;
+      console.log(obj.foo1); // 25
+
+      const descriptor = Object.getOwnPropertyDescriptor(obj, 'foo');
+
+      console.log(descriptor.get.name); // "get foo"
+      console.log(descriptor.set.name); // "set foo"
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 有两种特殊情况：bind方法创造的函数，name属性返回bound加上原函数的名字；
+      // Function构造函数创造的函数，name属性返回anonymous。
+      console.log((new Function())).name // "anonymous"
+
+      var doSomething = function () {
+        // ...
+      };
+      // console.log(doSomething.bind().name); // "bound doSomething"
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 如果对象的方法是一个 Symbol 值，那么name属性返回的是这个 Symbol 值的描述。
+      const key1 = Symbol('description');
+      const key2 = Symbol();
+      let obj = {
+        [key1]() {},
+        [key2]() {},
+      };
+      obj[key1].name // "[description]"
+      obj[key2].name // ""
+      // 上面代码中，key1对应的 Symbol 值有描述，key2没有。
+    })();
+  </script>
+</body>
+
+</html>
