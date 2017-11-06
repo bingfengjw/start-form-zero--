@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .map {
+      width: 800px;
+      height: 600px;
+      background: url(http://img3.cache.netease.com/game/2011/5/31/201105311622285252f.jpg) no-repeat;
+      background-size: contain;
+      border: 2px solid red;
+      margin: 50px auto;
+      position: relative;
+    }
+
+    .point {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: red;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="map">
+    <div class="point"></div>
+  </div>
+
+  <script>
+    const oMap = document.querySelector('.map');
+    const oPoint = document.querySelector('.point');
+    const pointPosition = {
+      left:'200px',
+      top:'120px'
+    }
+    console.log(oMap.scrollWidth);
+    console.log(Number.parseInt(pointPosition.left));
+    console.log(oMap.scrollWidth / Number.parseInt(pointPosition.left));
+    oPoint.style.left = Math.ceil(oMap.scrollWidth / Number.parseInt(pointPosition.left)) + '%';
+    oPoint.style.top = pointPosition.top;
+  </script>
+</body>
+
+</html>
