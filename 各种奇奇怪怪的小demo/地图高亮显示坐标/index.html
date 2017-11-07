@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul{
+      list-style: none;
+    }
+    .clear-fix{
+      zoom: 1;
+    }
+    .clear-fix:after{
+      content:'';
+      display: block;
+      height: 0;
+      visibility: hidden;
+      zoom: 1;
+      clear: both;
+    }
+
+    #map {
+      width: 600px;
+      position: relative;
+      float: right;
+    }
+
+    img {
+      display: block;
+    }
+
+    .point {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: red;
+      display: none;
+    }
+    .choose-list{
+      float: left;
+    }
+  </style>
+  <script src="jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="map" class="clear-fix">
+    <img src="./map.jpg">
+    <ul class="point-list"></ul>
+  </div>
+  <ul class="choose-list"></ul>
+  <button>生成点</button>
+  <script>
+    var oImg = {
+      width:0,
+      height:0
+    }
+    $("img").on('load',function(){
+      oImg.width = $(this).width();
+      oImg.height = $(this).height();
+      $("#map").width(oImg.width);
+    })
+    $.ajax({
+      url: "map.json",
+      success: function (response) {
+        var data = response.data;
+        var content = '';
+        var chooseList = '';
+        $.each(data, function (indexInArray, valueOfElement) { 
+           console.log(valueOfElement);
+           var x = valueOfElement.p_x;
+           var y = valueOfElement.p_y;
+           var p_id = valueOfElement.p_id;
+           var p_name = valueOfElement.p_name;
+           content += `<li p_id=`+p_id+` class='point' style='left:`+(Number(x)-7.5)+`px;top:`+(oImg.height-Number(y))+`px;'></li>`
+           chooseList += '<li><label><input p_id='+p_id+' type="checkbox"> '+ p_name +' </label></li>'
+        });
+        $(".point-list").html(content);
+        $(".choose-list").html(chooseList);
+      }
+    });
+    $('button').click(function(){
+      $(".point").hide();
+      $.each($(".choose-list input:checked"), function (indexInArray, valueOfElement) { 
+        $.each($(".point"), function (i, v) { 
+           if($(v).attr("p_id") === $(valueOfElement).attr("p_id")){
+             $(this).show();
+           }
+        }); 
+      });
+    })
+  </script>
+
+</body>
+
+</html>

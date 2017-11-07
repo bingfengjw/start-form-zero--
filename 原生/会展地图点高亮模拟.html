@@ -12,11 +12,14 @@
       padding: 0;
     }
 
+    img{
+      display: block;
+      width: 100%;
+    }
+
     .map {
       width: 800px;
-      height: 600px;
-      background: url(http://img3.cache.netease.com/game/2011/5/31/201105311622285252f.jpg) no-repeat;
-      background-size: contain;
+      height: 800px;
       border: 2px solid red;
       margin: 50px auto;
       position: relative;
@@ -36,21 +39,31 @@
 
 <body>
   <div class="map">
+    <img src="http://img3.cache.netease.com/game/2011/5/31/201105311622285252f.jpg">
     <div class="point"></div>
   </div>
 
   <script>
     const oMap = document.querySelector('.map');
     const oPoint = document.querySelector('.point');
+    const oImg = document.querySelector('img');
     const pointPosition = {
       left:'200px',
       top:'120px'
     }
-    console.log(oMap.scrollWidth);
-    console.log(Number.parseInt(pointPosition.left));
-    console.log(oMap.scrollWidth / Number.parseInt(pointPosition.left));
-    oPoint.style.left = Math.ceil(oMap.scrollWidth / Number.parseInt(pointPosition.left)) + '%';
+    
+    console.log('left ',oImg.scrollWidth / Number.parseInt(pointPosition.left));
+    console.log('top ',oImg.scrollHeight / Number.parseInt(pointPosition.top));
+    console.log('图片宽度 ',oImg.scrollWidth);
+    console.log('图片高度 ',oImg.scrollHeight);
+    oMap.style.height = oImg.scrollHeight + 'px';
+    console.log('div高度',oMap.style.height);
+    // oImg.style.left = Math.ceil(100 / (oImg.scrollWidth / Number.parseInt(pointPosition.left))) + '%';
+    // oImg.style.top = Math.ceil(100 / (oImg.scrollHeight / Number.parseInt(pointPosition.top))) + '%';
+    oPoint.style.left = pointPosition.left;
     oPoint.style.top = pointPosition.top;
+    console.log('oPoint.style.left ',oPoint.style.left);
+    console.log('oPoint.style.top ',oPoint.style.top);
   </script>
 </body>
 
