@@ -30,9 +30,12 @@
     }
 
     #map {
-      width: 600px;
+      width: 80%;
+      margin: auto;
       position: relative;
-      float: right;
+    }
+    .mapImg{
+      width: 100%;
     }
 
     img {
@@ -48,10 +51,26 @@
 
     .choose-list {
       float: left;
+      width: 85%;
+    }
+
+    .choose-list li {
+      float: left;
+      margin-left: 20px;
+    }
+
+    .button-list {
+      width: 10%;
+      float: right;
     }
 
     .pointImg {
       width: 100%;
+    }
+
+    .mapSetting {
+      border: 3px solid red;
+      margin-bottom: 10px;
     }
   </style>
   <link rel="stylesheet" href="print.css" media="print">
@@ -62,14 +81,18 @@
 
 <body>
   <div id="printDiv">
+    <div class="mapSetting clear-fix">
+      <ul class="choose-list"></ul>
+      <div class="button-list">
+        <button>生成点</button>
+        <button id="print">打印</button>
+      </div>
+    </div>
     <div id="map" class="clear-fix">
-      <img src="./map.jpg">
+      <img class="mapImg" src="./map.jpg">
       <ul class="point-list"></ul>
     </div>
-    <ul class="choose-list"></ul>
   </div>
-  <button>生成点</button>
-  <button id="print">打印</button>
 
 
 
@@ -93,18 +116,34 @@
     $.ajax({
       url: "map.json",
       success: function (response) {
+        oImg.width = response.imgSize.x;
+        oImg.height = response.imgSize.y;
+        pointSize = $("#map").width() * 0.05;
+        console.log('div#map.size = ',$("#map").width());
+        console.log('pointSize = ',pointSize);
+
+
+
         var data = response.data;
         var content = '';
         var chooseList = '';
+        console.log('oImg ',oImg);
         $.each(data, function (indexInArray, valueOfElement) {
           console.log(valueOfElement);
-          var x = valueOfElement.p_x;
-          var y = valueOfElement.p_y;
+          var x = Number(valueOfElement.p_x) - pointSize/2;
+          var y = oImg.height - (Number(valueOfElement.p_y)) - pointSize/2;
+          console.log('转换前点坐标 = ',x,y);
+          var x1 = (100 / (oImg.width / x) + 2 ) + '%';
+          var y1 = (100 / (oImg.height / y) + 2) + '%';
+          console.log('转换后点坐标 = ',x1,y1);
           var p_id = valueOfElement.p_id;
           var p_name = valueOfElement.p_name;
+
+          // 高亮点的坐标
           content += `<li p_id=` + p_id + ` class='point' style='width:` + pointSize + `px;height:` +
-            pointSize + `px;left:` + (Number(x) - pointSize / 2) + `px;top:` + (oImg.height - (Number(y) +
-              pointSize / 2)) + `px;'><img class='pointImg' src='timg.gif'></li>`
+            pointSize + `px;left:` + x1 + `;top:` + y1 + `;'><img class='pointImg' src='timg1.gif'></li>`
+          
+          // 创建多选框
           chooseList += '<li><label><input p_id=' + p_id + ' type="checkbox"> ' + p_name + ' </label></li>'
         });
         $(".point-list").html(content);
