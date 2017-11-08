@@ -1,0 +1,44 @@
+@page {
+  size: landscape;
+  margin: 0mm; /* this affects the margin in the printer settings */
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+.choose-list {
+  display: none;
+}
+
+button {
+  display: none;
+}
+
+#map {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.point {
+  border-radius: 50%;
+  position: absolute;
+  background-color: red;
+  display: none;
+  z-index: 999;
+}
+
+.pointImg {
+  width: 100%;
+}

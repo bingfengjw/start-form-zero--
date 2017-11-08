@@ -11,14 +11,17 @@
       margin: 0;
       padding: 0;
     }
-    ul{
+
+    ul {
       list-style: none;
     }
-    .clear-fix{
+
+    .clear-fix {
       zoom: 1;
     }
-    .clear-fix:after{
-      content:'';
+
+    .clear-fix:after {
+      content: '';
       display: block;
       height: 0;
       visibility: hidden;
@@ -37,38 +40,55 @@
     }
 
     .point {
-      width: 15px;
-      height: 15px;
       border-radius: 50%;
       position: absolute;
-      left: 0;
-      top: 0;
-      background-color: red;
+      /* background-color: red; */
       display: none;
     }
-    .choose-list{
+
+    .choose-list {
       float: left;
     }
+
+    .pointImg {
+      width: 100%;
+    }
   </style>
+  <link rel="stylesheet" href="print.css" media="print">
   <script src="jquery.min.js"></script>
+  <script src="jquery-migrate-1.2.1.min.js"></script>
+  <script src="jquery.jqprint-0.3.js"></script>
 </head>
 
 <body>
-  <div id="map" class="clear-fix">
-    <img src="./map.jpg">
-    <ul class="point-list"></ul>
+  <div id="printDiv">
+    <div id="map" class="clear-fix">
+      <img src="./map.jpg">
+      <ul class="point-list"></ul>
+    </div>
+    <ul class="choose-list"></ul>
   </div>
-  <ul class="choose-list"></ul>
   <button>生成点</button>
+  <button id="print">打印</button>
+
+
+
   <script>
     var oImg = {
-      width:0,
-      height:0
+      width: 0,
+      height: 0
     }
-    $("img").on('load',function(){
+    var pointSize = 30;
+
+
+    $("#print").click(function () {
+      $("#printDiv").jqprint();
+    })
+    $("img").on('load', function () {
       oImg.width = $(this).width();
       oImg.height = $(this).height();
       $("#map").width(oImg.width);
+      $("#map").height(oImg.height);
     })
     $.ajax({
       url: "map.json",
@@ -76,27 +96,29 @@
         var data = response.data;
         var content = '';
         var chooseList = '';
-        $.each(data, function (indexInArray, valueOfElement) { 
-           console.log(valueOfElement);
-           var x = valueOfElement.p_x;
-           var y = valueOfElement.p_y;
-           var p_id = valueOfElement.p_id;
-           var p_name = valueOfElement.p_name;
-           content += `<li p_id=`+p_id+` class='point' style='left:`+(Number(x)-7.5)+`px;top:`+(oImg.height-Number(y))+`px;'></li>`
-           chooseList += '<li><label><input p_id='+p_id+' type="checkbox"> '+ p_name +' </label></li>'
+        $.each(data, function (indexInArray, valueOfElement) {
+          console.log(valueOfElement);
+          var x = valueOfElement.p_x;
+          var y = valueOfElement.p_y;
+          var p_id = valueOfElement.p_id;
+          var p_name = valueOfElement.p_name;
+          content += `<li p_id=` + p_id + ` class='point' style='width:` + pointSize + `px;height:` +
+            pointSize + `px;left:` + (Number(x) - pointSize / 2) + `px;top:` + (oImg.height - (Number(y) +
+              pointSize / 2)) + `px;'><img class='pointImg' src='timg.gif'></li>`
+          chooseList += '<li><label><input p_id=' + p_id + ' type="checkbox"> ' + p_name + ' </label></li>'
         });
         $(".point-list").html(content);
         $(".choose-list").html(chooseList);
       }
     });
-    $('button').click(function(){
+    $('button').click(function () {
       $(".point").hide();
-      $.each($(".choose-list input:checked"), function (indexInArray, valueOfElement) { 
-        $.each($(".point"), function (i, v) { 
-           if($(v).attr("p_id") === $(valueOfElement).attr("p_id")){
-             $(this).show();
-           }
-        }); 
+      $.each($(".choose-list input:checked"), function (indexInArray, valueOfElement) {
+        $.each($(".point"), function (i, v) {
+          if ($(v).attr("p_id") === $(valueOfElement).attr("p_id")) {
+            $(this).show();
+          }
+        });
       });
     })
   </script>
