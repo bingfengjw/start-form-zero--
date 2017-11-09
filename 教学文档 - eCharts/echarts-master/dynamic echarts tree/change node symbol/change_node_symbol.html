@@ -57,7 +57,7 @@
                         }
                     },
                     children: [{
-                            name: '小\n米', //由于label的formatter存在bug，所以无法通过html进行格式化，如果要换行要用\n
+                            name: '小米', //由于label的formatter存在bug，所以无法通过html进行格式化，如果要换行要用\n
                             value: 4,
                             symbol: 'image://http://pic.58pic.com/58pic/12/36/51/66d58PICMUV.jpg',
                             symbolSize: [60, 60],
@@ -175,6 +175,9 @@
 
             console.log(param);
             param.data.symbol = 'image://http://www.viastreaming.com/images/apple_logo2.png';
+            if (param.name === '小米') {
+                console.log(1111);
+            }
             param.data.children = children;
             //远程加载图片最好先预加载过来，避免下载图标延迟。 var oImg = new Image();oImg.src = img;
             console.log(param.data.cusField);
