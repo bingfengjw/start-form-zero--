@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 对象的Symbol.match属性，指向一个函数。当执行str.match(myObject)时，如果该属性存在，会调用它，返回该方法的返回值。
+
+    // String.prototype.match(regexp)
+    // 等同于
+    // regexp[Symbol.match](this)
+
+    class MyMatcher {
+      [Symbol.match](string) {
+        return 'hello world'.indexOf(string);
+      }
+    }
+
+    console.log('e'.match(new MyMatcher())); // 1
+  </script>
+</body>
+
+</html>

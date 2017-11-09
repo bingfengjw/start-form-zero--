@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 对象的Symbol.species属性，指向当前对象的构造函数。
+    // 创造实例时，默认会调用这个方法，即使用这个属性返回的函数当作构造函数，来创造新的实例对象。
+    (function () {
+      class MyArray extends Array {
+        // 覆盖父类 Array 的构造函数
+        static get[Symbol.species]() {
+          return Array;
+        }
+      }
+      // 上面代码中，子类MyArray继承了父类Array。
+      // 创建MyArray的实例对象时，本来会调用它自己的构造函数（本例中被省略了），
+      // 但是由于定义了Symbol.species属性，所以会使用这个属性返回的的函数，创建MyArray的实例。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 这个例子也说明，定义Symbol.species属性要采用get读取器。默认的Symbol.species属性等同于下面的写法。
+
+      // static get[Symbol.species]() {
+      //   return this;
+      // }
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 下面是一个例子。
+
+      class MyArray extends Array {
+        static get[Symbol.species]() {
+          return Array;
+        }
+      }
+      let a = new MyArray(1, 2, 3);
+      let mapped = a.map(x => x * x);
+
+      console.log(mapped instanceof MyArray); // false
+      console.log(mapped instanceof Array); // true
+      // 上面代码中，由于构造函数被替换成了Array。所以，mapped对象不是MyArray的实例，而是Array的实例。
+    })();
+  </script>
+</body>
+
+</html>
