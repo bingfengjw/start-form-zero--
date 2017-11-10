@@ -3,13 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
     * {
       margin: 0;
       padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
     }
 
     ul {
@@ -34,7 +38,8 @@
       margin: auto;
       position: relative;
     }
-    .mapImg{
+
+    .mapImg {
       width: 100%;
     }
 
@@ -72,6 +77,10 @@
       border: 3px solid red;
       margin-bottom: 10px;
     }
+
+    #printDiv{
+      transform-origin: top;
+    }
   </style>
   <link rel="stylesheet" href="print.css" media="print">
   <script src="jquery.min.js"></script>
@@ -81,76 +90,126 @@
 
 <body>
   <div id="printDiv">
-    <div class="mapSetting clear-fix">
-      <ul class="choose-list"></ul>
-      <div class="button-list">
-        <button>生成点</button>
-        <button id="print">打印</button>
-      </div>
-    </div>
     <div id="map" class="clear-fix">
       <img class="mapImg" src="./map.jpg">
       <ul class="point-list"></ul>
+    </div>
+    <div class="mapSetting clear-fix">
+      <ul class="choose-list"></ul>
+      <div class="button-list">
+        <button id="creatPoints">生成点</button>
+        <button id="print">打印</button>
+        <!-- <button id="changePage">点击复制页面并转换</button> -->
+      </div>
     </div>
   </div>
 
 
 
   <script>
+    var oMap = $("#map");
+    var oMapImg = $(".mapImg");
+
     var oImg = {
       width: 0,
       height: 0
-    }
+    };
+    var jsonData = '';
     var pointSize = 30;
 
-
+    /* 
+    点击打印时由于需要按照纸张的比例缩放，所以如果设置百分比的话会出现尺寸不同的情况。
+    所以打印时需要先将地图单位转换为固定单位，然后重新计算图片和div的宽高，以便计算高亮点。
+    打印之后需要再将div的宽高和对于图片宽高的计量转换回来，否则网页里面会出现错乱
+     */
     $("#print").click(function () {
+      oMap.width(800 + 'px');
+      resetImg();
+      // creatPoint(jsonData);
+      showPoint();
+
       $("#printDiv").jqprint();
-    })
-    $("img").on('load', function () {
-      oImg.width = $(this).width();
-      oImg.height = $(this).height();
-      $("#map").width(oImg.width);
-      $("#map").height(oImg.height);
-    })
+
+      oMap.width("80%");
+      resetImg();
+    });
+
+    oMapImg.on('load', resetImg);
+
+    function resetImg(){
+      oImg.width = oMapImg.width();
+      oImg.height = oMapImg.height();
+      // oMap.width(oImg.width);
+      oMap.height(oImg.height);
+    }
+
     $.ajax({
       url: "map.json",
       success: function (response) {
+        jsonData = response.data;
         oImg.width = response.imgSize.x;
         oImg.height = response.imgSize.y;
-        pointSize = $("#map").width() * 0.05;
-        console.log('div#map.size = ',$("#map").width());
-        console.log('pointSize = ',pointSize);
-
+        pointSize = oMap.width() * 0.05;
+        console.log('div#map.size = ', oMap.width());
+        console.log('pointSize = ', pointSize);
 
 
         var data = response.data;
-        var content = '';
-        var chooseList = '';
-        console.log('oImg ',oImg);
-        $.each(data, function (indexInArray, valueOfElement) {
-          console.log(valueOfElement);
-          var x = Number(valueOfElement.p_x) - pointSize/2;
-          var y = oImg.height - (Number(valueOfElement.p_y)) - pointSize/2;
-          console.log('转换前点坐标 = ',x,y);
-          var x1 = (100 / (oImg.width / x) + 2 ) + '%';
-          var y1 = (100 / (oImg.height / y) + 2) + '%';
-          console.log('转换后点坐标 = ',x1,y1);
-          var p_id = valueOfElement.p_id;
-          var p_name = valueOfElement.p_name;
-
-          // 高亮点的坐标
-          content += `<li p_id=` + p_id + ` class='point' style='width:` + pointSize + `px;height:` +
-            pointSize + `px;left:` + x1 + `;top:` + y1 + `;'><img class='pointImg' src='timg1.gif'></li>`
-          
-          // 创建多选框
-          chooseList += '<li><label><input p_id=' + p_id + ' type="checkbox"> ' + p_name + ' </label></li>'
-        });
-        $(".point-list").html(content);
-        $(".choose-list").html(chooseList);
+        creatPoint(data);
+        creatList(data);
       }
     });
-    $('button').click(function () {
+
+    function creatPoint(data) {
+      var content = '';
+      console.log('oImg ', oImg);
+      $.each(data, function (indexInArray, valueOfElement) {
+        // console.log(valueOfElement);
+        var x = Number(valueOfElement.p_x) - pointSize / 2;
+        var y = oImg.height - (Number(valueOfElement.p_y)) - pointSize / 2;
+        // console.log('转换前点坐标 = ', x, y);
+        var x1 = (100 / (oImg.width / x) + 2) + '%';
+        var y1 = (100 / (oImg.height / y) + 2) + '%';
+        // console.log('转换后点坐标 = ', x1, y1);
+        var p_id = valueOfElement.p_id;
+        var p_name = valueOfElement.p_name;
+
+        // 高亮点的坐标
+        content += `<li p_id=` + p_id + ` class='point' style='width:` + pointSize + `px;height:` +
+          pointSize + `px;left:` + x1 + `;top:` + y1 + `;'><img class='pointImg' src='timg1.gif'></li>`
+
+      });
+      $(".point-list").html(content);
+    }
+
+    function creatList(data) {
+      var chooseList = '';
+      $.each(data, function (indexInArray, valueOfElement) {
+        var p_id = valueOfElement.p_id;
+        var p_name = valueOfElement.p_name;
+        // 创建多选框
+        chooseList += '<li><label><input class="choose" p_id=' + p_id + ' type="checkbox"> ' + p_name +
+          ' </label></li>'
+      });
+      chooseList +=
+        '<li style="margin-left:100px;"><label><input class="chooseAll" type="checkbox"><b>全选</b></label></li>'
+      $(".choose-list").html(chooseList);
+
+    }
+
+
+
+    $(".choose-list").on("click", '.chooseAll', function () {
+      $.each($(".choose"), function (indexInArray, valueOfElement) {
+        $(valueOfElement).prop('checked', $(".chooseAll").attr("checked") === 'checked' ? true : false);
+      });
+    })
+
+    $('#creatPoints').click(function () {
+      showPoint();
+    });
+
+    function showPoint() {
       $(".point").hide();
       $.each($(".choose-list input:checked"), function (indexInArray, valueOfElement) {
         $.each($(".point"), function (i, v) {
@@ -159,7 +218,7 @@
           }
         });
       });
-    })
+    }
   </script>
 
 </body>
