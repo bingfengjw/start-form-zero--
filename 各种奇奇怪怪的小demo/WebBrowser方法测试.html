@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <OBJECT classid=CLSID:8856F961-340A-11D0-A96B-00C04FD705A2 height=0 id=WebBrowser width=0></OBJECT>
+  <input name=Button onClick=document.all.WebBrowser.ExecWB(1,1) type=button value=打开>
+  <input name=Button onClick=document.all.WebBrowser.ExecWB(2,1) type=button value=关闭所有>
+  <input name=Button onClick=document.all.WebBrowser.ExecWB(4,1) type=button value=另存为>
+  <input name=Button onClick=document.all.WebBrowser.ExecWB(6,1) type=button value=打印>
+  <input name=Button onClick=document.all.WebBrowser.ExecWB(6,6) type=button value=直接打印>
+  <input name=Button onClick=document.all.WebBrowser.ExecWB(7,1) type=button value=打印预览>
+  <input name=Button onClick=document.all.WebBrowser.ExecWB(8,1) type=button value=页面设置>
+  <input name=Button onClick=document.all.WebBrowser.ExecWB(10,1) type=button value=属性>
+  <input name=Button onClick=document.all.WebBrowser.ExecWB(17,1) type=button value=全选>
+  <input name=Button onClick=document.all.WebBrowser.ExecWB(22,1) type=button value=刷新>
+  <input name=Button onClick=document.all.WebBrowser.ExecWB(45,1) type=button value=关闭>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <input type="button" name="btn" id="btn" value="关闭" onClick="onClose();" />
+  
+  <script>
+    function onClose() {
+      //模拟Alt+F4
+      var shell = new ActiveXObject("WScript.Shell");
+      window.focus();
+      shell.SendKeys("%{F4}");
+      shell.Quit();
+    }
+  </script>
+</body>
+
+</html>

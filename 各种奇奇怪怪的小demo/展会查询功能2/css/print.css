@@ -1,0 +1,29 @@
+@import 'style.css';
+@page {
+  size: landscape;
+  margin: 0mm;
+  /* this affects the margin in the printer settings */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+#map {
+  width: 90%;
+  margin: auto;
+}
+
+label {
+  margin-right: 10px;
+}
