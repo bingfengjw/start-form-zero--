@@ -27,3 +27,6 @@ img {
 label {
   margin-right: 10px;
 }
+.print{
+  display: none;
+}

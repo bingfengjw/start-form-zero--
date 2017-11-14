@@ -20,3 +20,10 @@ img {
 label {
   margin-right: 10px;
 }
+.search p{
+  display: inline-block;
+}
+.search span{
+  color: red;
+  font-weight: bold;
+}

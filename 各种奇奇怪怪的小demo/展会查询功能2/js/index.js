@@ -1,4 +1,7 @@
-$(function () {
+// 第一版：复选框+输入框查询
+//  通过id和x、y坐标发送请求，后台返回图片
+
+/* $(function () {
   var oMenu = $(".menu-list");
   var initData = '';
 
@@ -30,7 +33,6 @@ $(function () {
   // 点击复选框查询
   $(".send-point").click(function () {
     var sendList = [];
-
     $.each($(".choose-item:checked"), function (indexInArray, valueOfElement) {
       var _name = $(valueOfElement).attr('p_name');
       var _id = $(valueOfElement).attr('p_id');
@@ -92,6 +94,59 @@ $(function () {
 
   // 打印
   $(".print").click(function(){
+    $("#print-box").jqprint();
+  })
+
+}) */
+
+
+// 第二版，只留输入框，通过逗号分隔
+$(function () {
+  var oSearch = $(".search input");
+  var oBtn = $('.search button');
+
+
+  var urlSearch = decodeURI(window.location.search.substr(6));
+  // var urlSearch = (window.location.search.substr(6));
+  console.log(urlSearch);
+  $.ajax({
+    type: "get",
+    url: "http://10.2.6.31/cse/index.php",
+    data: {
+      name: urlSearch
+    },
+    success: function (response) {
+      console.log(response);
+      var data = JSON.parse(response);
+      $(".map-img").attr('src', data.url);
+    }
+  });
+
+
+  oBtn.click(function () {
+    var search = oSearch.val().trim();
+    var searchList = search.split(',');
+    console.log('search ', search);
+    console.log('searchList ', searchList);
+    if (searchList.length === 0) {
+      $(".map-img").attr('src', './map2.jpg');
+    } else {
+      $.ajax({
+        type: "get",
+        url: "http://10.2.6.31/cse/index.php",
+        data: {
+          name: search
+        },
+        success: function (response) {
+          console.log(response);
+          var data = JSON.parse(response);
+          $(".map-img").attr('src', data.url);
+        }
+      });
+    }
+  });
+
+  $(".print").click(function () {
     $("#print-box").jqprint();
   })
 
