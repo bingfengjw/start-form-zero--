@@ -122,7 +122,6 @@ $(function () {
     }
   });
 
-
   oBtn.click(function () {
     var search = oSearch.val().trim();
     var searchList = search.split(',');
@@ -141,6 +140,9 @@ $(function () {
           console.log(response);
           var data = JSON.parse(response);
           $(".map-img").attr('src', data.url);
+          $(".map-img").on('load',function(){
+            $("#print-box").jqprint();
+          })        
         }
       });
     }
