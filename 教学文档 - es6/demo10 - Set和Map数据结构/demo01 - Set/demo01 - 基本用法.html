@@ -9,13 +9,13 @@
 </head>
 
 <body>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
 
 
   <script>
@@ -59,6 +59,47 @@
       divs().forEach(div => set3.add(div));
       console.log(set3.size); // 7
       // 上面代码中，例一和例二都是Set函数接受数组作为参数，例三是接受类似数组的对象作为参数。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 上面代码中，也展示了一种去除数组重复成员的方法。
+      const array = [1, 2, 3, 4, 3, 4, 1, 2, 3, 1, 5, 7, 8, 4, 4, 7, 678, 78, 67, 8];
+      // 去除数组的重复成员
+      console.log([...new Set(array)]);
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 向 Set 加入值的时候，不会发生类型转换，所以5和"5"是两个不同的值。
+      // Set 内部判断两个值是否不同，使用的算法叫做“Same-value equality”，
+      // 它类似于精确相等运算符（===），主要的区别是NaN等于自身，而精确相等运算符认为NaN不等于自身。
+      let set = new Set();
+      let a = NaN;
+      let b = NaN;
+      set.add(a);
+      set.add(b);
+      console.log(set);
+
+      // 上面代码向 Set 实例添加了两个NaN，但是只能加入一个。这表明，在 Set 内部，两个NaN是相等。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 另外，两个对象总是不相等的。
+
+      let set = new Set();
+
+      set.add({});
+      console.log(set.size); // 1
+
+      set.add({});
+      console.log(set.size); // 2
+      console.log({} === {}); // false
+      // 上面代码表示，由于两个空对象不相等，所以它们被视为两个值。
     })();
   </script>
 </body>

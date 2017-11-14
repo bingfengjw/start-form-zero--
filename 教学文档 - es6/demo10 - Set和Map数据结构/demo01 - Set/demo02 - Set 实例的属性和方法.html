@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Set 结构的实例有以下属性。
+    // Set.prototype.constructor： 构造函数， 默认就是Set函数。
+    // Set.prototype.size： 返回Set实例的成员总数。
+
+    // Set 实例的方法分为两大类：操作方法（用于操作数据）和遍历方法（用于遍历成员）。下面先介绍四个操作方法。
+    // add(value)：添加某个值，返回 Set 结构本身。
+    // delete(value)：删除某个值，返回一个布尔值，表示删除是否成功。
+    // has(value)：返回一个布尔值，表示该值是否为Set的成员。
+    // clear()：清除所有成员，没有返回值。
+    (function () {
+      // 上面这些属性和方法的实例如下。
+      let s = new Set();
+      s.add(1).add(2).add(2);
+      // 注意2被加入了两次
+      console.log(s); // Set(2) {1, 2}
+      console.log(s.size); // 2
+
+      console.log(s.has(1)); // true
+      console.log(s.has(2)); // true
+      console.log(s.has(3)); // false
+
+      s.delete(2);
+      console.log(s.has(2)); // false
+
+      s.clear();
+      console.log(s); // Set(0) {}
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 下面是一个对比，看看在判断是否包括一个键上面，Object结构和Set结构的写法不同。
+
+      // 对象的写法
+      const properties = {
+        'width': 1,
+        'height': 1
+      };
+
+      if (properties['width']) {
+        console.log('do something');
+      }
+
+      // Set的写法
+      const properties2 = new Set();
+
+      properties2.add('width');
+      properties2.add('height');
+
+      if (properties2.has('height')) {
+        console.log('do something');
+      }
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // Array.from方法可以将 Set 结构转为数组。
+
+      const items = new Set([1, 2, 3, 4, 5]);
+      const array = Array.from(items);
+      console.log(items);
+      console.log(array);
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 这就提供了去除数组重复成员的另一种方法。
+
+      function dedupe(array) {
+        return Array.from(new Set(array));
+      }
+
+      console.log(dedupe([1, 1, 2, 3])); // [1, 2, 3]
+    })();
+  </script>
+</body>
+
+</html>

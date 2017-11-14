@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // keys方法、values方法、entries方法返回的都是遍历器对象（详见《Iterator 对象》一章）。
+    // 由于 Set 结构没有键名，只有键值（或者说键名和键值是同一个值），所以keys方法和values方法的行为完全一致。
+    let set = new Set(['red', 'green', 'blue']);
+
+    for (let item of set.keys()) {
+      console.log(item);
+    }
+    // red
+    // green
+    // blue
+
+    console.log('------------------------');
+
+    for (let item of set.values()) {
+      console.log(item);
+    }
+    // red
+    // green
+    // blue
+
+    console.log('------------------------');
+
+    for (let item of set.entries()) {
+      console.log(item);
+    }
+    // ["red", "red"]
+    // ["green", "green"]
+    // ["blue", "blue"]
+
+    // 上面代码中，entries方法返回的遍历器，同时包括键名和键值，所以每次输出一个数组，它的两个成员完全相等。
+
+    console.log('------------------------');
+
+    // Set 结构的实例默认可遍历，它的默认遍历器生成函数就是它的values方法。
+    // Set.prototype[Symbol.iterator] === Set.prototype.values
+    // true
+
+    // 这意味着， 可以省略values方法， 直接用for...of循环遍历 Set。
+
+    let set2 = new Set(['red', 'green', 'blue']);
+
+    for (let x of set2) {
+      console.log(x);
+    }
+    // red
+    // green
+    // blue
+  </script>
+</body>
+
+</html>

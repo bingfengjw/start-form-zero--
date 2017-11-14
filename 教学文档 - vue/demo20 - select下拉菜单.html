@@ -7,10 +7,8 @@
 </head>
 <body>
 <div id="app">
-    <select v-model="val">
-        <option value="1111">111111111111</option>
-        <option value="bbbb">2222222222</option>
-        <option value="CCCC">3333333333333</option>
+    <select v-model="myVal()">
+        <option v-for="x in options" :value="x.id">{{x.val}}</option>
     </select>
     <br>
     {{val}}
@@ -19,7 +17,22 @@
     new Vue({
         el:"#app",
         data:{
-            val:''
+            val:'2',
+            newVal:'3',
+            options:[
+                {id:1,val:111},
+                {id:2,val:222},
+                {id:3,val:333},
+            ]
+        },
+        methods:{
+            myVal:function (){
+                if(this.newVal){
+                    return this.newVal;
+                }else{
+                    return this.val;
+                }
+            }
         }
     })
 </script>
