@@ -1,240 +1,166 @@
 <!DOCTYPE html>
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>ECharts</title>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="http://echarts.baidu.com/dist/echarts.min.js"></script>
 </head>
-
 <body>
-  <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-  <div id="main" style="height:400px"></div>
-  <!-- ECharts单文件引入 -->
-  <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
-  <script type="text/javascript">
-    // 路径配置
-    require.config({
-      paths: {
-        echarts: 'http://echarts.baidu.com/build/dist'
-      }
-    });
-    // 使用
-    require([
-        'echarts',
-        'echarts/chart/tree' // 使用柱状图就加载bar模块，按需加载
-      ],
-      function (ec) {
-        // 基于准备好的dom，初始化echarts图表
-        var myChart = ec.init(document.getElementById('main'));
-        option = {
-          title: {
-            text: '手机品牌',
-            subtext: '线、节点样式'
-          },
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        var colors = ["#000", "#f00", "#fff"];
+        // 指定图表的配置项和数据
+        var option = {
+          color: colors,
+  
           tooltip: {
-            trigger: 'item',
-            formatter: "{b}: {c}"
-          },
-          toolbox: {
-            show: true,
-            feature: {
-              mark: {
-                show: true
-              },
-              dataView: {
-                show: true,
-                readOnly: false
-              },
-              restore: {
-                show: true
-              },
-              saveAsImage: {
-                show: true
-              }
+            trigger: "none",
+            axisPointer: {
+              type: "cross"
             }
           },
-          calculable: false,
-
-          series: [{
-            name: '树图',
-            type: 'tree',
-            orient: 'horizontal', // vertical horizontal
-            rootLocation: {
-              x: 100,
-              y: '60%'
-            }, // 根节点位置  {x: 'center',y: 10}
-            nodePadding: 20,
-            symbol: 'circle',
-            symbolSize: 40,
-            itemStyle: {
-              normal: {
-                label: {
-                  show: true,
-                  position: 'inside',
-                  textStyle: {
-                    color: '#cc9999',
-                    fontSize: 15,
-                    fontWeight: 'bolder'
-                  }
-                },
+          legend: {
+            data: ["2015 降水量", "2016 降水量"]
+          },
+          grid: {
+            top: 70,
+            bottom: 50
+          },
+          xAxis: [
+            {
+              type: "category",
+              axisTick: {
+                alignWithLabel: true
+              },
+              axisLine: {
+                onZero: false,
                 lineStyle: {
-                  color: '#000',
-                  width: 1,
-                  type: 'broken' // 'curve'|'broken'|'solid'|'dotted'|'dashed'
+                  color: colors[1]
                 }
               },
-              emphasis: {
+              axisPointer: {
                 label: {
-                  show: true
-                }
-              }
-            },
-            data: [{
-              name: '手机',
-              value: 6,
-              symbolSize: [90, 70],
-              symbol: 'image://http://www.iconpng.com/png/ecommerce-business/iphone.png',
-              itemStyle: {
-                normal: {
-                  label: {
-                    show: false
+                  formatter: function(params) {
+                    return (
+                      "降水量  " +
+                      params.value +
+                      (params.seriesData.length
+                        ? "：" + params.seriesData[0].data
+                        : "")
+                    );
                   }
                 }
               },
-              children: [{
-                  name: '小米',
-                  value: 4,
-                  symbol: 'image://http://pic.58pic.com/58pic/12/36/51/66d58PICMUV.jpg',
-                  itemStyle: {
-                    normal: {
-                      label: {
-                        show: false
-                      }
-                    }
-                  },
-                  symbolSize: [60, 60],
-                  children: [{
-                    name: '小米1',
-                    symbol: 'circle',
-                    symbolSize: 20,
-                    value: 4,
-                    itemStyle: {
-                      normal: {
-                        color: '#fa6900',
-                        label: {
-                          show: true,
-                          position: 'right'
-                        },
-
-                      },
-                      emphasis: {
-                        label: {
-                          show: true
-                        },
-                        borderWidth: 0
-                      }
-                    }
-                  }, {
-                    name: '小米2',
-                    value: 4,
-                    symbol: 'circle',
-                    symbolSize: 20,
-                    itemStyle: {
-                      normal: {
-                        label: {
-                          show: true,
-                          position: 'right',
-                          formatter: "{b}"
-                        },
-                        color: '#fa6900',
-                        borderWidth: 2,
-                        borderColor: '#cc66ff'
-
-                      },
-                      emphasis: {
-                        borderWidth: 0
-                      }
-                    }
-                  }, {
-                    name: '小米3',
-                    value: 2,
-                    symbol: 'circle',
-                    symbolSize: 20,
-                    itemStyle: {
-                      normal: {
-                        label: {
-                          position: 'right'
-                        },
-                        color: '#fa6900',
-                        brushType: 'stroke',
-                        borderWidth: 1,
-                        borderColor: '#999966',
-                      },
-                      emphasis: {
-                        borderWidth: 0
-                      }
-                    }
-                  }]
-                },
-                {
-                  name: '苹果',
-                  symbol: 'image://http://www.viastreaming.com/images/apple_logo2.png',
-                  symbolSize: [60, 60],
-                  itemStyle: {
-                    normal: {
-                      label: {
-                        show: false
-                      }
-
-                    }
-                  },
-                  value: 4
-                },
-                {
-                  name: '华为',
-                  symbol: 'image://http://market.huawei.com/hwgg/logo_cn/download/logo.jpg',
-                  symbolSize: [60, 60],
-                  itemStyle: {
-                    normal: {
-                      label: {
-                        show: false
-                      }
-
-                    }
-                  },
-                  value: 2
-                },
-                {
-                  name: '联想',
-                  symbol: 'image://http://www.lenovo.com.cn/HomeUpload/Home001/6d94ee9a20140714.jpg',
-                  symbolSize: [100, 40],
-                  itemStyle: {
-                    normal: {
-                      label: {
-                        show: false
-                      }
-
-                    }
-                  },
-                  value: 2
-                }
+              data: [
+                "2016-1",
+                "2016-2",
+                "2016-3",
+                "2016-4",
+                "2016-5",
+                "2016-6",
+                "2016-7",
+                "2016-8",
+                "2016-9",
+                "2016-10",
+                "2016-11",
+                "2016-12"
               ]
-            }]
-          }]
+            },
+            {
+              type: "category",
+              axisTick: {
+                alignWithLabel: true
+              },
+              axisLine: {
+                onZero: false,
+                lineStyle: {
+                  color: colors[0]
+                }
+              },
+              axisPointer: {
+                label: {
+                  formatter: function(params) {
+                    return (
+                      "降水量  " +
+                      params.value +
+                      (params.seriesData.length
+                        ? "：" + params.seriesData[0].data
+                        : "")
+                    );
+                  }
+                }
+              },
+              data: [
+                "2015-1",
+                "2015-2",
+                "2015-3",
+                "2015-4",
+                "2015-5",
+                "2015-6",
+                "2015-7",
+                "2015-8",
+                "2015-9",
+                "2015-10",
+                "2015-11",
+                "2015-12"
+              ]
+            }
+          ],
+          yAxis: [
+            {
+              type: "value"
+            }
+          ],
+          series: [
+            {
+              name: "2015 降水量",
+              type: "line",
+              xAxisIndex: 1,
+              smooth: true,
+              data: [
+                2.6,
+                5.9,
+                9.0,
+                26.4,
+                28.7,
+                70.7,
+                175.6,
+                182.2,
+                48.7,
+                18.8,
+                6.0,
+                2.3
+              ]
+            },
+            {
+              name: "2016 降水量",
+              type: "line",
+              smooth: true,
+              data: [
+                3.9,
+                5.9,
+                11.1,
+                18.7,
+                48.3,
+                69.2,
+                231.6,
+                46.6,
+                55.4,
+                18.4,
+                10.3,
+                0.7
+              ]
+            }
+          ]
         };
 
-        // 为echarts对象加载数据 
+        // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
-
-
-        // 关键点！！！  通过这里可以定义点击事件，下面的clickFun是注册的点击函数
-        var ecConfig = require('echarts/config');
-        myChart.on(ecConfig.EVENT.CLICK, clickFun); //也可以注册其他时间 hover 、mouseout等
-
-        function clickFun(e) {
-          console.log(e);
-        }
-
-      }
-    );
-  </script>
+    </script>
 </body>
+</html>
