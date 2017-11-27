@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // JavaScript 的对象（Object），本质上是键值对的集合（Hash 结构），但是传统上只能用字符串当作键。
+    // 这给它的使用带来了很大的限制。
+
+    const data = {};
+    const element = document.getElementById('myDiv');
+
+    data[element] = 'metadata';
+    console.log(data['[object HTMLDivElement]']); // "metadata"
+
+    // 上面代码原意是将一个 DOM 节点作为对象data的键，
+    // 但是由于对象只接受字符串作为键名，所以element被自动转为字符串[object HTMLDivElement]。
+  </script>
+</body>
+
+</html>

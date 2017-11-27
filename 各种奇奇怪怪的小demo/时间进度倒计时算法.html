@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <!--<p id="start">0</p>-->
+    <p id="nowtime">2017.11.22 15:28:19</p>
+    <p id="start">2017.11.22 09:52:44</p>
+    <p id="end">2017.11.22 10:19:21</p>
+    <p id="result"></p>
+    <script>
+        console.log(new Date());
+
+        const now = document.getElementById('nowtime').innerHTML;
+        const start = document.getElementById('start').innerHTML;
+        const end = document.getElementById('end').innerHTML;
+        document.getElementById('result').innerHTML = time(start,now);
+
+        function time(start, end) {
+            if (start == 0 || end == 0) {
+                return '----.--.-- --:--:--';
+            }
+            // 解析获取到的时间
+            var _start = {
+                date: {
+                    year: start.split(' ')[0].split('.')[0],
+                    mon: start.split(' ')[0].split('.')[1],
+                    day: start.split(' ')[0].split('.')[2]
+                },
+                time: {
+                    h: start.split(' ')[1].split(':')[0],
+                    m: start.split(' ')[1].split(':')[1],
+                    s: start.split(' ')[1].split(':')[2]
+                }
+            };
+            var _end = {
+                date: {
+                    year: end.split(' ')[0].split('.')[0],
+                    mon: end.split(' ')[0].split('.')[1],
+                    day: end.split(' ')[0].split('.')[2]
+                },
+                time: {
+                    h: end.split(' ')[1].split(':')[0],
+                    m: end.split(' ')[1].split(':')[1],
+                    s: end.split(' ')[1].split(':')[2]
+                }
+            };
+            // 判断任务的时间跨度
+            var startDaysNum = 0;
+            var endDaysNum = 0;
+            // 判断开始日期那一年的从日期开始的到那一年结束的所有天数，然后再加上当月的天数
+            for (var i = 1; i < _start.date.mon; i++) {
+                startDaysNum += getMonDays(i, _start.date.year);
+            }
+            startDaysNum += Number(_start.date.day);
+            console.log('开始年的任务开始经过今年的天数 =', startDaysNum);
+            // 同上
+            for (var i = 1; i < _end.date.mon; i++) {
+                endDaysNum += getMonDays(i, _end.date.year);
+            }
+            endDaysNum += Number(_end.date.day);
+            console.log('结束年从开始到任务结束的天数 =', endDaysNum);
+            // 如果没有跨过两年以上（例如2016 - 2017）
+            var startD = 0;
+            // 判断开始年份是不是闰年
+            isLeapYear(_start.date.year) ? startD = 366 : startD = 365;
+            if (_end.date.year - _start.date.year >= 2) {
+                // 如果中间跨度超过两年的话，则计算天数是要加上中间跨国的那一年（例如2015 - 2017）
+                // 任务持续的时间 = 开始年份的天数 - 任务开始的时间 + 任务结束年份持续的天数
+                var yearDaysNum = startD - startDaysNum + endDaysNum;
+                // 判断中间度过的每一年是否是闰年，如果是闰年的话需要再加1天
+                console.log('执行时间超过两年');
+                for (var i = _start.date.year; i < _end.date.year; i++) {
+                    isLeapYear(i) ? yearDaysNum += 366 : yearDaysNum += 365;
+                }
+            }
+            console.log('yearDaysNum =', yearDaysNum);
+            // 计算出从开始日期到结束日期的所有天数，然后通过天数计算出小时数
+            h = _start.date.year === _end.date.year ? (endDaysNum - startDaysNum) * 24 + (_end.time.h - _start.time.h) :
+                (yearDaysNum) * 24 + (_end.time.h - _start.time.h);
+            console.log('h =', h);
+            // 如果开始时的分钟数或秒数大于结束时的分钟数或秒数，则需要将小时数或分钟数-1
+            var m = Math.abs(_start.time.m - _end.time.m);
+            var s = Math.abs(_start.time.s - _end.time.s);
+            if (_end.time.m - _start.time.m < 0) {
+                h--;
+                m = 60 - Math.abs(_start.time.m - _end.time.m);
+                m.toString().length === 1 ? m = '0' + m : m;
+            }
+            if (_end.time.s - _start.time.s < 0) {
+                s = 60 - Math.abs(_start.time.s - _end.time.s);
+                m--;
+                if (m < 0) {
+                    // 如果当前分钟数是0，则像小时数借一位
+                    h--;
+                    m = 59;
+                }
+                s.toString().length === 1 ? s = '0' + s : s;
+            }
+            return h + '小时' + m + '分钟' + s + '秒';
+        }
+
+        function getMonDays(mon, year) {
+            // 获取当前月份的时间
+            var days = 0;
+            var _mon = Number(mon);
+            var _year = Number(year);
+            if (_mon === 1 || _mon === 3 || _mon === 5 || _mon === 7 || _mon === 8 || _mon === 10 || _mon === 12) {
+                days = 31;
+            } else if (_mon === 4 || _mon === 6 || _mon === 9 || _mon === 11) {
+                days = 30;
+            } else {
+                if (isLeapYear(year)) {
+                    days = 29;
+                } else {
+                    days = 28;
+                }
+            }
+            return days;
+        }
+
+        // 判断是不是闰年（获取一年的天数）
+        function isLeapYear(year) {
+            return (year % 4 == 0) && (year % 100 != 0 || year % 400 == 0);
+        }
+    </script>
+</body>
+
+</html>
