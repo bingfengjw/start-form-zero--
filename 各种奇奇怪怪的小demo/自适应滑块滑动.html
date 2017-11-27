@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #box {
+      width: 800px;
+      margin: 100px auto 0;
+      border-top: 3px solid red;
+      position: relative;
+    }
+
+    #box:after {
+      content: '';
+      display: block;
+      height: 0;
+      clear: both;
+    }
+
+    .item {
+      float: left;
+      height: 150px;
+    }
+
+    .item:nth-child(1) {
+      width:50%;
+      background-color: pink;
+    }
+
+    .item:nth-child(2) {
+      width:40%;
+      background-color: skyblue;
+    }
+
+    .item:nth-child(3) {
+      width:10%;
+      background-color: lightgreen;
+    }
+
+    .slide {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50px;
+      height: 10px;
+      background-color: red;
+      transition: all 0.3s;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="slide"></div>
+  </div>
+
+  <script>
+    const oSlide = document.querySelector('.slide');
+    const oItem = document.getElementsByClassName("item");
+    
+    for (let i = 0; i < oItem.length; i++) {
+      oItem[i].onmouseover = function () {
+        console.log(oItem);
+        let oItemWidth = oItem[i].offsetWidth;
+        console.log(oItemWidth);
+        let allLeftWidth = 0;
+        for (let j = 0; j < i; j++) {
+          allLeftWidth += oItem[j].offsetWidth;
+        }
+        oSlide.style.left = (oItemWidth / 2 - (oSlide.offsetWidth / 2)) + allLeftWidth + 'px';
+      }
+    }
+  </script>
+</body>
+
+</html>
