@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    (function () {
+      // （1）size 属性
+      // size属性返回 Map 结构的成员总数。
+      const map = new Map();
+      map.set('foo', true);
+      map.set('bar', false);
+
+      console.log(map.size); // 2
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // （2）set(key, value)
+      // set方法设置键名key对应的键值为value，然后返回整个 Map 结构。
+      // 如果key已经有值，则键值会被更新，否则就新生成该键。
+      const m = new Map();
+
+      m.set('edition', 6) // 键是字符串
+      m.set(262, 'standard') // 键是数值
+      m.set(undefined, 'nah') // 键是 undefined
+      console.log(m.get('edition'));
+      console.log(m.get(262));
+      console.log(m.get(undefined));
+
+      // set方法返回的是当前的Map对象，因此可以采用链式写法。
+      let map = new Map()
+        .set(1, 'a')
+        .set(2, 'b')
+        .set(3, 'c');
+      console.log(map);
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // （3）get(key)
+      // get方法读取key对应的键值，如果找不到key，返回undefined。
+      const m = new Map();
+
+      const hello = function () {
+        console.log('hello');
+      };
+      m.set(hello, 'Hello ES6!') // 键是函数
+
+      console.log(m.get(hello)); // Hello ES6!
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // （4）has(key)
+      // has方法返回一个布尔值， 表示某个键是否在当前 Map 对象之中。
+
+      const m = new Map();
+
+      m.set('edition', 6);
+      m.set(262, 'standard');
+      m.set(undefined, 'nah');
+
+      console.log(m.has('edition')); // true
+      console.log(m.has('years')); // false
+      console.log(m.has(262)); // true
+      console.log(m.has(undefined)); // true
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // （5）delete(key)
+      // delete方法删除某个键，返回true。如果删除失败，返回false。
+      const m = new Map();
+      m.set(undefined, 'nah');
+      console.log(m.has(undefined)); // true
+
+      m.delete(undefined)
+      console.log(m.has(undefined)); // false
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // （6）clear()
+      // clear方法清除所有成员，没有返回值。
+      let map = new Map();
+      map.set('foo', true);
+      map.set('bar', false);
+
+      console.log(map.size); // 2
+      map.clear()
+      console.log(map.size); // 0
+    })();
+  </script>
+</body>
+
+</html>

@@ -19,9 +19,178 @@
 
     data[element] = 'metadata';
     console.log(data['[object HTMLDivElement]']); // "metadata"
+    console.log(data['element']); // "undefined"
+    console.log(data[element]); // "metadata"
 
     // 上面代码原意是将一个 DOM 节点作为对象data的键，
     // 但是由于对象只接受字符串作为键名，所以element被自动转为字符串[object HTMLDivElement]。
+
+
+    console.log('------------------------');
+
+    (function () {
+      const m = new Map();
+      const o = {
+        p: 'Hello World'
+      };
+
+      m.set(o, 'content')
+      console.log(m.get(o)); // "content"
+
+      console.log(m); // Map(1) {{…} => "content"}
+      console.log(m.has(o)); // true
+      console.log(m.delete(o)); // true
+      console.log(m.has(o)); // false
+
+      // 上面代码使用 Map 结构的set方法，将对象o当作m的一个键，然后又使用get方法读取这个键，接着使用delete方法删除了这个键。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 上面的例子展示了如何向 Map 添加成员。作为构造函数，Map 也可以接受一个数组作为参数。该数组的成员是一个个表示键值对的数组。
+      const map = new Map([
+        ['name', '张三'],
+        ['title', 'Author']
+      ]);
+      console.log(map.size); // 2
+      console.log(map.has('name')); // true
+      console.log(map.get('name')); // "张三"
+      console.log(map.has('title')); // true
+      console.log(map.get('title')); // "Author"
+      // 上面代码在新建 Map 实例时，就指定了两个键name和title。
+
+      console.log(map); // Map(2) {"name" => "张三", "title" => "Author"}
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // Map构造函数接受数组作为参数，实际上执行的是下面的算法。
+
+      const items = [
+        ['name', '张三'],
+        ['title', 'Author']
+      ];
+
+      const map = new Map();
+
+      items.forEach(
+        ([key, value]) => map.set(key, value)
+      );
+      console.log(items); // [Array(2), Array(2)]
+      console.log(map); // Map(2) {"name" => "张三", "title" => "Author"}
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 事实上，不仅仅是数组，任何具有 Iterator 接口、且每个成员都是一个双元素的数组的数据结构都可以当作Map构造函数的参数。
+      // 这就是说，Set和Map都可以用来生成新的 Map。
+
+      const set = new Set([
+        ['foo', 1],
+        ['bar', 2]
+      ]);
+      const m1 = new Map(set);
+      console.log(m1.get('foo')); // 1
+      console.log(m1.get('bar')); // 2
+
+      const m2 = new Map([
+        ['baz', 3]
+      ]);
+      const m3 = new Map(m2);
+      console.log(m3.get('baz')); // 3
+      // 上面代码中，我们分别使用 Set 对象和 Map 对象，当作Map构造函数的参数，结果都生成了新的 Map 对象。
+
+      const set1 = new Set([
+        ['foo', 2],
+        ['foo', 2]
+      ]);
+      console.log(set1); // Set(2) {Array(2), Array(2)}
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 如果对同一个键多次赋值，后面的值将覆盖前面的值。
+
+      const map = new Map();
+
+      map
+        .set(1, 'aaa')
+        .set(1, 'bbb');
+
+      console.log(map.get(1)); // "bbb"
+
+      // 上面代码对键1连续赋值两次，后一次的值覆盖前一次的值。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 如果读取一个未知的键，则返回undefined。
+
+      console.log(new Map().get('asfddfsasadf'));
+      // undefined
+      // 注意，只有对同一个对象的引用，Map 结构才将其视为同一个键。这一点要非常小心。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      const map = new Map();
+
+      map.set(['a'], 555);
+      console.log(map.get(['a'])); // undefined
+      // 上面代码的set和get方法，表面是针对同一个键，但实际上这是两个值，内存地址是不一样的，因此get方法无法读取该键，返回undefined。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 同理，同样的值的两个实例，在 Map 结构中被视为两个键。
+
+      const map = new Map();
+
+      const k1 = ['a'];
+      const k2 = ['a'];
+
+      map
+        .set(k1, 111)
+        .set(k2, 222);
+
+      console.log(map.get(k1)); // 111
+      console.log(map.get(k2)); // 222
+
+      // 上面代码中，变量k1和k2的值是一样的，但是它们在 Map 结构中被视为两个键。
+
+      // 由上可知，Map 的键实际上是跟内存地址绑定的，只要内存地址不一样，就视为两个键。
+      // 这就解决了同名属性碰撞（clash）的问题，我们扩展别人的库的时候，如果使用对象作为键名，就不用担心自己的属性与原作者的属性同名。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 如果 Map 的键是一个简单类型的值（数字、字符串、布尔值），则只要两个值严格相等，Map 将其视为一个键，
+      // 比如0和-0就是一个键，布尔值true和字符串true则是两个不同的键。
+      // 另外，undefined和null也是两个不同的键。虽然NaN不严格相等于自身，但 Map 将其视为同一个键。
+      let map = new Map();
+
+      map.set(-0, 123);
+      console.log(map.get(+0)); // 123
+
+      map.set(true, 1);
+      map.set('true', 2);
+      console.log(map.get(true)); // 1
+
+      map.set(undefined, 3);
+      map.set(null, 4);
+      console.log(map.get(undefined)); // 3
+
+      map.set(NaN, 123);
+      console.log(map.get(NaN)); // 123
+    })();
   </script>
 </body>
 
