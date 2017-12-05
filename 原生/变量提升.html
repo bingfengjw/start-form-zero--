@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        (function () {
+            // 1    var
+            var a;
+            // 2    fn()
+            function fn() {
+                var a;
+                console.log(a); // undefined 
+                a = 1; // 赋值a = 1;
+                // console.log(a); // 1
+            }
+            // 正常执行
+            console.log(a); // undefined
+            a = 13; // 赋值a=13
+            fn(); // undefined
+            console.log(a); // 13
+        })();
+
+        console.log('----------------------');
+
+        (function(){
+            var a;
+            function fn() {
+                console.log(a);
+                a=1;
+            }
+
+            console.log(a); // undefined
+            a = 13;
+            console.log(a); // 13
+        })();
+        
+        console.log('----------------------');
+
+        // (function(){
+        //     function fn(){
+        //         console.log(a); // 13
+        //         a = 1;
+        //     }
+
+        //     console.log(a); // not defined
+        //     a = 13;
+        //     fn();
+        //     console.log(a); // 1
+        // })();
+        
+        console.log('----------------------');
+
+        (function(){
+            var foo;
+            function bar(){
+                var foo;    // undefined
+                if(!foo){
+                    foo = 10;
+                }
+                console.log(foo);
+            }
+            foo = 1;
+            bar(); // 10
+        })();
+        
+        console.log('----------------------');
+
+        (function(){
+            function f5(){
+                var f;  // undefined
+                function ff(){
+                    return "f" in window;   // false
+                }
+                f = ff();
+                return f;   // false
+            }
+            console.log(f5());  // false
+        })();
+        
+        console.log('----------------------');
+
+        (function(){
+            var a;
+            a = [1,2,3,4];
+            b = [1,2,3,4];
+            c = [1,2,3,4];
+            
+            b = 9;
+            a[1] = 0;
+            console.log(b[0]); // undefined
+            a = [1,2,3,4];
+            c = [1,2,3,4];
+            a[0] = b;
+            console.log(c);
+            console.log(a);
+        })();
+        
+        console.log('----------------------');
+        
+        (function(){
+            var ary;    // undefined
+            var s;  // undefined
+            function ff(ary){
+                // ary = [100]
+                ary[0] = 0;
+                console.log(ary);
+                ary = [0];
+                console.log(ary);
+                ary[0] = 100;
+                console.log(ary);
+                return ary; // [100]
+            }
+
+            ary = [1,2,3,4];
+            s = ff(ary);
+            console.log('ary =',ary);   //  [1,2,3,4]
+            console.log('s =',s); // [100]
+        })();
+        
+        console.log('----------------------');
+
+        (function(){
+            var a;  // undefined
+            function test(ab){
+                var b;  // undefined
+                ab = 1; 
+                b = 2;  // 2
+                c = 3;
+            }
+            a = 10;
+            b = 11;
+            c = 12;
+            test(10);
+            console.log(a); // 10
+            console.log(b); // 11
+            console.log(c); // 3
+        })();
+        
+        console.log('----------------------');
+
+        (function(){
+            var a;
+            function b(x,y,b){
+                console.log(a); // 4
+                arguments[2] = 10;
+                console.log(a); // 4
+            }
+
+            a = 4;
+            a = b(1,2,3);
+            console.log(a); // undefined
+        })();
+        
+        console.log('----------------------');
+
+        (function(){
+            var fs;
+            fs = 'hello';
+            (function(fs){
+                console.log(fs);    // 'hello'
+                var fs = fs || 'world';
+                console.log(fs);    // 'hello'
+            })(fs);
+            console.log(fs);    // 'hello'
+        })();
+        
+        console.log('----------------------');
+
+        (function(){
+            var a;
+            var f;
+            var m;
+            var n;
+            var x;
+            function ss(){
+                a = 0;
+                console.log(111111111111);
+                return function (b){
+                    console.log(222222222222);
+                    console.log(a);
+                    return b + (a++);
+                }
+            }
+
+            a = 9;
+            f = ss();
+            m = f(5);
+            console.log(m); // 5
+            n = ss()(5);
+            console.log(n); // 5
+            x = f(5);
+            console.log(x); // 6
+            console.log(a); // 2
+        })();
+        
+        console.log('----------------------');
+
+        (function(){
+            var a = 0;
+            console.log(a++); // 0
+            console.log(a); // 1
+            console.log(++a); // 2
+        })();
+    </script>
+</body>
+
+</html>
