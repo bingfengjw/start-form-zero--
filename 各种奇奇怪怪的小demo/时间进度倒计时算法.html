@@ -8,17 +8,20 @@
 
 <body>
     <!--<p id="start">0</p>-->
-    <p id="nowtime">2017.11.22 15:28:19</p>
+    <p id="nowtime">2017.11.22 5:19:22</p>
+
     <p id="start">2017.11.22 09:52:44</p>
     <p id="end">2017.11.22 10:19:21</p>
     <p id="result"></p>
+    <p id="orderTime"></p>
     <script>
         console.log(new Date());
 
         const now = document.getElementById('nowtime').innerHTML;
         const start = document.getElementById('start').innerHTML;
         const end = document.getElementById('end').innerHTML;
-        document.getElementById('result').innerHTML = time(start,now);
+        document.getElementById('result').innerHTML = `进度时间：${time(start,now)}`;
+        document.getElementById('orderTime').innerHTML = `预计剩余时间：${time(now,end)}`;
 
         function time(start, end) {
             if (start == 0 || end == 0) {
@@ -100,6 +103,10 @@
                     m = 59;
                 }
                 s.toString().length === 1 ? s = '0' + s : s;
+            }
+            var reg = /\-/;
+            if(reg.test(h) || reg.test(m) || reg.test(s)){
+                return '0小时0分钟0秒';
             }
             return h + '小时' + m + '分钟' + s + '秒';
         }
