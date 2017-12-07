@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    原型prototype
+//    每个函数都有一个prototype属性，这个属性是指向一个对象的引用
+//    var ary=new Array();
+//    var arr=[1,2,3];
+//    Array.prototype.a=12;
+//    alert(arr.a);
+    var arr=[1,2,3];
+    var arr2=[3,4,5];
+    Array.prototype.sum=function(){
+      var result=0;
+        for(var i=0;i<this.length;i++){
+            result+=this[i];
+        }
+        return result;
+    };
+    alert(arr.sum());//6
+    alert(arr2.sum());//12
+</script>
+</body>
+</html>

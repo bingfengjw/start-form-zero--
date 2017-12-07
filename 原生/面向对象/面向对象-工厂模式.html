@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //工厂模式：
+    function createPerson(name,sex){
+//        1、原料
+        var obj=new Object();
+//        2、加工
+        obj.name=name;
+        obj.sex=sex;
+        obj.showName=function(){
+            alert("名字是"+this.name);
+        };
+        obj.showSex=function(){
+            alert("性别是"+this.sex);
+        };
+//        3、出厂
+        return obj;
+    }
+
+    var p1=createPerson("cathy","女");
+    p1.showName();
+
+    var p2=createPerson("kate","男");
+    p2.showName();
+
+
+    alert(p1.showName==p2.showName);
+
+//    工厂模式弊端：
+//    1、实例化没有用new
+//    2、每个对象都有自己独立的一套方法，浪费资源。
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    单例模式
+    var obj=new Object();
+    obj.name="cathy";
+    obj.sex="女";
+
+    obj.showName=function(){
+        alert("名字是"+this.name);
+    };
+
+    obj.showSex=function(){
+        alert("性别是"+this.sex);
+    };
+
+    obj.showName();
+    obj.showSex();
+</script>
+</body>
+</html>
