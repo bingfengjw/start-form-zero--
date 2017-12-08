@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+  <input type="text" id='city'>
+  <button id="btn">search</button>
+  <div id="result"></div>
+  <script>
+    $("#btn").click(function () {
+      let searchCityName = $("#city").val();
+      $.ajax({
+        url: "weather.json",
+        success: function (response) {
+          const citys = response.城市代码;
+          // console.log(citys);
+          console.time();
+          for (let x of citys) {
+            for (let y of x.市) {
+              let cityName = y.市名;
+              if (cityName === searchCityName) {
+                // console.log(y);
+                console.log(y.编码);
+                $.ajax({
+                  url: `http://www.weather.com.cn/data/sk/${y.编码}.html`,
+                  dataType: 'jsonp',
+                  success: function (response) {
+                    console.log(response);
+                    // let data = JSON.parse(response);
+                    // console.log(data.weatherinfo.city);
+                    // $("#result").html(
+                    //   `
+                    //   查询的城市：${data.weatherinfo.city}
+                    //   <br>
+                    //   气温：${data.weatherinfo.temp}℃
+                    // `
+                    // );
+                  }
+                });
+                // break;
+              }
+            }
+          };
+          console.timeEnd();
+        }
+      });
+    })
+  </script>
+</body>
+
+</html>
