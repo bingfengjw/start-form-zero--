@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<input type="text" id="box">
+	<button onclick="ok()">确认</button>
+	<p id="result"></p>
+
+
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js "></script>
+	<script>
+		var box = document.getElementById("box");
+		var result = document.getElementById("result");
+
+		function ok() {
+			if (box.value === "") {
+				alert("不能为空！");
+				return;
+			} else {
+				check(box.value)
+			}
+		}
+
+		function check(cityname) {
+			$.ajax({
+				type: 'GET',
+				dateType: 'json',
+				url: 'https://www.easy-mock.com/mock/5a2decf5f28b1456235ec237/example_1512959221020/mock',
+				success: function (data) {
+					var hasCity = 0;
+					for (var i = 0; i < data.data.projects.length; i++) {
+						var city = data.data.projects[i].address;
+						console.log(cityname);
+						console.log(city);
+						console.log(city.indexOf(cityname));
+						if (city.indexOf(cityname) > -1) {
+							hasCity = i;
+						}
+						console.log(hasCity)
+					}
+					if (hasCity) {
+						result.innerHTML = JSON.stringify(data.data.projects[hasCity - 1])
+					} else {
+						result.innerHTML = '没这个城市'
+					}
+					//console.log(data.data.projects[hasCity])
+				}
+			})
+		}
+	</script>
+</body>
+
+</html>

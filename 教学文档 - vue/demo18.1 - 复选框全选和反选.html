@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="js/vue.min.js"></script>
+</head>
+<body>
+  <div id="box">
+    <label v-for="x in checks"><input type="checkbox" v-model="x.flag" :value="x.id">{{x.name}}<br></label>
+    <br>
+    <label><input @click='allcheck' v-model="allcheckFlag" type="checkbox">全选</label>
+    <br>
+    {{checkData}}
+  </div>
+  <script>
+    new Vue({
+      el:'#box',
+      data:{
+        checks:[
+          {name:'苹果',id:1,flag:false},
+          {name:'橘子',id:2,flag:false},
+          {name:'鸭梨',id:3,flag:false},
+          {name:'西瓜',id:4,flag:false},
+          {name:'馒头',id:5,flag:false},
+        ],
+        allcheckFlag:false,
+        checkData:[]
+      },
+      methods:{
+        allcheck(){
+          this.checks.map(x=>x.flag=this.allcheckFlag)
+        }
+      }
+    })
+  </script>
+</body>
+</html>
