@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    (function () {
+      // set方法用来拦截某个属性的赋值操作，
+      // 可以接受四个参数，依次为目标对象、属性名、属性值和 Proxy 实例本身，其中最后一个参数可选。
+
+      // 假定Person对象有一个age属性，该属性应该是一个不大于 200 的整数，那么可以使用Proxy保证age的属性值符合要求。
+      let validator = {
+        set: function (obj, prop, value) {
+          if (prop === 'age') {
+            if (!Number.isInteger(value)) {
+              throw new TypeError('The age is not an integer');
+            }
+            if (value > 200) {
+              throw new RangeError('The age seems invalid');
+            }
+          }
+
+          // 对于满足条件的 age 属性以及其他属性，直接保存
+          obj[prop] = value;
+        }
+      };
+
+      let person = new Proxy({}, validator);
+
+      person.age = 100;
+
+      console.log(person.age); // 100
+      // person.age = 'young' // 报错
+      // person.age = 300 // 报错
+      // 上面代码中，由于设置了存值函数set，任何不符合要求的age属性赋值，都会抛出一个错误，这是数据验证的一种实现方法。
+      // 利用set方法，还可以数据绑定，即每当对象发生变化时，会自动更新 DOM。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 有时，我们会在对象上面设置内部属性，属性名的第一个字符使用下划线开头，表示这些属性不应该被外部使用。
+      // 结合get和set方法，就可以做到防止这些内部属性被外部读写。
+      const handler = {
+        get(target, key) {
+          invariant(key, 'get');
+          return target[key];
+        },
+        set(target, key, value) {
+          invariant(key, 'set');
+          target[key] = value;
+          return true;
+        }
+      };
+
+      function invariant(key, action) {
+        if (key[0] === '_') {
+          throw new Error(`Invalid attempt to ${action} private "${key}" property`);
+        }
+      }
+      const target = {};
+      const proxy = new Proxy(target, handler);
+      // proxy._prop
+      // Error: Invalid attempt to get private "_prop" property
+      // proxy._prop = 'c'
+      // Error: Invalid attempt to set private "_prop" property
+
+      // 上面代码中，只要读写的属性名的第一个字符是下划线，一律抛错，从而达到禁止读写内部属性的目的。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 下面是set方法第四个参数的例子。
+
+      const handler = {
+        set: function (obj, prop, value, receiver) {
+          obj[prop] = receiver;
+        }
+      };
+      const proxy = new Proxy({}, handler);
+      proxy.foo = 'bar';
+      console.log(proxy.foo === proxy); // true
+      // 上面代码中，set方法的第四个参数receiver，总是返回this关键字所指向的那个对象，即proxy实例本身。
+
+      // 注意，如果目标对象自身的某个属性，不可写也不可配置，那么set不得改变这个属性的值，只能返回同样的值，否则报错。
+    })();
+  </script>
+</body>
+
+</html>
