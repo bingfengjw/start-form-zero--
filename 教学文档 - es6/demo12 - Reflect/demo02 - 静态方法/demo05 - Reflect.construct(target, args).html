@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Reflect.construct方法等同于new target(...args)，这提供了一种不使用new，来调用构造函数的方法。
+    function Greeting(name) {
+      this.name = name;
+    }
+
+    // new 的写法
+    const instance = new Greeting('张三');
+
+    // Reflect.construct 的写法
+    const instance = Reflect.construct(Greeting, ['张三']);
+  </script>
+</body>
+
+</html>

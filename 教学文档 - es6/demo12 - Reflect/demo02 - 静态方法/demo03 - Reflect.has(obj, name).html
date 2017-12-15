@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Reflect.has方法对应name in obj里面的in运算符。
+    var myObject = {
+      foo: 1,
+    };
+
+    // 旧写法
+    'foo' in myObject // true
+
+    // 新写法
+    Reflect.has(myObject, 'foo') // true
+
+    // 如果第一个参数不是对象， Reflect.has和in运算符都会报错。
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Reflect.defineProperty方法基本等同于Object.defineProperty，用来为对象定义属性。
+    // 未来，后者会被逐渐废除，请从现在开始就使用Reflect.defineProperty代替它。
+    function MyDate() {
+      /*…*/
+    }
+
+    // 旧写法
+    Object.defineProperty(MyDate, 'now', {
+      value: () => Date.now()
+    });
+
+    // 新写法
+    Reflect.defineProperty(MyDate, 'now', {
+      value: () => Date.now()
+    });
+    
+    // 如果Reflect.defineProperty的第一个参数不是对象，就会抛出错误，比如Reflect.defineProperty(1, 'foo')。
+  </script>
+</body>
+
+</html>
