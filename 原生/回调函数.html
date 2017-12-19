@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    (function () {
+
+      function fn(num1, num2, callback) {
+        callback(num1 + num2);
+      };
+      fn(2, 4, function (q) {
+        console.log(q);
+      });
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+
+      function Thing(name) {
+        this.name = name;
+      }
+      Thing.prototype.doSomething = function (callback) {
+        // Call our callback, but using our own instance as the context
+        callback.call(this);
+      }
+
+      function foo() {
+        console.log(this.name);
+      }
+
+      var t = new Thing('Joe');
+      t.doSomething(foo); // Alerts "Joe" via `foo`
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      function person(name) {
+        this.name = name;
+      }
+      person.prototype.say = function (word, callback) {
+        callback.call(this, word)
+      }
+
+      const fn = new person('小张');
+      fn.say('你好呀！',function (params) {
+        console.log(params + this.name);
+      });
+    })();
+  </script>
+</body>
+
+</html>
