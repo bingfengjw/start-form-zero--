@@ -4,24 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        p {
+            display: inline-block;
+        }
+    </style>
 </head>
 
 <body>
     <!--<p id="start">0</p>-->
-    <p id="nowtime">2017.11.22 5:19:22</p>
+    <br>当前时间：
+    <p id="nowtime">2017.11.22 10:13:22</p>
 
-    <p id="start">2017.11.22 09:52:44</p>
-    <p id="end">2017.11.22 10:19:21</p>
+    <br>任务开始时间：
+    <p id="start">2017.12.22 09:52:44</p>
+    <br>任务结束时间：
+    <p id="end">2017.12.22 12:19:21</p>
+    <br>
     <p id="result"></p>
+    <br>
     <p id="orderTime"></p>
     <script>
-        console.log(new Date());
-
-        const now = document.getElementById('nowtime').innerHTML;
-        const start = document.getElementById('start').innerHTML;
-        const end = document.getElementById('end').innerHTML;
+        let now = document.getElementById('nowtime').innerHTML;
+        let start = document.getElementById('start').innerHTML;
+        let end = document.getElementById('end').innerHTML;
         document.getElementById('result').innerHTML = `进度时间：${time(start,now)}`;
         document.getElementById('orderTime').innerHTML = `预计剩余时间：${time(now,end)}`;
+
+
+        let D = new Date();
+        let Y = D.getFullYear();
+        let M = D.getMonth() + 1;
+        let d = D.getDate();
+        let H = D.getHours();
+        let m = D.getMinutes() + 1;
+        let s = D.getSeconds() + 1;
+        let time1 = `${Y}.${M}.${d} ${H}:${m}:${s}`;
+        setInterval(function () {
+            let D = new Date();
+            let Y = D.getFullYear();
+            let M = D.getMonth() + 1;
+            let d = D.getDate();
+            let H = D.getHours()<10?'0'+D.getHours():D.getHours();
+            let m = D.getMinutes()<10?'0'+D.getMinutes():D.getMinutes();
+            let s = D.getSeconds()<10?'0'+D.getSeconds():D.getSeconds();
+            let time1 = `${Y}.${M}.${d} ${H}:${m}:${s}`;
+            console.log(`现在的时间是${time1}`);
+
+            document.getElementById('nowtime').innerHTML = time1;
+            now = document.getElementById('nowtime').innerHTML;
+            start = document.getElementById('start').innerHTML;
+            end = document.getElementById('end').innerHTML;
+            document.getElementById('result').innerHTML = `进度时间：${time(start,now)}`;
+            document.getElementById('orderTime').innerHTML = `预计剩余时间：${time(now,end)}`;
+        }, 1000)
+
+
 
         function time(start, end) {
             if (start == 0 || end == 0) {
@@ -105,7 +143,7 @@
                 s.toString().length === 1 ? s = '0' + s : s;
             }
             var reg = /\-/;
-            if(reg.test(h) || reg.test(m) || reg.test(s)){
+            if (reg.test(h) || reg.test(m) || reg.test(s)) {
                 return '0小时0分钟0秒';
             }
             return h + '小时' + m + '分钟' + s + '秒';
