@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style: none;
+    }
+    .clear-fix{
+      zoom: 1;
+    }
+    .clear-fix:after{
+      content: '';
+      clear: both;
+      zoom: 1;
+      display: block;
+    }
+    .menu{
+      border: 1px solid red;
+      width:500px;
+      margin: 50px auto;
+    }
+    .menu>li{
+      float: left;
+      width:20%;
+      padding: 5px 0;
+      text-align: center;
+      position: relative;
+    }
+    .menu>li>ul{
+      position: absolute;
+      left: 0;
+      top: 100%;
+      display: none;
+    }
+    .menu>li:hover>ul{
+      display: block;
+      width: 100%;
+      background-color: antiquewhite;
+    }
+    .menu>li:hover>ul>li:hover{
+      background-color: pink;
+    }
+    .menu:hover>li{
+      background-color: #fff;
+    }
+    .menu>li:hover{
+      background-color: skyblue;
+    }
+    .active{
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="menu clear-fix">
+    <li class="active">
+      <a href="">11111</a>
+      <ul>
+        <li><a href="./a标签跳转.html#oD1">div1</a></li>
+        <li>children</li>
+        <li>children</li>
+        <li>children</li>
+        <li>children</li>
+      </ul>
+    </li>
+    <li>
+      <a href="">22222</a>
+      <ul>
+        <li><a href="./a标签跳转.html#oD2">div2</a></li>
+        <li>children</li>
+        <li>children</li>
+        <li>children</li>
+        <li>children</li>
+      </ul>
+    </li>
+    <li>
+      <a href="">33333</a>
+      <ul>
+        <li><a href="./a标签跳转.html#oD3">div3</a></li>
+        <li>children</li>
+        <li>children</li>
+        <li>children</li>
+        <li>children</li>
+      </ul>
+    </li>
+    <li>
+      <a href="">44444</a>
+      <ul>
+        <li>children</li>
+        <li>children</li>
+        <li>children</li>
+        <li>children</li>
+        <li>children</li>
+      </ul>
+    </li>
+    <li>
+      <a href="">55555</a>
+      <ul>
+        <li>children</li>
+        <li>children</li>
+        <li>children</li>
+        <li>children</li>
+        <li>children</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+
+</html>
