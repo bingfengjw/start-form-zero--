@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const fn = function (num) {
+      return new Promise(function (succ, err) {
+        console.log('num =', num);
+        if (num > 10) {
+          return succ(num);
+        } else {
+          return err(num);
+        }
+      })
+    }
+
+    fn(1).then(function (params) {
+      console.log(params);
+    });
+  </script>
+</body>
+
+</html>
