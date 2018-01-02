@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+        }
+    </style>
+
+</head>
+<body>
+<div id="box"></div>
+<input id="text1" type="text">
+
+</body>
+</html>
+<!--
+给事件行为绑定了一个函数,只要是触发,这个行为就会执行这个函数,只要是执行,浏览器就会默认给这个函数传一个参数,这个参数就是事件对象,这个事件对象记录了触发事件一瞬间的信息
+
+
+MouseEvent  鼠标事件对象
+keyboardEvent  键盘事件对象
+
+
+同一个事件行为绑定的一个函数,每一次触发事件行为执行这个函数的事件对象都是不一样的
+
+当点击box的时候同时触发body的onclick事件行为,此时就点击了一下,只有一个鼠标,浏览器只会得到一个事件对象,只不过是将同一个事件对象分别传给了两个函数
+-->
+<script>
+    box.onclick=function (e) {
+        console.log(e);
+        //e:MouseEvent  鼠标事件对象
+        e.clientX;//记录当前点击的那一瞬间鼠标距离屏幕左边的距离
+        e.clientY;//记录当前点击的那一瞬间鼠标距离屏幕上边的距离
+        //pageX,pageY有兼容性   低版本IE没有
+        e.pageX;//记录当前点击的那一瞬间鼠标距离整个网页左边的距离
+        e.pageY;//记录当前点击的那一瞬间鼠标距离整个网页上边的距离
+
+        e.target;//事件源  当前触发事件的元素,不一定是给谁绑得就是谁
+        e.type;//事件类型  DOM级事件绑定的第一个参数
+
+        //this 就是box
+
+        //在低版本IE下浏览器不会默认传参数,他的事件对象  window.event
+        e==e||window.event;
+        //事件源:   window.event.srcElement
+    }
+    document.body.onclick=function (e) {
+        console.log(e);
+        //当点击box的时候也会触发这个body的onclick,但是事件源e.target是box
+
+        // this 就是body
+    }
+
+</script>
