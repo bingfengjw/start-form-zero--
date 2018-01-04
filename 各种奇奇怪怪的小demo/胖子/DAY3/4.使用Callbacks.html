@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>张华男</title>
+</head>
+<body>
+
+</body>
+</html>
+<script src="js/Callbacks.js"></script>
+<script type="text/javascript">
+    function person1() {
+        console.log("张华男1");
+    }
+    function person2() {
+        console.log("张华男2");
+    }
+    function person3() {
+        console.log("张华男3");
+    }
+    function person4() {
+        console.log("张华男4");
+    }
+    function person5() {
+        console.log("张华男5");
+    }
+
+    let LiShuaiLin=new Callbacks();
+    LiShuaiLin.add("marry",person1,person2,person3);
+    LiShuaiLin.add("baby",person1,person2,person3,person4,person5);
+    LiShuaiLin.remove("baby",person1);
+
+    window.setInterval(function () {
+        LiShuaiLin.fire("marry")
+    },2000);
+    window.setInterval(function () {
+        LiShuaiLin.fire("baby")
+    },5000)
+
+
+    //add订阅
+    //fire 发布
+
+
+
+
+
+
+</script>
