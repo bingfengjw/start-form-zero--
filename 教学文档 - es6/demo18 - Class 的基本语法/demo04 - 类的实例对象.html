@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    (function () {
+      // 生成类的实例对象的写法，与 ES5 完全一样，也是使用new命令。前面说过，如果忘记加上new，像函数那样调用Class，将会报错。
+
+      class Point {
+        // ...
+      }
+
+      // 报错
+      // var point = Point(2, 3);
+
+      // 正确
+      var point = new Point(2, 3);
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 与 ES5 一样，实例的属性除非显式定义在其本身（即定义在this对象上），否则都是定义在原型上（即定义在class上）。
+
+      //定义类
+      class Point {
+
+        constructor(x, y) {
+          this.x = x;
+          this.y = y;
+        }
+
+        toString() {
+          return '(' + this.x + ', ' + this.y + ')';
+        }
+
+      }
+
+      var point = new Point(2, 3);
+
+      console.log(point.toString()); // (2, 3)
+
+      console.log(point.hasOwnProperty('x')); // true
+      console.log(point.hasOwnProperty('y')); // true
+      console.log(point.hasOwnProperty('toString')); // false
+      console.log(point.__proto__.hasOwnProperty('toString')); // true
+      // 上面代码中，x和y都是实例对象point自身的属性（因为定义在this变量上），所以hasOwnProperty方法返回true，而toString是原型对象的属性（因为定义在Point类上），所以hasOwnProperty方法返回false。这些都与 ES5 的行为保持一致。
+
+      // 与 ES5 一样，类的所有实例共享一个原型对象。
+
+      var p1 = new Point(2, 3);
+      var p2 = new Point(3, 2);
+
+      console.log(p1.__proto__ === p2.__proto__);
+      //true
+      // 上面代码中，p1和p2都是Point的实例，它们的原型都是Point.prototype，所以__proto__属性是相等的。
+    })();
+  </script>
+</body>
+
+</html>
