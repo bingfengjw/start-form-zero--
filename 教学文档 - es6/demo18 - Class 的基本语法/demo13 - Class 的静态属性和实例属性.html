@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    (function () {
+      // 静态属性指的是 Class 本身的属性，即Class.propName，而不是定义在实例对象（this）上的属性。
+
+      class Foo {}
+
+      Foo.prop = 1;
+      console.log(Foo.prop); // 1
+      // 上面的写法为Foo类定义了一个静态属性prop。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 目前，只有这种写法可行，因为 ES6 明确规定，Class 内部只有静态方法，没有静态属性。
+
+      // 以下两种写法都无效
+      class Foo {
+        // 写法一
+        // prop: 2
+
+        // 写法二
+        // static prop: 2;
+      }
+
+      Foo.prop // undefined
+    })();
+
+    console.log('------------------------');
+
+    // 目前有一个静态属性的提案，对实例属性和静态属性都规定了新的写法。
+    (function () {
+      // （1）类的实例属性
+      // 类的实例属性可以用等式，写入类的定义之中。
+
+      class MyClass {
+        myProp = 42;
+
+        constructor() {
+          console.log(this.myProp); // 42
+        }
+      }
+      // 上面代码中，myProp就是MyClass的实例属性。在MyClass的实例上，可以读取这个属性。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 以前，我们定义实例属性，只能写在类的constructor方法里面。
+
+      class ReactCounter extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            count: 0
+          };
+        }
+      }
+      // 上面代码中，构造方法constructor里面，定义了this.state属性。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 有了新的写法以后，可以不在constructor方法里面定义。
+
+      class ReactCounter extends React.Component {
+        state = {
+          count: 0
+        };
+      }
+      // 这种写法比以前更清晰。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 为了可读性的目的，对于那些在constructor里面已经定义的实例属性，新写法允许直接列出。
+
+      class ReactCounter extends React.Component {
+        state;
+        constructor(props) {
+          super(props);
+          this.state = {
+            count: 0
+          };
+        }
+      }
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // （2）类的静态属性
+      // 类的静态属性只要在上面的实例属性写法前面，加上static关键字就可以了。
+
+      class MyClass {
+        static myStaticProp = 42; // *现在使用会报错
+
+        constructor() {
+          console.log(MyClass.myStaticProp); // 42
+        }
+      }
+
+      // 老写法
+      class Foo {
+        // ...
+      }
+      Foo.prop = 1;
+
+      // 新写法
+      class Foo {
+        static prop = 1;
+      }
+      // 上面代码中，老写法的静态属性定义在类的外部。整个类生成以后，再生成静态属性。这样让人很容易忽略这个静态属性，也不符合相关代码应该放在一起的代码组织原则。另外，新写法是显式声明（declarative），而不是赋值处理，语义更好。
+    })();
+  </script>
+</body>
+
+</html>
