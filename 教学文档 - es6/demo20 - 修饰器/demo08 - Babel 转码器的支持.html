@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 目前，Babel 转码器已经支持 Decorator。
+
+    // 首先，安装babel-core和babel-plugin-transform-decorators。由于后者包括在babel-preset-stage-0之中，所以改为安装babel-preset-stage-0亦可。
+    // $ npm install babel-core babel-plugin-transform-decorators
+
+    // 然后，设置配置文件.babelrc。
+    // { "plugins": ["transform-decorators"] }
+
+    // 这时，Babel 就可以对 Decorator 转码了。
+
+    // 脚本中打开的命令如下。
+    // babel.transform("code", {plugins: ["transform-decorators"]})
+
+    // Babel 的官方网站提供一个在线转码器，只要勾选 Experimental，就能支持 Decorator 的在线转码。
+  </script>
+</body>
+
+</html>
