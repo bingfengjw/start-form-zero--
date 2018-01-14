@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>张华男</title>
+</head>
+<body>
+
+</body>
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+   function Callbacks() {
+       //给每一个实例加一个私有属性,一个数组后面用来当做回调函数集合
+       this.CB=[];
+   }
+   Callbacks.prototype.has=function (fn) {
+       //this 也是当前实例; 判断实例this的回调函数集合cb 中有没有fn
+      return this.CB.includes(fn);
+   };
+   Callbacks.prototype.add=function (...arg) {
+       //循环当前的arg,判断每一项,必须是个函数,并且之前集合中没有才放到数组中
+       arg.forEach((item)=>{
+           if(typeof item=="function"&&!this.CB.includes(item)){
+               this.CB.push(item)
+           }
+       });
+       return this;
+   };
+   Callbacks.prototype.remove=function (...arg) {
+       //遍历arg判断每一项,在集合中有的就移除,没有的就不需要移除
+       arg.forEach((item)=>{
+           if(this.has(item)){
+               this.CB.splice(this.CB.indexOf(item),1)
+           }
+       })
+
+   };
+   Callbacks.prototype.fire=function (...arg) {
+       //让当前集合中的函数依次执行
+       //我们让每一个函数执行的时候把里面的this变成当前实例
+       this.CB.forEach((item)=>{
+           item.apply(this,arg);
+       })
+   };
+   function fn1() {
+       console.log("fn1");
+   }
+   let cb=new Callbacks();
+   cb.has(fn1)
+
+</script>

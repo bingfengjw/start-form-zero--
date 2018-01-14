@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // yield*语句也可以跟一个异步遍历器。
+    (function () {
+
+      async function* gen1() {
+        yield 'a';
+        yield 'b';
+        return 2;
+      }
+
+      async function* gen2() {
+        // result 最终会等于 2
+        const result = yield* gen1();
+      }
+      // 上面代码中，gen2函数里面的result变量，最后的值是2。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 与同步 Generator 函数一样，for await...of循环会展开yield*。
+
+      (async function () {
+        for await (const x of gen2()) {
+          console.log(x);
+        }
+      })();
+      // a
+      // b
+    })();
+  </script>
+</body>
+
+</html>

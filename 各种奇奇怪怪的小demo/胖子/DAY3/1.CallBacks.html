@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>张华男</title>
+</head>
+<body>
+
+</body>
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+    //回调函数集合  当一个函数当做参数的时候就叫做回调函数,回调函数都是异步的,例如  定时器
+    let $cb=$.Callbacks();
+//    console.log($cb);
+    //add  remove  has  empty  fire
+    //add  往集合里面增加函数 ,可以执行多次,也可以一次性增加多个,
+    $cb.add(fn3);
+    $cb.add(fn1,fn2)
+
+   //fire  让集合中所有的函数执行,按照add加入的顺序执行
+    //函数可以传实参,每个函数执行的时候根据自己的形参获取对应的实参
+    $cb.fire(1,2)
+    //remove 从集合中移除某一个函数
+    console.log($cb.remove(fn3));;
+    //has   判断集合中有没有指定函数,false/true
+    //empty   清空
+
+
+    function fn1(n) {
+        console.log("fn1",n);
+    }
+    function fn2(n,m) {
+        console.log("fn2",n,m);
+    }
+    function fn3() {
+        console.log("fn3");
+    }
+
+
+
+
+</script>

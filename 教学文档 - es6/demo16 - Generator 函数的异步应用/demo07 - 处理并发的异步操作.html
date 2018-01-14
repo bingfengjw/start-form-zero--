@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // co 支持并发的异步操作，即允许某些操作同时进行，等到它们全部完成，才进行下一步。
+    // 这时，要把并发的操作都放在数组或对象里面，跟在yield语句后面。
+
+    // 数组的写法
+    co(function* () {
+      var res = yield [
+        Promise.resolve(1),
+        Promise.resolve(2)
+      ];
+      console.log(res);
+    }).catch(onerror);
+
+    // 对象的写法
+    co(function* () {
+      var res = yield {
+        1: Promise.resolve(1),
+        2: Promise.resolve(2),
+      };
+      console.log(res);
+    }).catch(onerror);
+
+    // 下面是另一个例子。
+
+    co(function* () {
+      var values = [n1, n2, n3];
+      yield values.map(somethingAsync);
+    });
+
+    function* somethingAsync(x) {
+      // do something async
+      return y
+    }
+    // 上面的代码允许并发三个somethingAsync异步操作，等到它们全部完成，才会进行下一步。
+  </script>
+</body>
+
+</html>

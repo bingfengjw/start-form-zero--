@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>张华男</title>
+</head>
+<body>
+
+</body>
+</html>
+<script src="js/Callbacks.js"></script>
+<script type="text/javascript">
+    function fn1(n) {
+        console.log("fn1",n);
+    }
+    function fn2(n,m) {
+        console.log("fn2",n,m);
+    }
+    function fn3() {
+        console.log("fn3");
+    }
+
+
+
+
+    let cb1=new Callbacks();
+    cb1.add("click",fn1,fn2);
+    cb1.add("mouseover",fn2,fn3);
+    cb1.add("mousedown",fn3);
+    cb1.remove("mouseover",fn2);
+    console.log(cb1);
+    cb1.fire("click",4,5)
+</script>

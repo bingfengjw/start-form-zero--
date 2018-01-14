@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    (function () {
+      // 与私有方法一样，ES6 不支持私有属性。目前，有一个提案，为class加了私有属性。方法是在属性名之前，使用#表示。
+
+      // class Point {
+      //   #x;
+
+      //   constructor(x = 0) {
+      //     #x = +x; // 写成 this.#x 亦可
+      //   }
+
+      //   get x() { return #x }
+      //   set x(value) { #x = +value }
+      // }
+
+      // 上面代码中，#x就表示私有属性x，在Point类之外是读取不到这个属性的。还可以看到，私有属性与实例的属性是可以同名的（比如，#x与get x()）。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 私有属性可以指定初始值，在构造函数执行时进行初始化。
+
+      // class Point {
+      //   #x = 0;
+      //   constructor() {
+      //     #x; // 0
+      //   }
+      // }
+
+      // 之所以要引入一个新的前缀#表示私有属性，而没有采用private关键字，是因为 JavaScript 是一门动态语言，使用独立的符号似乎是唯一的可靠方法，能够准确地区分一种属性是否为私有属性。另外，Ruby 语言使用@表示私有属性，ES6 没有用这个符号而使用#，是因为@已经被留给了 Decorator。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 该提案只规定了私有属性的写法。但是，很自然地，它也可以用来写私有方法。
+
+      // class Foo {
+      //   #a;
+      //   #b;
+      //   #sum() { return #a + #b; }
+      //   printSum() { console.log(#sum()); }
+      //   constructor(a, b) { #a = a; #b = b; }
+      // }
+      // 上面代码中，#sum()就是一个私有方法。
+    })();
+
+    console.log('------------------------');
+
+    (function () {
+      // 另外，私有属性也可以设置 getter 和 setter 方法。
+
+      // class Counter {
+      //   #xValue = 0;
+
+      //   get #x() { return #xValue; }
+      //   set #x(value) {
+      //     this.#xValue = value;
+      //   }
+
+      //   constructor() {
+      //     super();
+      //     // ...
+      //   }
+      // }
+      // 上面代码中，#x是一个私有属性，它的读写都通过get #x()和set #x()来完成。
+    })();
+  </script>
+</body>
+
+</html>
