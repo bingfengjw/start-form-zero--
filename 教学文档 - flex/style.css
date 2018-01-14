@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.box{
+    display: flex;
+}
+.item{
+    width: 200px;
+    height: 200px;
+    border: 5px solid red;
+    background-color: skyblue;
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 200px;
+}

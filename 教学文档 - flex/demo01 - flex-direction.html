@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+    .box{
+        /* 
+        排列方式:
+        row（默认）：从左到右
+        row-reverse：从右到左
+        column：从上到下
+        column-reverse：从下到上
+        */
+        flex-direction: column-reverse;
+    }
+    </style>
+</head>
+<body>
+    <!-- flex是 flexible box的缩写,意味"弹性布局",用来为盒装模型提供最大的灵活性。
+    任何一个容器都可以指定为flex布局。 -->
+<div class="box">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</div>
+</body>
+</html>

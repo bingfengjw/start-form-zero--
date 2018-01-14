@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .item {
+            line-height: 120px;
+        }
+
+        .item:nth-of-type(2) {
+            line-height: 100px;
+            height: 150px;
+        }
+
+        .item:nth-of-type(3) {
+            height: 240px;
+            line-height: 200px;
+        }
+
+        .item:nth-of-type(4) {
+            height: 120px;
+        }
+
+        .item:nth-of-type(5) {
+            height: 300px;
+        }
+
+        .box{
+            /* 
+            align-items：定义在纵向上元素如何对齐
+            stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度
+            flex-start：顶部对齐
+            flex-end：底部对齐
+            center：中间对齐
+            baseline：按照第一行文字的基线对齐 
+            */
+            align-items: baseline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>
