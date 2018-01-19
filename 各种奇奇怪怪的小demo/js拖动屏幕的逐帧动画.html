@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      height: 8000px;
+      background-position: 0 0;
+    }
+
+    img {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 800px;
+      transform: rotate(90deg);
+    }
+    .content{
+      width: 270px;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+    }
+  </style>
+  <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+  <img src="./img/土豆_看图王/土豆_1.jpg" alt="">
+  <div class="content">
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+</body>
+<script>
+  const documentH = $(document).height(); // 当前页面的总高度
+  const pictureNum = 67; // 图片数量
+  $(document).scroll(function (e) {
+    const scrollT = $(this).scrollTop() + $(window).height(); // 当前屏幕距离页面顶端的距离
+    const scrollPercent = scrollT / documentH * 100; // 当前屏幕位置的百分比
+    const picPercent = Math.ceil(pictureNum * Math.ceil(scrollPercent) / 100); // 当前屏幕应该显示的图片
+    console.log(picPercent);
+    $('img').attr('src', `./img/土豆_看图王/土豆_${picPercent}.jpg`);
+    $("p:eq(0)").html(`当前显示的图片是${picPercent}`);
+    $("p:eq(1)").html(`当前屏幕位置的百分比${scrollPercent.toFixed(5)}`);
+    $("p:eq(2)").html(`当前屏幕距离页面底部的距离${scrollT}`);
+  })
+</script>
+
+</html>
