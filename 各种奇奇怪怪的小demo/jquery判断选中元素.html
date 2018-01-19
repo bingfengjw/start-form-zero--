@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    div {
+      width: 300px;
+      height: 300px;
+      border: 1px solid red;
+      float: left;
+      margin: 50px;
+      padding: 20px;
+    }
+    #left span{
+      color: red;
+      font-size: 20px;
+    }
+    #right p{
+      color: red;
+      font-size: 30px;
+    }
+  </style>
+  <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="left">
+    <h1>left</h1>
+    <p>选中了
+      <span></span>项</p>
+    <ol>
+      <li>
+        <input type="checkbox">
+      </li>
+      <li>
+        <input type="checkbox">
+      </li>
+      <li>
+        <input type="checkbox">
+      </li>
+      <li>
+        <input type="checkbox">
+      </li>
+      <li>
+        <input type="checkbox">
+      </li>
+    </ol>
+  </div>
+  <div id="right">
+    <h1>左侧选中的input的下标为：</h1>
+    <p></p>
+  </div>
+  <script async>
+    $("input").change(function () {
+      let selectArr = [];
+      $("#left span").text($("input:checked").length);
+      $.each($('input'), function (indexInArray, valueOfElement) {
+        if ($(this).prop('checked')) {
+          selectArr.push(indexInArray);
+        }
+      });
+      $("#right p").text(Array.from(selectArr));
+    })
+  </script>
+</body>
+
+</html>

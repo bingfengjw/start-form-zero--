@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        /*ol li{*/
+        /*list-style: none;*/
+        /*}*/
+
+        .fl {
+            float: left;
+        }
+
+        .inner {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            margin-left: -600px;
+            width: 1200px;
+            height: 420px;
+            /*margin: 20px auto 0;*/
+            /*transition:  2s ease ;*/
+            display: none;
+            background: #ccc;
+        }
+
+        .inner div {
+            width: 500px;
+            height: 300px;
+            box-sizing: border-box;
+            margin: 50px;
+            /*border: 1px solid #cccccc;*/
+            border: 1px solid black;
+        }
+
+        .inner div h2 {
+            margin-left: 20px;
+        }
+
+        .button {
+            width: 150px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            color: #000;
+            background: #ccc;
+            margin: 150px auto 0;
+            border-radius: 5%;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: #999;
+        }
+
+        .close {
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -50px;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            background: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button">
+        弹窗
+    </div>
+    <div class="inner">
+        <div class="left fl">
+            <h2>左边列表</h2>
+            <ol id="left_ol" style="display: block;">
+                <li>一</li>
+                <li>二</li>
+                <li>三</li>
+            </ol>
+        </div>
+        <div class="right fl">
+            <h2>右边列表</h2>
+            <ol id="right_ol">
+            </ol>
+        </div>
+        <p class="close">
+            关闭
+        </p>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        let selectVal = new Set();
+        $("#left_ol li").click(function () {
+            $("#right_ol").html(null);
+            selectVal.add($(this).text());
+            selectVal.forEach(element => {
+                $("#right_ol").append(`<li>${element}</li>`)
+            })
+        });
+        $('#right_ol').delegate('li', 'click', function () {
+            selectVal.delete($(this).text());
+            $(this).remove();
+        });
+        $('.button').click(function () {
+            $('.inner').css("display", "block");
+        })
+        $('.close').click(function () {
+            $('.inner').css("display", "none");
+        })
+    })
+</script>
+
+</html>
