@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="http://echarts.baidu.com/dist/echarts.min.js"></script>
+</head>
+
+<body>
+  <div id="main" style="width: 600px;height:400px;"></div>
+
+  <script>
+    var myChart = echarts.init(document.getElementById('main'));
+
+    var colorList = [];
+    var option = {
+      calculable: true,
+      tooltip: {
+        trigger: 'axis'
+      },
+      xAxis: [{
+          type: 'category',
+          data: ['s1', 's2', 's3', 's4', 's5']
+        },
+        //辅助x轴
+        {
+          type: 'category',
+          axisLine: {
+            show: false
+          },
+          axisTick: {
+            show: false
+          },
+          axisLabel: {
+            show: false
+          },
+          splitArea: {
+            show: false
+          },
+          splitLine: {
+            show: false
+          },
+          data: ['s1', 's2', 's3', 's4', 's5']
+        }
+      ],
+      yAxis: [{
+        type: 'value',
+        axisLabel: {
+          formatter: '{value} 分'
+        }
+      }],
+      series: [{
+          name: '成绩',
+          type: 'bar',
+          xAxisIndex: 1,
+          itemStyle: {
+            normal: {
+              // color: function (params) {
+              //   return colorList[params.dataIndex]
+              // }
+              color: 'skyblue'
+            }
+          },
+          data: [70, 80, 50, 90, 100]
+        },
+        //背景
+        {
+          name: '成绩',
+          type: 'bar',
+          //颜色需要有透明度
+          itemStyle: {
+            normal: {
+              color: 'rgba(102, 102, 102,0.5)'
+            }
+          },
+          //data填你需要的背景的值
+          data: [50, 50, 50, 50, 50]
+        },
+      ]
+    };
+    // for (var i in option.series[0].data) {
+    //   colorList[i] = option.series[0].data[i] > 70 ? '#F08080' : '#7EC0EE';
+    // };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+  </script>
+</body>
+
+</html>
