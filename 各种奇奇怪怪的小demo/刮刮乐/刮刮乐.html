@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+</head>
+
+<body>
+	<div class="ggl">
+		<div class="oggl" data-interactive-type="touchsmear">
+			<!-- <img src="微信图片_20180122165223.jpg" /> -->
+			djasklasdjl213213213213
+		</div>
+	</div>
+	<div class="ggl">
+		<div class="oggl" data-interactive-type="touchsmear">
+			djasklasdjl213213213213
+		</div>
+	</div>
+	<div class="ggl">
+		<div class="oggl" data-interactive-type="touchsmear">
+			djasklasdjl213213213213
+		</div>
+	</div>
+	<div class="ggl">
+		<div class="oggl" data-interactive-type="touchsmear">
+			djasklasdjl213213213213
+		</div>
+	</div>
+	<div class="ggl">
+		<div class="oggl" data-interactive-type="touchsmear">
+			djasklasdjl213213213213
+		</div>
+	</div>
+	<div class="ggl">
+		<div class="oggl" data-interactive-type="touchsmear">
+			djasklasdjl213213213213
+		</div>
+	</div>
+
+</body>
+
+<style type="text/css">
+	.ggl {
+		position: relative;
+	}
+
+	.oggl {
+		position: absolute;
+		z-index: -1;
+	}
+</style>
+<script type="text/javascript">
+	function TMB() {
+
+		function init(oDiv) {
+			if (window.innerWidth) {
+				Width = window.innerWidth;
+			} else if (document.body && document.body.clientWidth) {
+				Width = document.body.clientWidth;
+			}
+
+			let oGgl = oDiv;
+			let bodyStyle = oGgl.parentNode;
+
+			let oTouchsmear = oGgl.getAttribute('data-interactive-type');
+
+			let canvas = document.createElement('canvas');
+			oGgl.parentNode.appendChild(canvas);
+
+			let w = oGgl.clientWidth;
+			let h = oGgl.clientHeight;
+
+			bodyStyle.mozUserSelect = 'none'; //屏蔽
+			bodyStyle.webkitUserSelect = 'none';
+			let scrapeNum;
+
+			//创建画布
+			let ctx = canvas.getContext('2d');
+			canvas.width = w;
+			canvas.height = h;
+			ctx.beginPath();
+			//			ctx.fillStyle = 'grey'
+			ctx.fillStyle = "rgba(149,163,171,0.95)"
+			//			console.log(canvas.width)
+			ctx.fillRect(0, 0, w, h);
+
+			// render(canvas,ctx,w,h,bodyStyle);
+			return {
+				canvas,
+				ctx,
+				w,
+				h,
+				bodyStyle
+			};
+		}
+
+		function render(oDiv) {
+			let {
+				canvas,
+				ctx,
+				w,
+				h,
+				bodyStyle
+			} = init(oDiv);
+
+			//判断百分之70
+
+			//判断手势抬起固定位置		
+			let mousedown = false;
+
+			canvas.addEventListener('touchstart', function (e) {
+				e.preventDefault();
+				mousedown = true;
+			});
+			canvas.addEventListener('touchend', function (e) {
+				e.preventDefault();
+				console.log(mousedown)
+				mousedown = false;
+
+			});
+			canvas.addEventListener('touchmove', function (e) {
+				e.preventDefault();
+				e = e || event
+
+				//涂抹百分70清空
+				let data = ctx.getImageData(0, 0, w, h).data,
+
+					scrapeNum = 0,
+					area = w * h;
+				for (let i = 3, len = data.length; i < len; i += 4) {
+					if (data[i] === 0) {
+						scrapeNum++;
+					}
+				}
+				if (scrapeNum > area * 0.7) {
+					console.log(">70%");
+					ctx.clearRect(0, 0, w, h);
+					/*		canvas.removeEventListener('touchmove', moveFunc, false);
+							canvas.removeEventListener('touchend', endFunc, false);*/
+				}
+				let offsetX = bodyStyle.offsetLeft //获取
+				offsetY = bodyStyle.offsetTop;
+
+				if (mousedown) {
+					if (e.changedTouches) {
+						e = e.changedTouches[e.changedTouches.length - 1];
+					}
+
+					console.log(offsetX)
+					let x = e.pageX - offsetX,
+						y = e.pageY - offsetY;
+					//				console.log(y)
+					//				console.log(x)
+					ctx.globalCompositeOperation = "destination-out";
+					ctx.beginPath();
+					ctx.arc(x, y, 30, 0, Math.PI * 4);
+					ctx.fill();
+				}
+			});
+		}
+
+		function run(oDiv) {
+			// init(oDiv);
+			render(oDiv);
+		}
+
+		return {
+			run
+		}
+	}
+
+	// document.querySelector('img').onload = function () {
+	TMB().run(document.querySelector('.oggl'));
+	TMB().run(document.querySelectorAll('.oggl')[1]);
+	TMB().run(document.querySelectorAll('.oggl')[2]);
+	TMB().run(document.querySelectorAll('.oggl')[3]);
+	TMB().run(document.querySelectorAll('.oggl')[4]);
+	TMB().run(document.querySelectorAll('.oggl')[5]);
+	// }
+</script>
+
+</html>
