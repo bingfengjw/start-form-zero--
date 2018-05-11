@@ -1,0 +1,28 @@
+{
+  "data":[
+    {
+      "start":0,
+      "end":10,
+      "content":"让我们掌声有请中国移动通信集团公司尚兵董事长做主题演讲， ",
+      "isText":"true"
+    },
+    {
+      "start":10,
+      "end":20,
+      "content":"有请。",
+      "isText":"true"
+    },
+    {
+      "start":20,
+      "end":30,
+      "content":"啊你啊啊嗯嗯这。",
+      "isText":"false"
+    },
+    {
+      "start":30,
+      "end":40,
+      "content":"尊敬的各位合作伙伴，",
+      "isText":"true"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="js/wavesurfer.min.js"></script>
+</head>
+
+<body>
+  <div id="waveform"></div>
+  <button>get time</button>
+  <button class="setTime">回退1分钟</button>
+  <button class="setTime">回退10秒</button>
+  <button class="setTime">前进10秒</button>
+  <button class="setTime">前进1分钟</button>
+
+  <script>
+    var wavesurfer = WaveSurfer.create({
+      container: '#waveform',
+      hideScrollbar:true,
+      // scrollParent: true, // 是否有滚动条（左右可以拖动）
+      // waveColor: 'violet',
+      // progressColor: 'purple'
+    });
+
+    wavesurfer.load('file/薛之谦 - 一半 (Live).mp3');
+    wavesurfer.on('ready', function () {
+      wavesurfer.play();  //  音频播放
+    });
+    document.querySelectorAll("button")[0].onclick = function(){
+      var time = wavesurfer.getCurrentTime()
+      console.log(time);
+    }
+    document.querySelectorAll("button")[1].onclick = function(){
+      wavesurfer.skip(-60);
+    }
+    document.querySelectorAll("button")[2].onclick = function(){
+      wavesurfer.skip(-10);
+    }
+    document.querySelectorAll("button")[3].onclick = function(){
+      wavesurfer.skip(10);
+    }
+    document.querySelectorAll("button")[4].onclick = function(){
+      wavesurfer.skip(60);
+    }
+  </script>
+</body>
+
+</html>

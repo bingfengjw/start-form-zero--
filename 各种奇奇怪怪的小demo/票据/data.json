@@ -1,0 +1,17 @@
+{
+  "biList": [{
+    "billNo": "230758400800520180416100265420",
+    "endorseType": "E",
+    "endorserName": "票据测试一",
+    "endorseeName": "企业测试六",
+    "transferEnable": "Y",
+    "endorserTm": "2018-04-20"
+  }, {
+    "billNo": "230758400800520180416100265420",
+    "endorseType": "E",
+    "endorserName": "票据测试一",
+    "endorseeName": "企业测试六",
+    "transferEnable": "Y",
+    "endorserTm": "2018-04-20"
+  }]
+}

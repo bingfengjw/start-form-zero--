@@ -6,4 +6,5 @@
     "files":[
         "app.js",
         "typings/node/dode.d.ts"
+    ]
 }

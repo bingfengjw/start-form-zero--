@@ -1,0 +1,361 @@
+/*zyp base css 閸氬孩婀￠崥鍫濊嫙閸掔櫚ase.css*/
+
+/* S 閸忣剙鍙￠弽宄扮础*/
+.zwrap{width: 1180px; margin: 0px auto;margin-top: 30px;margin-bottom: 50px;}
+.fl{float: left}
+.fr{float: right;}
+.sameIcons{background-image: url("../../img/Icons.png");}
+.showRuleWrap{display: none;}
+
+
+/* E 閸忣剙鍙￠弽宄扮础*/
+
+/*---------------------- S 閻劍鍩涙稉顓炵妇-閸忣剙鍙� ----------------------*/
+/* .userBg{background: url(../../img/test/centerLeftBorder.png) repeat right;} */
+.userBg{
+    filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#b6abea,endcolorstr=#5b4e99,gradientType=0);
+    -ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#b6abea,endcolorstr=#5b4e99,gradientType=0);/*IE8*/	
+    background:#8f84c8; /* 娑擄拷娴滄稐绗夐弨顖涘瘮閼冲本娅欏〒鎰綁閻ㄥ嫭绁荤憴鍫濇珤 */  
+    background:-moz-linear-gradient(top, #b6abea, #5b4e99);  
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#b6abea), to(#5b4e99));  
+    background:-o-linear-gradient(top, #b6abea, #5b4e99);
+}
+
+
+
+/* S 閻劍鍩涙稉顓炵妇瀹革缚鏅禸ar*/
+.userBar{width: 230px; padding-bottom: 54px; background: none; float: left;}
+.userBarTop{height: 285px; padding-top: 25px;}
+.userPic{display: block; margin: 0px auto;}
+.userIcon{display: block; text-align: center; width: 70px; height: 26px; line-height: 26px; font-size: 12px; color: #daa518; background: #fff8df; border-radius: 5px; margin: 18px auto; border: 1px solid #f2df9b}
+.userInfo{height: 20px; line-height: 20px; text-align: center; font-size: 14px; font-weight: bold; color: #666;}
+.userSecurityState{padding-left: 70px; margin-top: 15px;}
+.userSecurityState li,.userSecurityState a{display: block; width: 34px; height: 34px; float: left;}
+.userSecurityState li{margin-right: 20px;}
+.userSecurityState a.userPhone{background-position: 0 0;}
+.userSecurityState a.userEmail{background-position: -70px 0;}
+.userSecurityState a.userPhone.active{background-position: -35px 0;}
+.userSecurityState a.userEmail.active{background-position: -105px 0;}
+
+.userCenterNav a{display: block; color: #fff;height: 54px; line-height: 54px; padding-left: 70px;  line-height: 54px; position: relative;}
+.userCenterNav a:hover{background: #a49ad7;}
+.userCenterNav .active a{background: #a49ad7;}
+.userCenterNav a.active{background: #fff; border-color: #dbdee5;}
+.userCenterNavIcon {display: block; width: 14px; height: 14px; line-height: 14px; position: absolute; top: 18px; right: 25px; color: #fff;background: url(../../img/test/jiantou.png) no-repeat center;}
+.userCenterNavIcon2 {display: block; width: 14px; height: 14px; line-height: 14px; position: absolute; top: 18px; right: 25px; color: #fff;background: url(../../img/test/jiantou.png) no-repeat center;}
+
+/* E 閻劍鍩涙稉顓炵妇瀹革缚鏅禸ar*/
+
+/* S 閻劍鍩涙稉顓炵妇閸欏厖鏅� */
+.userContent{background: #fff; padding: 0 20px; min-height: 830px; float: left; width: 910px;padding-bottom:20px;}
+.userContentTitle{height: 38px; line-height: 38px; font-size: 22px; color: #333; padding-top: 20px;}
+/* E 閻劍鍩涙稉顓炵妇閸欏厖鏅� */
+
+/* S 閻劍鍩涙稉顓炵妇-鐎瑰鍙忔稉顓炵妇*/
+.formWrap{padding: 40px 0 1px 220px; width: 410px;}
+.securityFrom li{height: 42px; line-height: 42px; margin-bottom: 30px;}
+
+/*.securityFrom li#errorText i{display: inline-block; width: 16px; height: 16px; line-height: 20px; text-align: center; margin-right: 10px; background:#db2b1d; color: #fff; border-radius: 50%; position: absolute; }*/
+.securityFrom .errorText{height: 20px; line-height: 20px; padding-left: 130px; color: #db2b1d; position: relative; font-size: 12px;}
+
+
+.securityFrom li label{width: 110px; margin-right: 15px; text-align: right; color: #999; display: inline-block;}
+.securityFrom li input{height: 30px; line-height: 40px; width: 270px; padding: 5px 0 5px 8px;  border-radius: 5px; border: 1px solid #eaeaea;}
+
+.securityFrom li input.validCode{width:120px; margin-right: 15px;}
+.securityFrom li #getValidCode{height: 40px; width: 128px; display: inline-block; border-radius: 5px; border: 1px solid #eaeaea; text-align: center; color: #666; background: #fafafa;}
+
+.securityFrom li .btn-submit{display: block; width: 280px; height: 44px; line-height: 0px; background: #9786ea; text-align: center; font-size: 16px; color: #fff; border-radius:5px; cursor: pointer;}
+
+
+.questionWrap{margin-top: 70px; padding: 44px 58px 15px; background: url("../../img/userline.png") no-repeat left top;}
+.everyQuest i.qwIcon{display: block; width: 20px; height: 20px; line-height: 20px; text-align: center; font-size: 14px; color: #fff; font-weight: normal; border-radius: 50%;  background: #9786ea; position: absolute; top: 0px; left: 0px; }
+.everyQuest .qwIcon:after{width: 0px; content: " "; border-width: 4px; border-style: solid; border-color: transparent transparent transparent #9786ea; position: absolute; top: 6px; right: -7px; z-index: 999}
+.everyQuest i.qwIcon.two{background: #ffc053;}
+.everyQuest .qwIcon.two:after{border-color: transparent transparent transparent #ffc053;}
+
+.everyQuest .querstion,.everyQuest .anwser{line-height: 20px; position: relative; line-height: 20px; padding-left: 42px;}
+.everyQuest .querstion{color: #666; font-weight: bold; margin-bottom: 20px;}
+.everyQuest .anwser{color: #999; }
+.everyQuest .anwser a{color: #9786ea;}
+/* E 閻劍鍩涙稉顓炵妇-鐎瑰鍙忔稉顓炵妇*/
+
+/* S 閻劍鍩涙稉顓炵妇-閸╄櫣顢呮穱鈩冧紖*/
+.infoWrap{margin-top: 10px; padding-bottom: 46px;}
+.infoWrap h4{padding: 0 15px; background: #fafafa; height: 34px; line-height: 34px; font-size: 16px; color: #666;}
+.infoWrap li{float: left; width: 440px; height: 40px; line-height: 40px; padding-right: 10px;}
+.infoWrap li label{display: inline-block; width: 80px; color: #999; margin-right: 15px; text-align: right;}
+
+.infoWrap .userInfoList{padding-top: 33px;}
+.infoWrap .userInfoList li{margin-bottom: 15px;}
+
+.infoWrap .userInfoForm{position: relative; padding-top: 40px;}
+.infoWrap .userInfoForm li{margin-bottom: 30px;}
+.infoWrap .userInfoForm li i{color: #ea544a; margin-right: 5px;}
+.infoWrap .userInfoForm input{width: 220px; padding-left: 8px; height: 38px; border: 1px solid #eaeaea; border-radius: 5px;}
+.infoWrap .userInfoForm li .errorText{height: 20px; line-height: 20px; padding-left: 100px; color: #db2b1d; position: relative; font-size: 12px;}
+
+.infoWrap .userInfoForm #submitLi{width: auto; position: absolute; top: -40px; right: 20px; margin: 0px;}
+.infoWrap .userInfoForm #submitLi input{border: none; padding: 0; margin: 0px; width: auto; background: none; cursor: pointer; color: #5b9fe2;}
+.infoWrap .userInfoForm #submitLi input:focus{outline: none;}
+
+.bankCodeWrap .addBankCode{display: block; text-align: center; padding: 10px 20px; width: 90px; background: #fafafa; border: 1px solid #ccc;}
+.bankTitle{padding-top: 20px;}
+.bankTitle li{float: left; height: 30px; line-height: 30px; background: #fafafd;text-align: center;}
+.bankCodeWrap li.bankIndex{width: 50px; text-align: center;}
+.bankCodeWrap li.bankName,
+.bankCodeWrap li.bankCode,
+.bankCodeWrap li.bankArea,
+.bankCodeWrap li.bankUserName{padding-left: 16px; width: 145px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.bankCodeWrap li a{color:#0000FF; margin-right: 5px;}
+
+.bankCodeWrap li.bankOperation{width: 200px; text-align: center;}
+.banklist li{border: 1px solid #ccc; float: left; height: 40px; line-height: 40px; margin-left: -1px;}
+.addBank .cancelReason .dateInput{width: 340px; line-height: 40px; border-radius: 3px; border: 1px solid #eaeaea; text-indent: 10px;}
+
+/* E 閻劍鍩涙稉顓炵妇-閸╄櫣顢呮穱鈩冧紖*/
+
+/* S 鐠у嫰鍣剧拋鏉跨秿*/
+.accountInfo{margin-top: 12px; height: 113px; background: #fffbfa; padding-left: 15px; position: relative;}
+.accountTitle{padding-top: 40px; line-height: 20px; color: #999; margin-right: 15px;}
+.accountTitle .balance{font-size: 32px; color: #db2b1d; line-height: 40px; }
+.accountDetail{height: 70px; color: #999; padding-top: 10px; width: 308px; position: absolute; right: 0px; top: 26px;}
+.accountDetail .btn-withdraw{display: inline-block; font-size: 16px; color: #fff; line-height: 40px; text-align: center; width: 130px; height: 40px; border-radius: 5px; background: #db2b1d; position: relative;}
+.accountDetail .hint{padding-top: 10px;}
+.accountDetail .hint em{color: #666;}
+
+.cashListWrap ul.cashListSearch{padding: 8px;}
+.cashListWrap .cashListSearch li{margin-top: 20px; height: 24px; line-height: 24px;}
+.cashListWrap .cashListSearch li label{float: left; display: inline-block; width: 70px; text-align: right; color: #999; margin-right: 20px;}
+.cashListWrap .cashListSearch li a{display: inline-block; padding: 0 10px; margin-right: 3px;}
+.cashListWrap .cashListSearch li a.active{color: #91a0b2; background: #fafafd;}
+
+
+.cashList li{margin-right: 14px; text-align: center; float: left;}
+.cashList li.tradeTime{padding-left: 15px; text-align: left; width: 140px;}
+.cashList li.tradeSum{width: 125px;}
+.cashList li.tradeId{width: 180px;}
+.cashList li.tradetype{width: 100px;}
+.cashList li.tradeState{width: 145px;}
+.cashList li.tradeRemark{width: 120px;text-overflow: ellipsis; overflow: hidden; white-space: nowrap;} 
+.cashListTitle{background: #fafafd; height: 44px; line-height: 44px; color: #666; margin-top: 30px;}
+.cashItem{height: 70px; line-height: 70px; border-bottom: 1px solid #eaeaea; color: #999; overflow: hidden;}
+/* E 鐠у嫰鍣剧拋鏉跨秿*/
+
+
+/* S 閹绘劗骞�*/
+.accountWithdrawWrap{padding: 46px 0 0 200px; }
+.accountWithdrawWrap li{width: 380px; line-height: 42px; margin-bottom: 15px; color: #999;position: relative; min-height: 42px;}
+.accountWithdrawWrap li label{width: 80px; margin-right: 20px; text-align: right; color: #999; display: inline-block; float: left;}
+.accountWithdrawWrap li .accountLast{font-size: 30px; color: #db2b1d; font-weight: bold; margin-right: 5px;}
+.accountWithdrawWrap li .canWithdraw{color: #666; font-size: 20px; margin-right: 5px;}
+.accountWithdrawWrap li .btn-withdrawAll{color: #41a6ed; margin-left: 25px;}
+.accountWithdrawWrap li .accountInputWrap{width: 280px; float: left;min-height: 42px; position: relative;}
+.accountWithdrawWrap li .accountInputWrap .accountInput{height: 30px; line-height: 40px; width: 270px; padding: 5px 0 5px 8px; border-radius: 5px; border: 1px solid #eaeaea;}
+.accountWithdrawWrap li .accountInputWrap .yuanIcon{position: absolute; width: 20px; height: 20px; line-height: 20px; text-align: center; top: 11px; right: 11px;}
+.accountWithdrawWrap li .accountInputWrap p{line-height: 30px; padding-bottom: 5px;}
+
+.accountWithdrawWrap li .bankCard{width: 280px; height: 54px; float: left;
+ background: url("/resources/img/bg-bankCard.png") no-repeat center top;}
+ .accountWithdrawWrap li .bankCard span{line-height:54px; text-align: center; display: inline-block; color: #666;}
+.accountWithdrawWrap li.submitLi{margin-top: 40px; padding-left: 100px;}
+.accountWithdrawWrap li.submitLi a{display: block; text-align: center; width: 280px; height: 45px; background: #db2b1d; font-size: 18px; color: #fff; border: none;}
+/* E 閹绘劗骞�*/
+
+
+/* S 缁併劍绨幒銊╋拷锟�*/
+.billPushList{position: relative; padding-top: 12px;}
+.billPushList .btn-rule{position: absolute; height: 16px; line-height: 16px; color: #5b9fe2; top: -22px; }
+.billPushList .btn-setRule{right: 130px;}
+.billPushList .btn-setRuleList{right: 0;}
+
+.billPushListTitle{background: #fafafd; height: 44px; line-height: 44px; color: #666;}
+.billPushList li{float: left; text-align: center; margin-right: 5px; width: 90px;
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;}
+.billPushList li.billId{padding-left: 15px; text-align: left; width: 80px;}
+.billPushList li.billMoney,
+.billPushList li.billBackMoney{width: 100px;}
+.billPushList li.billOperation{width: 115px;}
+
+.billItem{height: 70px; line-height: 70px; border-bottom: 1px solid #eaeaea; color: #999; overflow: hidden;}
+.billItem li a{color: #db2b1d; margin-right: 7px;}
+
+.showRuleWrap{width: 800px; padding: 15px 0 15px 15px;}
+.showRuleWrap ul.showRuleTitle{background: #fafafd;line-height: 44px;}
+.showRuleWrap li{float: left; text-align: center; margin-right: 5px; width: 135px;text-overflow:ellipsis; white-space: nowrap;overflow: hidden;}
+.showRuleWrap li.showRuleId{padding-left: 15px; width: 60px;}
+.showRuleWrap li.showRuleRate{width: 80px;}
+.showRuleWrap li.showRuleOpretion{width: 60px;}
+.showRuleWrap li a{color: #db2b1d;}
+
+.cancelReason#banckWrap .bankNameList{position: absolute; width: 340px; height: 200px; border: 1px solid #ccc; z-index: 99; background: #fff; right: 3px; padding-bottom: 20px; display: none; overflow-y:auto }
+.cancelReason#banckWrap .bankNameList li{width: 133px; text-align: left; float: left; line-height: 20px; padding-left: 25px;margin: 5px 0;}
+.cancelReason#banckWrap .bankNameList li input{margin-right: 5px; vertical-align: middle;}
+
+/* E 缁併劍绨幒銊╋拷锟�*/
+
+/* S 娴溿倖妲楃拋銏犲礋*/
+
+
+.tradeRecordList .tabTitle li{float: left; height: 58px;}
+.tradeRecordList .tabTitle a{padding: 0 20px;display: block; width: 130px; height: 55px; line-height: 55px; text-align: center; color: #666; font-size: 16px; position: relative;}
+.tradeRecordList .tabTitle a.active{color: #9786ea; border-bottom: 3px solid #9786ea;}
+.tradeRecordList .tabTitle a i{display: inline-block;text-align: center; min-width: 16px; height: 16px; line-height: 16px; border-radius: 50%; background:#9786ea; color: #fff; position: relative; margin-left: 5px; font-size: 12px;font-weight: 100;}
+
+.tradeRecordTitle{background: #fafafd; height: 44px; line-height: 44px; color: #666;margin-bottom: 15px;}
+
+.tradeRecordItem{height: 70px; line-height: 70px; border-bottom: 1px solid #eaeaea;}
+.tradeRecordItem li a{color: #db2b1d; }
+
+/*娴溿倖妲楁稉锟�*/
+.tradeRecordList .trading li{float: left; text-align: center; margin-right: 3px;}
+.tradeRecordList .trading li{text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.tradeRecordList .trading li.tradeRecordId{width: 70px; padding-left: 15px; text-align: left;}
+.tradeRecordList .trading li.tradeRecordType{width: 70px;}
+
+.tradeRecordList .trading li.tradeRecordBank,
+.tradeRecordList .trading li.tradeRecordBillMoney,
+.tradeRecordList .trading li.tradeRecordBackMoney{width: 90px;}
+
+.tradeRecordList .trading li.tradeRecordLastTime{width: 58px;}
+.tradeRecordList .trading li.tradeRecordRate{width: 49px;}
+
+.tradeRecordList .trading li.tradeRecordDate,
+.tradeRecordList .trading li.tradeRecordLastDay{width: 78px;}
+
+.tradeRecordList .trading li.tradeRecordStatus{width: 97px;}
+.tradeRecordList .trading li.tradeRecordOperation{width: 125px;}
+
+/*娴溿倖妲楃€瑰本鍨�*/
+.tradeRecordList .tradOver li{float: left; text-align: center; margin-right: 5px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+/*.tradeRecordList .tradOver li.tradeRecordId,
+.tradeRecordList .tradOver li.tradeRecordTicketId{
+	
+}*/
+.tradeRecordList .tradOver li.tradeRecordId{width: 65px; padding-left: 15px; text-align: left;}
+.tradeRecordList .tradOver li.tradeRecordTicketId,
+.tradeRecordList .tradOver li.tradeRecordType,
+.tradeRecordList .tradOver li.tradeRecordBank,
+.tradeRecordList .tradOver li.tradeRecordmoney,
+.tradeRecordList .tradOver li.tradeRecordRate,
+.tradeRecordList .tradOver li.tradeRecordBackMoney{width: 85px;}
+
+.tradeRecordList .tradOver li.tradeRecordDate,
+.tradeRecordList .tradOver li.tradeRecordOrg{width: 90px;}
+
+.tradeRecordList .tradOver li.tradeRecordBank,
+.tradeRecordList .tradOver li.tradeRecordmoney,
+.tradeRecordList .tradOver li.tradeRecordBackMoney{width: 105px;}
+
+
+.tradeRecordList .tradOver li.tradeRecordOperation{width: 65px;}
+
+/*娴溿倖妲楅崗鎶芥４*/
+.tradeRecordList .tradeClose li{float: left; text-align: center; margin-right: 5px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+/*.tradeRecordList .tradeClose li.tradeRecordId,
+.tradeRecordList .tradeClose li.tradeRecordTicketId,
+.tradeRecordList .tradeClose li.tradeRecordRemark{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+*/
+.tradeRecordList .tradeClose li.tradeRecordId{width: 65px; padding-left: 15px; text-align: left;}
+.tradeRecordList .tradeClose li.tradeRecordTicketId,
+.tradeRecordList .tradeClose li.tradeRecordType,
+.tradeRecordList .tradeClose li.tradeRecordRate{width: 75px;}
+
+.tradeRecordList .tradeClose li.tradeRecordBank,
+.tradeRecordList .tradeClose li.tradeRecordmoney,
+.tradeRecordList .tradeClose li.tradeRecordBackMoney{width: 95px;}
+
+.tradeRecordList .tradeClose li.tradeRecordDate,
+.tradeRecordList .tradeClose li.tradeRecordOrg,
+.tradeRecordList .tradeClose li.tradeRecordRemark{width: 85px;}
+
+.tradeRecordList .tradeClose li.tradeRecordOperation{width: 65px;}
+
+
+/* E 娴溿倖妲楃拋銏犲礋*/
+
+/* ---------------------- E 閻劍鍩涙稉顓炵妇-閸忣剙鍙� ---------------------- */
+
+.userCenterNav a i.tipsNavIcon{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    font-weight: normal;
+}
+.userCenterNav a i.tipsNavIcon.icon2{
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+.userCenterNav a i.icon1{
+	background: url(../../img/test/centerIcon1.png) no-repeat center;
+}
+.userCenterNav a i.icon2{
+	background: url(../../img/test/centerIcon2.png) no-repeat center;
+}
+.userCenterNav a i.icon3{
+	background: url(../../img/test/centerIcon3.png) no-repeat center;
+}
+.userCenterNav a i.icon4{
+	background: url(../../img/test/centerIcon4.png) no-repeat center;
+}
+.userCenterNav a i.icon5{
+	background: url(../../img/test/centerIcon5.png) no-repeat center;
+}
+.hideChild{
+	display: none;
+	background: #867bbb;
+	font-size: 12px;
+	opacity: 0.4;
+	border-left: 5px solid #867bbb;
+}
+.hideChild:hover{
+	background: #867bbb;
+	border-left: 5px solid #fff678;
+    opacity: 1;
+}
+.hideChild.onActive{
+	display: block;
+}
+.userCenterNavIcon.onActive{
+    background: url(../../img/test/jiantou2.png) no-repeat center; 
+}
+.hideChild2{
+	display: none;
+	background: #867bbb;
+	font-size: 12px;
+	opacity: 0.4;
+	border-left: 5px solid #867bbb;
+}
+.hideChild2:hover{
+	background: #867bbb;
+	border-left: 5px solid #fff678;
+    opacity: 1;
+}
+.hideChild2.onActive{
+	display: block;
+}
+.userCenterNavIcon2.onActive{
+    background: url(../../img/test/jiantou2.png) no-repeat center; 
+}
+.tabTitle.clearfix{
+	border-bottom: 1px solid #eaeaea;
+}
+.userCenterNav a i.tipsNavIcon.icon-guanli{
+    width: 30px;
+    margin-left: -6px;} 

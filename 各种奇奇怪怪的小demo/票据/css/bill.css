@@ -1,0 +1,201 @@
+body {
+	background: #FFF !important;
+}
+
+[v-cloak] {
+	display: none;
+}
+
+.bill {
+	min-height: 500px;
+	margin: 0 auto;
+	margin-top: 30px;
+	font-weight: bold;
+	font-family: Arial, "Microsoft YaHei";
+	letter-spacing: 1px;
+	background-color: white;
+}
+
+.tableWrap {
+	margin: 0 auto;
+}
+
+.tableWrap table {
+	width: 100%;
+	display: table;
+	border-collapse: collapse;
+	color: #483e32;
+}
+
+.tableWrap p {
+	color: #483e32;
+	margin-bottom: 20px;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Arial, "Microsoft YaHei";
+}
+
+.tableWrap h3 {
+	text-align: center;
+	letter-spacing: 25px;
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	font-family: Arial, "Microsoft YaHei";
+}
+
+.tableWrap table th {
+	background: #fafafd;
+	font-size: 14px;
+	line-height: 38px;
+	text-align: center;
+	border: 1px solid #483e32;
+	font-weight: 700px;
+	font-family: Arial, "Microsoft YaHei";
+}
+
+.tableWrap table td {
+	font-size: 10px;
+	width: 15px;
+	height: 5px;
+	/*text-align: center;*/
+	padding: 4px 3px;
+	border: 1px solid #483e32;
+	font-weight: bold;
+	font-family: Arial, "Microsoft YaHei";
+}
+
+.tableWrap table .firstRow td {
+	padding: 0;
+	height: 0;
+	border-bottom: none;
+	border-top: none;
+}
+
+.tableWrap .billBase li {
+	font-size: 10px;
+	margin-bottom: 10px;
+	color: #483e32;
+	float: left;
+	width: 50%;
+	/* font-weight: bold; */
+	font-family: Arial, "Microsoft YaHei";
+}
+
+.tableWrap img {
+	width: 200px;
+	height: 40px;
+	margin-bottom: 15px;
+}
+
+.row4 {
+	text-align: left !important;
+}
+
+.row4.col1 {
+	border-right: none;
+	border-left: none;
+}
+
+.row4.col2 {
+	border-left: none;
+	border-right: none;
+}
+
+.row4.col3 {
+	border-left: none;
+}
+
+.row9 {
+	text-indent: 20px;
+	text-align: left !important;
+}
+
+.row10 {
+	text-indent: 20px;
+	text-align: left !important;
+	border-bottom: none !important;
+}
+
+.row11 {
+	border-top: none !important;
+	text-align: right !important;
+	padding-right: 20px !important;
+}
+
+.red .billContent {
+	background: url(../images/bg2.jpg) repeat;
+}
+
+.blue .billContent {
+	background: url(../images/bg1.jpg) repeat;
+}
+
+.billWarp1 {
+	margin: 30px auto;
+	width: 80%;
+	border-radius: 4px;
+	/* height: auto; */
+	padding: 30px 50px;
+	/* box-sizing: border-box; */
+}
+
+.billWarp2 {
+	margin: 30px auto;
+	width: 80%;
+	border-radius: 4px;
+	/* width: 750px; */
+	height: auto;
+	padding: 30px 50px;
+	margin-top: 30px;
+}
+
+.billWarp2Shang {
+	margin: 0 auto;
+	border-radius: 4px;
+	width: 750px;
+	height: auto;
+	padding: 30px 50px;
+	margin-top: 30px;
+	/* background: url(../images/bg1.jpg) repeat; */
+}
+
+.billWarp1Shang {
+	margin: 0 auto;
+	border-radius: 4px;
+	width: 750px;
+	height: auto;
+	padding: 30px 50px;
+	margin-top: 30px;
+	/* background: url(../images/bg2.jpg) repeat; */
+}
+
+.billBack {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.mosaic {
+	position: relative;
+}
+
+.mosaic2 {
+	position: relative;
+}
+
+.tableWrap .mosaic img {
+	display: none;
+}
+
+.tableWrap .mosaic2 img {
+	display: none;
+}
+
+#billBg2 tbody tr td {
+	width: 80%;
+}
+
+#billBg2 tbody tr td:first-of-type {
+	width: 20%;
+}

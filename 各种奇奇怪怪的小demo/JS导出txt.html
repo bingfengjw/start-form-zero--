@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* #preview button{
+    display: none;
+  } */
+
+    span,
+    p {
+      display: inline-block;
+      float: left;
+    }
+
+    #preview div {
+      clear: both;
+    }
+
+    #preview div:after {
+      content: '';
+      display: block;
+      height: 0;
+      clear: both;
+    }
+  </style>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/FileSaver.min.js"></script>
+  <script src="js/jquery.wordexport.js"></script>
+</head>
+
+<body>
+  <div id="preview" contenteditable="true" style="border: 1px solid rgb(153, 153, 153);">
+    <div>
+      <span class="timeStart time" currenttime="0">00 : 00</span> -
+      <span class="timeEnd time" currenttime="0">00 : 00</span>
+      <span>让我们掌声有请中国移动通信集团公司尚兵董事长做主题演讲，</span>
+      <button>删除</button>
+    </div>
+    <div>
+      <span class="timeStart time" currenttime="1">00 : 01</span> -
+      <span class="timeEnd time"="1">00 : 01</span>
+      <span>有请。</span>
+      <button>删除</button>
+    </div>
+    <div>
+      <span class="timeStart time" currenttime="1">00 : 01</span> -
+      <span class="timeEnd time" currenttime="1">00 : 01</span>
+      <span>有请。</span>
+      <button>删除</button>
+    </div>
+  </div>
+
+  </div>
+
+  <button>save</button>
+
+  <script>
+    $("button").click(function (event) {
+      // $("#preview button").remove();
+      $("#preview").wordExport('span{color:blue;}button{color:blue;}');
+    });
+  </script>
+</body>
+
+</html>
