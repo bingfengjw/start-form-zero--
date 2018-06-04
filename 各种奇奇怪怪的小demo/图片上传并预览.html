@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Title</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+</head>
+
+<body style="overflow: scroll; overflow-y: hidden; overflow-x: hidden">
+  <div style="height: 20px"></div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6 col-md-offset-3">
+        <form class="form-horizontal" enctype="multipart/form-data" role="form" id="testform">
+
+          <input type="hidden" value="1" id="id" name="id" />
+          <div class="control-group">
+            <label for="uname" class="col-md-3 control-label span3">姓 名:</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control span3" value="" id="uname" name="uname" placeholder="请输入姓名">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label for="pwd" class="col-md-3 control-label span3">密码:</label>
+            <div class="col-md-9">
+              <input type="password" class="form-control span3" value="" id="pwd" name="pwd" placeholder="请输入密码">
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="col-md-3 control-label span3"></label>
+            <div class="col-md-9">
+              <img src="" width="100px" height="100px">
+            </div>
+          </div>
+
+          <div class="control-group">
+
+            <label for="requirement" class="col-md-3 control-label span3">图片上传</label>
+            <div class="col-md-9">
+              <div class="input-group">
+                <input id="photoCover" class="form-control" readonly type="text">
+                <label class="input-group-btn">
+                  <input id="file" type="file" name="file" style="left: -9999px; position: absolute;">
+                  <span class="btn btn-default">Browse</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="col-md-2 control-label span2"></label>
+            <div class="col-md-10">
+              <a class="btn btn-small btn-primary" onclick="saveUser()">方式一</a>
+              <a class="btn btn-small btn-danger" onclick="saveUser2()">方式二</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    //html5实现图片预览功能
+    $(function () {
+      $("#file").change(function (e) {
+        var file = e.target.files[0] || e.dataTransfer.files[0];
+        $('#photoCover').val(document.getElementById("file").files[0].name);
+        if (file) {
+          var reader = new FileReader();
+          reader.onload = function () {
+            $("img").attr("src", this.result);
+          }
+
+          reader.readAsDataURL(file);
+        }
+      });
+    })
+    //方式一 Jquery实现
+    function saveUser2() {
+      var id = $("#id").val().trim();
+      var uname = $("#uname").val().trim();
+      var pwd = $("#pwd").val().trim();
+      var file = document.getElementById("file").files[0];
+      var formData = new FormData();
+      formData.append('id', id);
+      formData.append('uname', uname);
+      formData.append('pwd', pwd);
+      formData.append('file', file);
+
+      $.ajax({
+        url: "/home/about",
+        type: "post",
+        data: formData,
+        contentType: false,
+        processData: false,
+        mimeType: "multipart/form-data",
+        success: function (data) {
+          console.log(data);
+        },
+        error: function (data) {
+          console.log(data);
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
