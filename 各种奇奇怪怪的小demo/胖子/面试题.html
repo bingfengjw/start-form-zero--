@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var aa = function(item){
+      console.log(item.a);
+    }
+    var list2 = [{a:1},{a:2},{a:3}];
+    for(var i=0;i<list2.length;i++){
+      let item = list2[i];
+      setTimeout((function(_item){
+        return function(){
+          aa(_item);
+        }
+      })(item),10);
+    }
+
+  </script>
+</body>
+
+</html>

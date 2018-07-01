@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/FileSaver.min.js"></script>
+  <script src="js/jquery.wordexport.js"></script>
+  <script src="js/wavesurfer.min.js"></script>
+
+</head>
+
+<body>
+  <div class="btn-box">
+
+    <div class="choose-list clearfix">
+      <label>
+        <input type="file">
+        <p id="auT" class="fileTxt">选择音频文件</p>
+      </label>
+      <label>
+        <input type="file" id="input">
+        <p id="txT" class="fileTxt">选择文本文件</p>
+      </label>
+    </div>
+    <div class="audio_box">
+      <!-- <div id="waveform"></div> -->
+      <audio src="" controls></audio>
+    </div>
+
+    <div class="btn_group clearfix">
+      <button id="time" disabled>end</button>
+      <button class="setTime" disabled>回退5秒</button>
+      <button class="setTime" disabled>回退10秒</button>
+      <button class="setTime" disabled>前进10秒</button>
+      <button class="setTime" disabled>前进5秒</button>
+      <button id="save" disabled>save</button>
+    </div>
+  </div>
+
+
+  <div id="preview"></div>
+
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>

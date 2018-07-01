@@ -1,0 +1,110 @@
+.btn-box{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #eee;
+  z-index: 10;
+}
+
+label {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+
+.audio_box {
+  margin: 10px 20px;
+}
+.audio_box span{
+  float: right;
+}
+
+audio {
+  display: block;
+  width: 100%;
+}
+
+input[type=file] {
+  display: none;
+}
+
+.fileTxt {
+  padding: 10px 20px;
+  background-color: skyblue;
+  display: inline-block;
+  color: #fff;
+}
+
+#preview {
+  padding: 10px;
+}
+
+.content {
+  padding: 5px;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+#preview div {
+  position: relative;
+}
+
+#preview button {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+}
+#preview button:nth-of-type(1) {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 80px;
+  margin: auto;
+}
+
+#preview div:hover {
+  background-color: rgba(238, 168, 168, 0.35);
+}
+
+#preview div:hover button {
+  display: block;
+}
+
+.btn_group {
+  padding: 5px 20px 10px;
+  vertical-align: bottom;
+}
+
+.btn_group button {
+  width: 100px;
+  height: 35px;
+  font-size: 20px;
+}
+
+.time {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.timeStart {
+  color: red;
+}
+
+.timeEnd {
+  color: blue;
+}
+
+.active {
+  background-color: lightgreen;
+}
+#save{
+  float: right;
+}

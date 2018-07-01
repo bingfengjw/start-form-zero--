@@ -36,13 +36,13 @@
 						//这里参数value是clickChange中返回的内容
 						var nValue = value.split(':');
 						this.name = nValue[0];
-						this.url = nValue;
+						this.url = nValue[1];
 					}
 				}
 			},
 			methods: {
 				clickChange: function () {
-					this.setUrl = 'Google:http://www.google.com';
+					this.setUrl = 'Google:www.google.com';
 					/*this.setUrl.name = 'Google';
 					this.setUrl.url = 'http://www.google.com'*/
 				}

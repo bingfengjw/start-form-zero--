@@ -1,0 +1,146 @@
+body{
+  padding-bottom: 180px;
+}
+.btn-box {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #eee;
+  z-index: 10;
+}
+
+.btn-box label {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+
+.audio_box {
+  margin: 10px 20px;
+}
+
+audio {
+  display: block;
+  width: 100%;
+}
+
+input[type=file] {
+  display: none;
+}
+
+.fileTxt {
+  padding: 10px 20px;
+  background-color: skyblue;
+  display: inline-block;
+  color: #fff;
+}
+
+#preview {
+  padding: 10px;
+}
+
+.content {
+  padding: 5px;
+  margin-left: 120px;
+  display: inline-block;
+}
+
+#preview div {
+  position: relative;
+}
+#preview .times{
+  display: inline-block;
+}
+#preview label {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:250px;
+  margin: auto;
+  line-height: 30px;
+  height: 30px;
+  color: red;
+  font-weight: bold;
+}
+#preview .replay{
+  position: absolute;
+  left: 220px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  transition: all .5s;
+  display: none;
+}
+#preview .replay:hover{
+  transform: rotate(360deg);
+}
+
+#preview .no{
+  background-color: #eee;
+  color: #999;
+}
+#preview .no.active{
+  background-color: lightgray;
+  color: #333;
+}
+#preview .no label{
+  display: block;
+}
+
+#preview input {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#preview>.item:hover {
+  background-color: rgba(238, 168, 168, 0.35);
+}
+#preview>.item:hover .replay{
+  display: block;
+}
+
+#preview>.item:hover label {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn_group {
+  padding: 5px 20px 10px;
+  vertical-align: bottom;
+}
+
+.btn_group button {
+  width: 100px;
+  height: 35px;
+  font-size: 20px;
+}
+
+.time {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.timeStart {
+  color: red;
+}
+
+.timeEnd {
+  color: blue;
+}
+
+.active {
+  background-color: lightgreen;
+}
+
+#save {
+  float: right;
+}

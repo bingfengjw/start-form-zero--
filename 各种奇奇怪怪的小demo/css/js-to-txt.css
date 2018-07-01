@@ -1,0 +1,16 @@
+/* #preview button{
+    display: none;
+  } */
+  span,p{
+    display: inline-block;
+    float: left;
+  }
+  #preview div{
+    clear: both;
+  }
+  #preview div:after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+  }
