@@ -9,7 +9,7 @@
 </head>
 <body>
   <div id="box">
-    <label v-for="x in checks"><input type="checkbox" v-model="x.flag" :value="x.id">{{x.name}}<br></label>
+    <label v-for="x in checks"><input type="checkbox" @click="checkItem" v-model="x.flag" :value="x.id">{{x.name}}<br></label>
     <br>
     <label><input @click='allcheck' v-model="allcheckFlag" type="checkbox">全选</label>
     <br>
@@ -32,6 +32,9 @@
       methods:{
         allcheck(){
           this.checks.map(x=>x.flag=this.allcheckFlag)
+        },
+        checkItem(){
+          this.allcheckFlag = this.checks.every(x=>x.flag === true);
         }
       }
     })
