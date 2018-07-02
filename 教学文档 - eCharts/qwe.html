@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  data = [900, 5700, 17920, 12500, 7840];
+
+  //数据，阀值
+  function naQuShua(data, thresholdValue) {
+    if (thresholdValue === undefined && thresholdValue === "" && thresholdValue === null) {
+      thresholdValue = 5000;
+    }
+    let i = 0;
+    let gradeMaxNumber = 0;
+    let grade = 0;
+    let dataArr = new Array();
+    while (i < data.length) {
+      if (data[i] > gradeMaxNumber) {
+        gradeMaxNumber = parseFloat(data[i]);
+        grade = Math.ceil(parseFloat(data[i]) / parseFloat(thresholdValue));
+      }
+      i++;
+    }
+    for (let u = 0; u < grade; u++) {
+      dataArr.push({data: []});
+    }
+    console.log(grade, gradeMaxNumber);
+    for (let o = 0; o < data.length; o++) {
+      for (let u = 0; u < grade; u++) {
+        if (parseFloat(data[o]) > parseFloat(thresholdValue) * u && parseFloat(data[o]) < parseFloat(thresholdValue) * (u + 1)) {
+          dataArr[u].data.push(data[o] % parseFloat(thresholdValue))
+        } else if (parseFloat(data[o]) > parseFloat(thresholdValue) * u) {
+          dataArr[u].data.push(parseFloat(thresholdValue))
+        } else {
+          dataArr[u].data.push(0)
+        }
+
+      }
+    }
+    return dataArr;
+  }
+
+
+  let app = new naQuShua(data, 1000);
+  console.log(app)
+
+</script>
+</html>

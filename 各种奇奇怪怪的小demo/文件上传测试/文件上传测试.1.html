@@ -34,6 +34,7 @@
           return;
         }
         var file = document.getElementsByName('video')[0].files[0]; //文件对象
+        console.log(document.getElementsByName('video')[0].files);
         console.log(file);
         //如果sta>file.size，就结束了
         if (start > file.size) {
@@ -94,7 +95,7 @@
   <div id="progress">
     <div id="bar"></div>
   </div>
-  <input type="file" name="video" />
+  <input type="file" name="video" multiple=”multiple” />
   <button onclick="selfile();">点击上传</button>
 </body>
 

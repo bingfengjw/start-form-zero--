@@ -1,0 +1,56 @@
+{
+  "code": 200,
+  "msg": "\u6210\u529f",
+  "data": {
+    "open": {
+      "apply": [{
+        "app_id": "62",
+        "apply_name": "\u6d4b\u8bd5"
+      }, {
+        "app_id": "63",
+        "apply_name": "\u6d4b\u8bd51"
+      }]
+    },
+    "lively": [{
+      "num": "34",
+      "cost": "0.0000",
+      "time": "11",
+      "rate": "100%"
+    }, {
+      "num": "53",
+      "cost": "0.0000",
+      "time": "15",
+      "rate": "100%"
+    }, {
+      "num": "135",
+      "cost": "0.0000",
+      "time": "16",
+      "rate": "100%"
+    }],
+    "combo": {
+      "combo": [{
+        "stair_name": "\u8d85\u51fa1-100\u6b21",
+        "stair_money": "0.0400"
+      }, {
+        "stair_name": "\u8d85\u51fa101-500\u6b21",
+        "stair_money": "0.0400"
+      }, {
+        "stair_name": "\u8d85\u51fa501-2000\u6b21",
+        "stair_money": "0.0300"
+      }, {
+        "stair_name": "\u8d85\u51fa2001-5000\u6b21",
+        "stair_money": "0.0200"
+      }, {
+        "stair_name": "\u8d85\u51fa5001\u6b21\u53ca\u4ee5\u4e0a",
+        "stair_money": "0.0100"
+      }],
+      "serve": {
+        "serve_id": "2",
+        "serve_name": "\u6587\u672c\u5206\u8bcd",
+        "amount": "100",
+        "is_open": "0",
+        "totalNum": "0"
+      }
+    }
+  }
+}

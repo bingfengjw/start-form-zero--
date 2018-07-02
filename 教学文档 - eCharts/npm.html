@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+
+<body>
+
+</body>
+<script>
+  var data = [900, 5700, 17920, 12500, 7840];
+  var thresholdValue = [{
+    min: 0,
+    max: 100
+  }, {
+    min: 101,
+    max: 200
+  }, {
+    min: 201,
+    max: 600
+  }, {
+    min: 601,
+    max: 2100
+  }, {
+    min: 2101,
+    max: 5100
+  }, {
+    min: 5101,
+    max: 10000
+  },{
+    min:10001,
+    max:'max'
+  }];
+
+  //数据，阀值
+  function naQuShua(data, thresholdValue) {
+    // console.error("参数thresholdValue不存在");
+    if (data === undefined || data === "" || data === null || data === []) {
+      console.error("无数据传入");
+      return false;
+    }
+    if (thresholdValue === undefined || thresholdValue === "" || thresholdValue === null || thresholdValue === []) {
+      console.error("参数thresholdValue不存在");
+      return false;
+    }
+    let grade = thresholdValue.length;
+    let dataArr = new Array();
+    for (let u = 0; u < grade; u++) {
+      dataArr.push({
+        data: [],
+        type: "bar",
+        stack: "npm"
+      });
+    }
+    for (let o = 0; o < data.length; o++) {
+      for (let u = 0; u < grade; u++) {
+        if (u === grade - 1) {
+          if (parseFloat(data[o]) > thresholdValue[u].min) {
+            dataArr[u].data.push(data[o] - thresholdValue[u].min);
+          } else {
+            dataArr[u].data.push(null)
+          }
+        } else {
+          if (data[o] > thresholdValue[u].min && data[o] <= thresholdValue[u].max) {
+            if ((data[o] - thresholdValue[u].min).toString() === "NaN") {
+              console.error(data[o] + " or " + thresholdValue[u].max + "中的一个或两个不是Number类型");
+              return false;
+            }
+            dataArr[u].data.push(data[o] - thresholdValue[u].min);
+          } else if (data[o] > thresholdValue[u].max) {
+            if ((thresholdValue[u].max).toString() === "NaN") {
+              console.error(thresholdValue[u].max + "不是Number类型");
+              return false;
+            }
+            dataArr[u].data.push(thresholdValue[u].max)
+          } else {
+            if (parseFloat(data[o].toString()) === "NaN" || parseFloat(thresholdValue[u].min).toString() === "NaN" ||
+              parseFloat(thresholdValue[u].max.toString() === "NaN")) {
+              console.error("数据未依照参数格式的类型")
+            }
+            dataArr[u].data.push(null)
+          }
+        }
+
+      }
+
+    }
+    return dataArr;
+  }
+
+  let app = new naQuShua(data, thresholdValue);
+  console.log(app)
+</script>
+
+</html>

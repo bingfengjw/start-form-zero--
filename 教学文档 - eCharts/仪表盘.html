@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>ECharts练习</title>
+  <script src="./echarts3.7.1.js"></script>
+</head>
+
+<body>
+  <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+  <div id="main" style="width: 600px;height:400px;"></div>
+  <script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    var option = {
+      title: {
+        text: '业务指标', //标题文本内容
+      },
+      toolbox: { //可视化的工具箱
+        show: true,
+        feature: {
+          restore: { //重置
+            show: true
+          },
+          saveAsImage: { //保存图片
+            show: true
+          }
+        }
+      },
+      tooltip: { //弹窗组件
+        formatter: "{a} <br/>{b} : {c}%"
+      },
+      series: [{
+        name: '业务指标',
+        type: 'gauge',
+        startAngle: 140, // 仪表盘起始角度
+        endAngle: -140, // 仪表盘结束角度
+        detail: {
+          formatter: '{value}%'
+        },
+        axisLine: { // 坐标轴线  
+          lineStyle: { // 属性lineStyle控制线条样式  
+            color: [
+              [0.2, '#c23531'],
+              [0.8, '#63869e'],
+              [1, '#91c7ae']
+            ]
+          }
+        },
+        axisLabel: {
+          show: true, // 是否显示仪表盘刻度标签
+          formatter: function (v) {
+            return v + '度';
+          },
+        },
+        data: [{
+          value: 45,
+          name: '完成率'
+        }]
+      }]
+
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+
+    setInterval(function () { //把option.series[0].data[0].value的值使用random()方法获取一个随机数
+      option.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0;
+      myChart.setOption(option, true);
+    }, 2000);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #charts {
+      width: 800px;
+      height: 300px;
+    }
+  </style>
+  <script src="../教学文档 - jQuery/jQuery插件/js/jQuery-1.7.2.js"></script>
+  <script src="./echarts3.7.1.js"></script>
+</head>
+
+<body>
+
+  <div id="charts"></div>
+
+
+
+  <script>
+    $.ajax({
+      url: "./单数据多颜色堆叠柱状图.json",
+      success: function (response) {
+        var data = response.data.lively;
+
+        _echart(data);
+      }
+    });
+
+    function _echart(data) {
+      console.log('data', data);
+      var _time = [];
+      var _data = [];
+
+      var nData = [];
+      data.map(function (x) {
+        _time.push(x.time);
+        _data.push(Number(x.num));
+        nData.push([]);
+      });
+      console.log(_time, _data);
+
+      // data.map(function (x) {
+      //   _data.map(function (item, i) {
+      //     console.log('​before -> item', item);
+      //     item = item - 10 <= 0 ? 10 : item - 10;
+      //     console.log('​after -> item', item);
+      //     _data[i] = item;
+      //     nData[i].push(item);
+      //   })
+      //   console.log('---------------');
+      // })
+
+      console.log('原数据', _data);
+      var val = [10, 20, 50]; // 阈值
+      _data.map(function (x, i) {
+        // 如果剩余的数小于该范围下的阈值，则返回这个数
+        var num = x - val[0] <= 0 ? x : val[0];
+        // _data[i] = _data[i] - val[0] <= 0 ? _data[i] : _data[i] - val[0];
+        nData[i].push(num);
+      });
+      _data.map(function (x, i) {
+        // 如果剩余的数小于该范围下的阈值，则返回这个数
+        var num = x - (val[0] + val[1]) <= 0 ? x - (val[0]) : val[1];
+        // _data[i] = _data[i] - val[0] <= 0 ? _data[i] : _data[i] - val[0];
+        nData[i].push(num);
+      });
+      _data.map(function (x, i) {
+        // 如果剩余的数小于该范围下的阈值，则返回这个数
+        var num = x - (val[0] + val[1] + val[2]) <= 0 ? x - (val[0] + val[1]) : val[2];
+        // _data[i] = _data[i] - val[0] <= 0 ? _data[i] : _data[i] - val[0];
+        nData[i].push(num);
+      });
+
+      _data.map(function (x, i) {
+        // 如果剩余的数小于该范围下的阈值，则返回这个数
+        var num = x - (val[0] + val[1] + val[2]) <= 0 ? 0 : x - (val[0] + val[1] + val[2]);
+        // _data[i] = _data[i] - val[0] <= 0 ? _data[i] : _data[i] - val[0];
+        nData[i].push(num);
+      });
+      console.log('原数据', _data);
+      console.log('最终数据', nData);
+
+
+      for (var i = 0; i < val.length; i++) {
+        var _v = 0;
+        for (var j = 0; j <= i; j++) {
+          console.log('​function_echart -> j', j);
+          val[j] += val[j] - 1;
+        }
+        _data.map(function (x, i) {
+          // 如果剩余的数小于该范围下的阈值，则返回这个数
+          var num = x - val[0] <= 0 ? x : val[0];
+          // _data[i] = _data[i] - val[0] <= 0 ? _data[i] : _data[i] - val[0];
+          nData[i].push(num);
+        });
+        console.log(nData);
+        console.log('i', i);
+      }
+
+
+      var myChart = echarts.init(document.getElementById('charts'));
+
+      var option = {
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: { // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+          }
+        },
+        // legend: {
+        //   data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
+        // },
+        grid: {
+          left: '3%',
+          right: '4%',
+          bottom: '3%',
+          containLabel: true
+        },
+        xAxis: {
+          type: 'category',
+          data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+        },
+        yAxis: {
+          type: 'value'
+        },
+        series: [{
+            // name: '直接访问',
+            type: 'bar',
+            // stack: '总量',
+            label: {
+              normal: {
+                show: true,
+                position: 'insideRight'
+              }
+            },
+            data: [320, 302, 301, 334, 390, 330, 320]
+          },
+          // {
+          //   // name: '邮件营销',
+          //   type: 'bar',
+          //   stack: '总量',
+          //   label: {
+          //     normal: {
+          //       show: true,
+          //       position: 'insideRight'
+          //     }
+          //   },
+          //   data: [120, 132, 101, 134, 90, 230, 210]
+          // },
+          // {
+          //   // name: '联盟广告',
+          //   type: 'bar',
+          //   stack: '总量',
+          //   label: {
+          //     normal: {
+          //       show: true,
+          //       position: 'insideRight'
+          //     }
+          //   },
+          //   data: [220, 182, 191, 234, 290, 330, 310]
+          // },
+          // {
+          //   // name: '视频广告',
+          //   type: 'bar',
+          //   stack: '总量',
+          //   label: {
+          //     normal: {
+          //       show: true,
+          //       position: 'insideRight'
+          //     }
+          //   },
+          //   data: [150, 212, 201, 154, 190, 330, 410]
+          // },
+          // {
+          //   // name: '搜索引擎',
+          //   type: 'bar',
+          //   stack: '总量',
+          //   label: {
+          //     normal: {
+          //       show: true,
+          //       position: 'insideRight'
+          //     }
+          //   },
+          //   data: [820, 832, 901, 934, 1290, 1330, 1320]
+          // }
+        ]
+      };
+      myChart.setOption(option);
+    }
+  </script>
+</body>
+
+</html>
