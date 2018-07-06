@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+  <input type="file" id="up">
+  <button>send</button>
+
+  <script>
+    var ip = '192.168.250.230:1080';
+
+    $("button").click(function () {
+      var file = $('#up')[0].files[0];
+      var fd = new FormData();
+      console.log(file);
+
+      fd.append('task_name',file.name);
+      fd.append('file',file);
+
+      $.ajax({
+        url: 'http://' + ip +
+          '/srsp/v1/speech_recognition?access_token=f79b90a09bee7ca982ce8d6ac09537b3.1507891630',
+        type: 'POST',
+        cache: false,
+        datatype: 'jsonp',
+        data: fd,
+        processData: false,
+        contentType: false
+      }).done(function (res) {
+        console.log(res);
+      })
+    })
+  </script>
+</body>
+
+</html>
