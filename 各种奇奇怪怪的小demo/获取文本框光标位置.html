@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+  <div contenteditable="true" id="text">
+    年轻的修行者是大齐某个隐秘宗门的弟子，年纪虽轻但已经迈入了六境，实是这数十年来罕见的修行天才，初出山门又是不久，难免有些骄傲，但强者毕竟是强者，一声厉喝之间，他直接便用尽了全力，整个身体如干枯的鲜花迅速枯萎下来。
+    <br> 噗的一声闷响。
+    <br> 他的手中涌出一蓬黏稠如浓墨的黑炎，黑炎里，是一颗无数颗细小晶石拼接而成的拳头大小黑色骷髅头。
+  </div>
+
+  <script>
+    var range = document.createRange();
+
+    document.querySelector("#text").onkeyup = function () {
+      console.log(document.createRange().selectNodeContents(this));
+    }
+
+    function setFocus(el) {
+      // el = el[0]; // jquery 对象转dom对象  
+      el.focus();
+      var range = document.createRange();
+      range.selectNodeContents(el);
+      console.log(range);
+      range.collapse(false);
+      var sel = window.getSelection();
+      console.log(sel);
+      //判断光标位置，如不需要可删除
+      if (sel.anchorOffset != 0) {
+        return;
+      };
+      sel.removeAllRanges();
+      sel.addRange(range);
+    };
+  </script>
+</body>
+
+</html>
