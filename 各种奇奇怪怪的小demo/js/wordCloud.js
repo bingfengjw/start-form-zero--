@@ -1,16 +1,23 @@
-;
-(function (window) {
-  var radius = 120; //  半径
+var wordCloud = function (options) {
+  if (options === undefined || options === '' || options === null) {
+    options = {};
+  }
+  console.log(options);
+  var el = options.el;  // 词云div
+  var childEl = options.childEl || 'a';  // 单词元素标签
+  var radius = options.radius || 120; //  半径
+  var distr = options.distr || true;    // 是否允许文字重叠
+  var tspeed = options.tspeed || 50;    // 旋转速度
+  var d = options.d || 500;  //  距离感？值越大球体越透明，给人感觉距离越远
+  var size = options.size || 10;  // 鼠标感应范围大小？与滚动速度相关
+
+
   var dtr = Math.PI / 180;
-  var d = 300;
 
   var mcList = [];
   var active = false;
   var lasta = 1;
   var lastb = 1;
-  var distr = true;    // 是否允许文字重叠
-  var tspeed = 50;    // 旋转速度
-  var size = 10;
 
   var mouseX = 0;
   var mouseY = 0;
@@ -20,13 +27,14 @@
   var aA = null;
   var oDiv = null;
 
-  window.onload = function () {
+  ; (function () {
     var i = 0;
     var oTag = null;
 
-    oDiv = document.getElementById('div1');
+    oDiv = document.querySelector(el);
+    console.log(oDiv,childEl);
 
-    aA = oDiv.getElementsByTagName('a');
+    aA = oDiv.querySelectorAll(childEl);
 
     for (i = 0; i < aA.length; i++) {
       oTag = {};
@@ -60,7 +68,7 @@
     };
 
     setInterval(update, 30);
-  };
+  })();
 
   function update() {
     var a;
@@ -205,4 +213,4 @@
     sc = Math.sin(c * dtr);
     cc = Math.cos(c * dtr);
   }
-})(window)
+}
