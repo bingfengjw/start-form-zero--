@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <navbar ref="navbar"></navbar>
+        <pagefooter ref="pagefooter"></pagefooter>
+        <div ref="demo"></div>
+    </div>
+
+    <script>
+        Vue.component('navbar', {
+            template: '#navbar',
+            data: function () {
+                return {
+                    navs: [1, 2, 3, 4]
+                }
+            }
+        });
+
+        Vue.component('pagefooter', {
+            template: '#pagefooter',
+            data: function () {
+                return {
+                    footer: '这是footer'
+                }
+            }
+        });
+        new Vue({
+            el: '#app',
+            mounted: function () {
+                //ready,
+                //这里怎么直接访问navbar的navs和pagefooter的footer值呢，
+                console.log(this.$refs.navbar.navs);
+                console.log(this.$refs.pagefooter.footer);
+                console.log(this.$refs.demo);
+            }
+        })
+    </script>
+</body>
+
+</html>
