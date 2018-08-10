@@ -2,14 +2,13 @@ var wordCloud = function (options) {
   if (options === undefined || options === '' || options === null) {
     options = {};
   }
-  console.log(options);
-  var el = options.el;  // 词云div
-  var childEl = options.childEl || 'a';  // 单词元素标签
-  var radius = options.radius || 120; //  半径
-  var distr = options.distr || true;    // 是否允许文字重叠
-  var tspeed = options.tspeed || 50;    // 旋转速度
-  var d = options.d || 500;  //  距离感？值越大球体越透明，给人感觉距离越远
-  var size = options.size || 10;  // 鼠标感应范围大小？与滚动速度相关
+  var el = options.el; // 词云div
+  var childEl = options.childEl || 'a'; // 单词元素标签
+  var radius = options.radius || 200; //  半径
+  var distr = options.distr || true; // 是否允许文字重叠
+  var tspeed = options.tspeed || 50; // 旋转速度
+  var d = options.d || 500; //  距离感？值越大球体越透明，给人感觉距离越远
+  var size = options.size || 10; // 鼠标感应范围大小？与滚动速度相关
 
 
   var dtr = Math.PI / 180;
@@ -27,15 +26,12 @@ var wordCloud = function (options) {
   var aA = null;
   var oDiv = null;
 
-  ; (function () {
+  ;
+  (function () {
     var i = 0;
     var oTag = null;
-
     oDiv = document.querySelector(el);
-    console.log(oDiv,childEl);
-
     aA = oDiv.querySelectorAll(childEl);
-
     for (i = 0; i < aA.length; i++) {
       oTag = {};
 
@@ -61,10 +57,13 @@ var wordCloud = function (options) {
       var oEvent = window.event || ev;
 
       mouseX = oEvent.clientX - (oDiv.offsetLeft + oDiv.offsetWidth / 2);
-      mouseY = oEvent.clientY - (oDiv.offsetTop + oDiv.offsetHeight / 2);
+      mouseY = oEvent.clientY - (oDiv.clientTop + oDiv.clientHeight / 2);
 
       mouseX /= 5;
       mouseY /= 5;
+
+      console.log(mouseX,mouseY);
+
     };
 
     setInterval(update, 30);
@@ -198,7 +197,7 @@ var wordCloud = function (options) {
       aA[i].style.left = mcList[i].cx + l - mcList[i].offsetWidth / 2 + 'px';
       aA[i].style.top = mcList[i].cy + t - mcList[i].offsetHeight / 2 + 'px';
 
-      aA[i].style.fontSize = Math.ceil(12 * mcList[i].scale / 2) + 10 + 'px';
+      aA[i].style.fontSize = Math.ceil(12 * mcList[i].scale / 2) + 16 + 'px';
 
       aA[i].style.filter = "alpha(opacity=" + 100 * mcList[i].alpha + ")";
       aA[i].style.opacity = mcList[i].alpha;
@@ -213,4 +212,5 @@ var wordCloud = function (options) {
     sc = Math.sin(c * dtr);
     cc = Math.cos(c * dtr);
   }
+
 }
