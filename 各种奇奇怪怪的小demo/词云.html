@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #div1 {
+      position: relative;
+      width: 550px;
+      height: 550px;
+      border: 1px solid #000;
+      margin: 20px auto 0;
+    }
+
+    #div1 a {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      font-family: arial, Microsoft YaHei;
+      color: #000;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 3px 6px;
+    }
+
+    #div1 a:hover {
+      border: 1px solid #eee;
+      background: #FFF;
+    }
+
+    #div1 .blue {
+      color: blue;
+    }
+
+    #div1 .red {
+      color: red;
+    }
+
+    #div1 .green {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="div1">
+  </div>
+
+  <script src="js/wordCloud.js"></script>
+  <script>
+    var content =
+      '<a>疑问</a><a>上个月</a><a>流量</a><a>查看</a><a>扣费</a><a>前台</a>';
+    (function () {
+      setTimeout(() => {
+        document.querySelector("#div1").innerHTML = content;
+      }, 1000);
+      setTimeout(() => {
+        wordCloud({
+          el: '#div1'
+        });
+      }, 1000);
+    })();
+  </script>
+</body>
+
+</html>
