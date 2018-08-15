@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../教学文档 - jQuery/jQuery插件/js/jquery.min.js"></script>
+  <script src="./echarts3.7.1.js"></script>
+  <script src="./china.js"></script>
+  <style>
+    #main {
+      width: 600px;
+      height: 500px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="main"></div>
+
+  <script>
+    var chart = echarts.init(document.getElementById('main'));
+
+    function randomValue() {
+      return Math.round(Math.random() * 1500);
+    }
+
+    chart.setOption({
+      visualMap: {
+        min: 0,
+        max: 1500,
+        left: 'left',
+        top: 'middle',
+        text: ['High', 'Low'],
+        seriesIndex: [0],
+        inRange: {
+          color: ['#e0ffff', '#006edd']
+        },
+        calculable: true
+      },
+      series: [{
+        geo: {
+          show: true,
+          map: 'china',
+          roam: true,
+          itemStyle: {
+            normal: {
+              borderColor: 'rgba(0, 0, 0, 0.2)'
+            },
+            emphasis: {
+              areaColor: null,
+              shadowOffsetX: 0,
+              shadowOffsetY: 0,
+              shadowBlur: 20,
+              borderWidth: 0,
+              shadowColor: 'rgba(0, 0, 0, 0.5)'
+            }
+          }
+        },
+        label: {
+          normal: {
+            show: false
+          },
+          emphasis: {
+            show: false
+          }
+        },
+        type: 'map',
+        map: 'china',
+        // name: 'categoryA',
+        // geoIndex: 0,
+        data: [{
+            name: '北京省',
+            value: randomValue()
+          },
+          {
+            name: '天津省',
+            value: randomValue()
+          },
+          {
+            name: '上海省',
+            value: randomValue()
+          },
+          {
+            name: '重庆省',
+            value: randomValue()
+          },
+          {
+            name: '河北省',
+            value: randomValue()
+          },
+          {
+            name: '河南省',
+            value: randomValue()
+          },
+          {
+            name: '云南省',
+            value: randomValue()
+          },
+          {
+            name: '辽宁省',
+            value: randomValue()
+          },
+          {
+            name: '黑龙江省',
+            value: randomValue()
+          },
+          {
+            name: '湖南省',
+            value: randomValue()
+          },
+          {
+            name: '安徽省',
+            value: randomValue()
+          },
+          {
+            name: '山东省',
+            value: randomValue()
+          },
+          {
+            name: '新疆省',
+            value: randomValue()
+          },
+          {
+            name: '江苏省',
+            value: randomValue()
+          },
+          {
+            name: '浙江省',
+            value: randomValue()
+          },
+          {
+            name: '江西省',
+            value: randomValue()
+          },
+          {
+            name: '湖北省',
+            value: randomValue()
+          },
+          {
+            name: '广西省',
+            value: randomValue()
+          },
+          {
+            name: '甘肃省',
+            value: randomValue()
+          },
+          {
+            name: '山西省',
+            value: randomValue()
+          },
+          {
+            name: '内蒙古省',
+            value: randomValue()
+          },
+          {
+            name: '陕西省',
+            value: randomValue()
+          },
+          {
+            name: '吉林省',
+            value: randomValue()
+          },
+          {
+            name: '福建省',
+            value: randomValue()
+          },
+          {
+            name: '贵州省',
+            value: randomValue()
+          },
+          {
+            name: '广东省',
+            value: randomValue()
+          },
+          {
+            name: '青海省',
+            value: randomValue()
+          },
+          {
+            name: '西藏省',
+            value: randomValue()
+          },
+          {
+            name: '四川省',
+            value: randomValue()
+          },
+          {
+            name: '宁夏省',
+            value: randomValue()
+          },
+          {
+            name: '海南省',
+            value: randomValue()
+          },
+          {
+            name: '台湾省',
+            value: randomValue()
+          },
+          {
+            name: '香港省',
+            value: randomValue()
+          },
+          {
+            name: '澳门省',
+            value: randomValue()
+          }
+        ]
+      }],
+      tooltip: {
+        formatter: function (v) {
+          console.log(v);
+        }
+      },
+    });
+  </script>
+</body>
+
+</html>
